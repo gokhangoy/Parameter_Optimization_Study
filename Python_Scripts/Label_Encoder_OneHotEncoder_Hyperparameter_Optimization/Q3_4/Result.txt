@@ -1,0 +1,10 @@
+Score: 0.8086749911308289
+start_point = {'keras.compile.0': {'loss': ['categorical_crossentropy'], 'optimizer': ['Nadam']}, 
+'keras.fit.0': {'epochs': [100], 'batch_size': [100], 'verbose': [2]}, 
+'keras.layers.Dense.1': {'units': [100], 'activation': ['linear']}, 
+'keras.layers.Dropout.2': {'rate': [0.4]}, 'keras.layers.Dense.3': 
+{'units': [3], 'activation': ['softmax']}} 
+
+Epoch 1/1
+80000/80000 [==============================] - 14s 176us/step - loss: 0.4958 - accuracy: 0.7930
+20000/20000 [==============================] - 2s 93us/step

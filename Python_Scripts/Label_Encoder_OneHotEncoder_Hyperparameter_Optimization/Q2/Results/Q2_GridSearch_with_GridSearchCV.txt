@@ -1,0 +1,116 @@
+Using TensorFlow backend.
+2020-03-16 12:44:06.693061: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/lib64-nvidia
+2020-03-16 12:44:06.693157: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/lib64-nvidia
+2020-03-16 12:44:06.693171: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2020-03-16 12:44:11.142078: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+Best: 0.811050 using {'batch_size': 40, 'epochs': 50}
+0.810360 (0.001591) with: {'batch_size': 10, 'epochs': 10}
+0.810970 (0.002320) with: {'batch_size': 10, 'epochs': 50}
+0.750421 (0.070495) with: {'batch_size': 20, 'epochs': 10}
+0.810230 (0.002339) with: {'batch_size': 20, 'epochs': 50}
+0.810320 (0.001676) with: {'batch_size': 40, 'epochs': 10}
+0.811050 (0.001885) with: {'batch_size': 40, 'epochs': 50}
+
+
+Optimizer Optimization
+
+Using TensorFlow backend.
+2020-03-16 19:46:05.519726: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/lib64-nvidia
+2020-03-16 19:46:05.520622: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/lib64-nvidia
+2020-03-16 19:46:05.520654: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2020-03-16 19:46:11.728743: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+Best: 0.812030 using {'optimizer': 'RMSprop'}
+0.809560 (0.001546) with: {'optimizer': 'SGD'}
+0.812030 (0.001261) with: {'optimizer': 'RMSprop'}
+0.808400 (0.002286) with: {'optimizer': 'Adagrad'}
+0.810830 (0.001652) with: {'optimizer': 'Adadelta'}
+0.809970 (0.001030) with: {'optimizer': 'Adam'}
+0.808310 (0.001579) with: {'optimizer': 'Adamax'}
+0.811100 (0.001391) with: {'optimizer': 'Nadam'}
+
+
+Learning Rate Optimization
+
+Using TensorFlow backend.
+2020-03-16 21:47:26.776737: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/lib64-nvidia
+2020-03-16 21:47:26.776847: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/lib64-nvidia
+2020-03-16 21:47:26.776861: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2020-03-16 21:47:31.238777: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+Best: 0.811590 using {'learn_rate': 0.001}
+0.811590 (0.000851) with: {'learn_rate': 0.001}
+0.809860 (0.001682) with: {'learn_rate': 0.01}
+0.809560 (0.001546) with: {'learn_rate': 0.1}
+0.809560 (0.001546) with: {'learn_rate': 0.2}
+0.809560 (0.001546) with: {'learn_rate': 0.3}
+
+
+Activation Function Optimization
+
+Using TensorFlow backend.
+2020-03-17 00:49:12.171192: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/lib64-nvidia
+2020-03-17 00:49:12.171321: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/lib64-nvidia
+2020-03-17 00:49:12.171342: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2020-03-17 00:49:16.516294: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+Best: 0.811060 using {'activation': 'softplus'}
+0.810240 (0.001615) with: {'activation': 'softmax'}
+0.811060 (0.001590) with: {'activation': 'softplus'}
+0.809810 (0.001461) with: {'activation': 'softsign'}
+0.810340 (0.001785) with: {'activation': 'relu'}
+0.810290 (0.001666) with: {'activation': 'tanh'}
+0.810240 (0.001615) with: {'activation': 'sigmoid'}
+0.810100 (0.001540) with: {'activation': 'hard_sigmoid'}
+0.810420 (0.002002) with: {'activation': 'linear'}
+
+Dropout Rate Optimization 
+
+Best: 0.810750 using {'dropout_rate': 0.0, 'weight_constraint': 2}
+0.810610 (0.001530) with: {'dropout_rate': 0.0, 'weight_constraint': 1}
+0.810750 (0.001567) with: {'dropout_rate': 0.0, 'weight_constraint': 2}
+0.810490 (0.001411) with: {'dropout_rate': 0.0, 'weight_constraint': 3}
+0.810360 (0.001535) with: {'dropout_rate': 0.0, 'weight_constraint': 4}
+0.810450 (0.001898) with: {'dropout_rate': 0.0, 'weight_constraint': 5}
+0.810280 (0.001542) with: {'dropout_rate': 0.1, 'weight_constraint': 1}
+0.810240 (0.001545) with: {'dropout_rate': 0.1, 'weight_constraint': 2}
+0.810160 (0.001387) with: {'dropout_rate': 0.1, 'weight_constraint': 3}
+0.810170 (0.001586) with: {'dropout_rate': 0.1, 'weight_constraint': 4}
+0.810210 (0.001615) with: {'dropout_rate': 0.1, 'weight_constraint': 5}
+0.810280 (0.001591) with: {'dropout_rate': 0.2, 'weight_constraint': 1}
+0.810270 (0.001538) with: {'dropout_rate': 0.2, 'weight_constraint': 2}
+0.810290 (0.001596) with: {'dropout_rate': 0.2, 'weight_constraint': 3}
+0.810340 (0.001535) with: {'dropout_rate': 0.2, 'weight_constraint': 4}
+0.810260 (0.001540) with: {'dropout_rate': 0.2, 'weight_constraint': 5}
+0.810300 (0.001554) with: {'dropout_rate': 0.3, 'weight_constraint': 1}
+0.810280 (0.001416) with: {'dropout_rate': 0.3, 'weight_constraint': 2}
+0.810370 (0.001519) with: {'dropout_rate': 0.3, 'weight_constraint': 3}
+0.810310 (0.001435) with: {'dropout_rate': 0.3, 'weight_constraint': 4}
+0.810210 (0.001276) with: {'dropout_rate': 0.3, 'weight_constraint': 5}
+0.810100 (0.001364) with: {'dropout_rate': 0.4, 'weight_constraint': 1}
+0.810140 (0.001526) with: {'dropout_rate': 0.4, 'weight_constraint': 2}
+0.810180 (0.001642) with: {'dropout_rate': 0.4, 'weight_constraint': 3}
+0.810250 (0.001549) with: {'dropout_rate': 0.4, 'weight_constraint': 4}
+0.810220 (0.001378) with: {'dropout_rate': 0.4, 'weight_constraint': 5}
+0.810260 (0.001559) with: {'dropout_rate': 0.5, 'weight_constraint': 1}
+0.810220 (0.001393) with: {'dropout_rate': 0.5, 'weight_constraint': 2}
+0.810320 (0.001462) with: {'dropout_rate': 0.5, 'weight_constraint': 3}
+0.810320 (0.001517) with: {'dropout_rate': 0.5, 'weight_constraint': 4}
+0.810130 (0.001597) with: {'dropout_rate': 0.5, 'weight_constraint': 5}
+0.810290 (0.001430) with: {'dropout_rate': 0.6, 'weight_constraint': 1}
+0.810230 (0.001472) with: {'dropout_rate': 0.6, 'weight_constraint': 2}
+0.810250 (0.001535) with: {'dropout_rate': 0.6, 'weight_constraint': 3}
+0.810240 (0.001470) with: {'dropout_rate': 0.6, 'weight_constraint': 4}
+0.810260 (0.001498) with: {'dropout_rate': 0.6, 'weight_constraint': 5}
+0.810160 (0.001513) with: {'dropout_rate': 0.7, 'weight_constraint': 1}
+0.810260 (0.001475) with: {'dropout_rate': 0.7, 'weight_constraint': 2}
+0.810140 (0.001671) with: {'dropout_rate': 0.7, 'weight_constraint': 3}
+0.810280 (0.001435) with: {'dropout_rate': 0.7, 'weight_constraint': 4}
+0.810190 (0.001507) with: {'dropout_rate': 0.7, 'weight_constraint': 5}
+0.810230 (0.001521) with: {'dropout_rate': 0.8, 'weight_constraint': 1}
+0.810130 (0.001564) with: {'dropout_rate': 0.8, 'weight_constraint': 2}
+0.810070 (0.001635) with: {'dropout_rate': 0.8, 'weight_constraint': 3}
+0.810260 (0.001568) with: {'dropout_rate': 0.8, 'weight_constraint': 4}
+0.809970 (0.001469) with: {'dropout_rate': 0.8, 'weight_constraint': 5}
+0.809900 (0.001591) with: {'dropout_rate': 0.9, 'weight_constraint': 1}
+0.809920 (0.001517) with: {'dropout_rate': 0.9, 'weight_constraint': 2}
+0.809880 (0.001733) with: {'dropout_rate': 0.9, 'weight_constraint': 3}
+0.809650 (0.001692) with: {'dropout_rate': 0.9, 'weight_constraint': 4}
+0.810080 (0.001679) with: {'dropout_rate': 0.9, 'weight_constraint': 5}

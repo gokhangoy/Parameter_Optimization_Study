@@ -1,0 +1,49 @@
+   round_epochs  val_loss  ...                      loss  weight_regulizer
+0           100  0.482064  ...  categorical_crossentropy              None
+1           100  0.481400  ...  categorical_crossentropy              None
+2           100  0.480568  ...  categorical_crossentropy              None
+3           100  0.480956  ...  categorical_crossentropy              None
+4           100  0.480603  ...  categorical_crossentropy              None
+
+[5 rows x 12 columns]
+        loss      accuracy
+0   0.000044  9.779511e-08
+1   0.000010  8.755828e-08
+2   0.218730  5.036737e-08
+3   0.000003  9.779511e-08
+4   0.008648  8.755828e-08
+..       ...           ...
+85  0.000018  1.322608e-08
+86  0.050663  5.036737e-08
+87  0.000012  9.779511e-08
+88  0.004032  3.085906e-08
+89  0.227454  6.895662e-08
+
+[90 rows x 2 columns]
+experiment_name                LRTuning
+random_method          uniform_mersenne
+reduction_method                   None
+reduction_interval                   50
+reduction_window                     20
+reduction_threshold                 0.2
+reduction_metric                val_acc
+complete_time            03/18/20/11:00
+x_shape                   (100000, 605)
+y_shape                     (100000, 3)
+dtype: object
+    round_epochs  val_loss  ...                      loss  weight_regulizer
+0            100  0.482064  ...  categorical_crossentropy              None
+1            100  0.481400  ...  categorical_crossentropy              None
+2            100  0.480568  ...  categorical_crossentropy              None
+3            100  0.480956  ...  categorical_crossentropy              None
+4            100  0.480603  ...  categorical_crossentropy              None
+..           ...       ...  ...                       ...               ...
+85           100  0.481065  ...  categorical_crossentropy              None
+86           100  0.481350  ...  categorical_crossentropy              None
+87           100  0.480618  ...  categorical_crossentropy              None
+88           100  0.480568  ...  categorical_crossentropy              None
+89           100  0.480755  ...  categorical_crossentropy              None
+
+[90 rows x 12 columns]
+Second Result
+90
