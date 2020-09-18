@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.HoeffdingTree -L 2 -S 1 -E 1.0E-7 -H 0.05 -M 0.01 -G 200.0 -N 0.0
+Relation:     clv_hun_swit_VA
+Instances:    371
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+1 (200.000) NB1 NB adaptive1
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         317               85.4447 %
+Incorrectly Classified Instances        54               14.5553 %
+Kappa statistic                          0.7083
+Mean absolute error                      0.1609
+Root mean squared error                  0.3556
+Relative absolute error                 32.3402 %
+Root relative squared error             71.3148 %
+Total Number of Instances              371     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.866    0.156    0.828      0.866    0.847      0.709    0.901     0.886     0
+                 0.844    0.134    0.880      0.844    0.862      0.709    0.901     0.906     1
+Weighted Avg.    0.854    0.144    0.856      0.854    0.855      0.709    0.901     0.897     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 149  23 |   a = 0
+  31 168 |   b = 1
+

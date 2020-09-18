@@ -1,0 +1,479 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.RandomSubSpace -P 0.5 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     clv_hun_swit_VA
+Instances:    371
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -921414761 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 3,8,6,13,5,4,9,14
+
+Filtered Header
+@relation 'clv_hun_swit_VA-weka.filters.unsupervised.attribute.Remove-V-R3,8,6,13,5,4,9,14'
+
+@attribute cp numeric
+@attribute thalach numeric
+@attribute fbs numeric
+@attribute thal numeric
+@attribute chol numeric
+@attribute trestbps numeric
+@attribute exang numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+cp < 3.5
+|   chol < 63 : 1 (5/1) [5/0]
+|   chol >= 63
+|   |   thal < 6.5 : 0 (82/9) [41.79/7]
+|   |   thal >= 6.5
+|   |   |   thalach < 132.5 : 1 (2/0) [4.21/0.21]
+|   |   |   thalach >= 132.5 : 0 (20/7) [14/6]
+cp >= 3.5
+|   thal < 4.5
+|   |   thalach < 120 : 1 (7/0) [4/0]
+|   |   thalach >= 120 : 0 (34/14) [13.3/3.3]
+|   thal >= 4.5 : 1 (97/8) [41.7/4]
+
+Size of the tree : 13
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1501103744 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 3,5,2,1,9,10,13,14
+
+Filtered Header
+@relation 'clv_hun_swit_VA-weka.filters.unsupervised.attribute.Remove-V-R3,5,2,1,9,10,13,14'
+
+@attribute cp numeric
+@attribute chol numeric
+@attribute sex numeric
+@attribute age numeric
+@attribute exang numeric
+@attribute oldpeak numeric
+@attribute thal numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+thal < 4.5
+|   chol < 70.5 : 1 (6/0) [4/0]
+|   chol >= 70.5
+|   |   cp < 3.5 : 0 (84/10) [32.51/3]
+|   |   cp >= 3.5
+|   |   |   exang < 0.5 : 0 (26/7) [6/2]
+|   |   |   exang >= 0.5
+|   |   |   |   age < 51.5 : 0 (3/1) [3/0]
+|   |   |   |   age >= 51.5 : 1 (7.51/0) [9/2]
+thal >= 4.5
+|   cp < 3.5
+|   |   age < 43.5 : 0 (3/0) [2/2]
+|   |   age >= 43.5
+|   |   |   oldpeak < 0.5 : 0 (9/3) [8.49/3]
+|   |   |   oldpeak >= 0.5 : 1 (17/4) [12/8]
+|   cp >= 3.5 : 1 (91.49/7) [47/5]
+
+Size of the tree : 17
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -655635189 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 3,11,2,4,6,10,8,14
+
+Filtered Header
+@relation 'clv_hun_swit_VA-weka.filters.unsupervised.attribute.Remove-V-R3,11,2,4,6,10,8,14'
+
+@attribute cp numeric
+@attribute slope numeric
+@attribute sex numeric
+@attribute trestbps numeric
+@attribute fbs numeric
+@attribute oldpeak numeric
+@attribute thalach numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+thalach < 150.5
+|   cp < 3.5
+|   |   slope < 1.5 : 0 (9/2) [10/2]
+|   |   slope >= 1.5
+|   |   |   thalach < 145.5
+|   |   |   |   thalach < 135.5
+|   |   |   |   |   trestbps < 142.5
+|   |   |   |   |   |   oldpeak < 1.15 : 0 (6/3) [1/0]
+|   |   |   |   |   |   oldpeak >= 1.15 : 1 (4/0) [3/1]
+|   |   |   |   |   trestbps >= 142.5 : 1 (5/0) [4/2]
+|   |   |   |   thalach >= 135.5 : 0 (7/2) [2/1]
+|   |   |   thalach >= 145.5 : 1 (3/0) [6/4]
+|   cp >= 3.5 : 1 (92/12) [49/7]
+thalach >= 150.5
+|   cp < 3.5 : 0 (80/11) [34/5]
+|   cp >= 3.5 : 1 (41/19) [15/4]
+
+Size of the tree : 17
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -605021538 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 4,1,12,2,10,7,9,14
+
+Filtered Header
+@relation 'clv_hun_swit_VA-weka.filters.unsupervised.attribute.Remove-V-R4,1,12,2,10,7,9,14'
+
+@attribute trestbps numeric
+@attribute age numeric
+@attribute ca numeric
+@attribute sex numeric
+@attribute oldpeak numeric
+@attribute restecg numeric
+@attribute exang numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+exang < 0.5
+|   ca < 0.5 : 0 (92.56/18.25) [54.53/12.91]
+|   ca >= 0.5
+|   |   sex < 0.5
+|   |   |   oldpeak < 2.8 : 0 (14.69/3.69) [7.34/3.34]
+|   |   |   oldpeak >= 2.8 : 1 (2/0) [1/0]
+|   |   sex >= 0.5 : 1 (31.75/6.69) [20.12/6.37]
+exang >= 0.5
+|   oldpeak < 1.55
+|   |   trestbps < 107.5 : 0 (2/0) [2/1]
+|   |   trestbps >= 107.5
+|   |   |   ca < 0.5
+|   |   |   |   trestbps < 113.5 : 0 (2/0) [0.58/0]
+|   |   |   |   trestbps >= 113.5 : 1 (33.89/12.16) [7.47/1]
+|   |   |   ca >= 0.5 : 1 (26.11/3.84) [11.95/1.42]
+|   oldpeak >= 1.55 : 1 (42/3) [19/1]
+
+Size of the tree : 17
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -1149582542 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 13,5,2,9,7,3,11,14
+
+Filtered Header
+@relation 'clv_hun_swit_VA-weka.filters.unsupervised.attribute.Remove-V-R13,5,2,9,7,3,11,14'
+
+@attribute thal numeric
+@attribute chol numeric
+@attribute sex numeric
+@attribute exang numeric
+@attribute restecg numeric
+@attribute cp numeric
+@attribute slope numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+cp < 3.5
+|   sex < 0.5 : 0 (43/4) [16/1]
+|   sex >= 0.5
+|   |   slope < 1.5 : 0 (34/7) [24/2]
+|   |   slope >= 1.5
+|   |   |   chol < 185.5 : 1 (8/1) [2/0]
+|   |   |   chol >= 185.5 : 0 (30/15) [17/6]
+cp >= 3.5
+|   thal < 4.5
+|   |   chol < 74.5 : 1 (3/0) [1/0]
+|   |   chol >= 74.5
+|   |   |   slope < 2.5
+|   |   |   |   exang < 0.5
+|   |   |   |   |   chol < 280.5 : 0 (15/3) [6/0]
+|   |   |   |   |   chol >= 280.5
+|   |   |   |   |   |   chol < 298 : 1 (2/0) [0/0]
+|   |   |   |   |   |   chol >= 298
+|   |   |   |   |   |   |   chol < 304 : 0 (3/0) [1/0]
+|   |   |   |   |   |   |   chol >= 304 : 1 (3/1) [1/0]
+|   |   |   |   exang >= 0.5 : 1 (17/7) [4.34/0]
+|   |   |   slope >= 2.5 : 1 (2/0) [0/0]
+|   thal >= 4.5 : 1 (87/10) [51.66/2]
+
+Size of the tree : 23
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1593249209 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 12,6,9,8,2,10,13,14
+
+Filtered Header
+@relation 'clv_hun_swit_VA-weka.filters.unsupervised.attribute.Remove-V-R12,6,9,8,2,10,13,14'
+
+@attribute ca numeric
+@attribute fbs numeric
+@attribute exang numeric
+@attribute thalach numeric
+@attribute sex numeric
+@attribute oldpeak numeric
+@attribute thal numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+thal < 4.5
+|   thalach < 136.5
+|   |   sex < 0.5 : 0 (10/3) [5.5/1]
+|   |   sex >= 0.5 : 1 (17/2) [6/2]
+|   thalach >= 136.5 : 0 (96.5/13.5) [46/11]
+thal >= 4.5
+|   thalach < 143.5 : 1 (79/7) [35.5/4.5]
+|   thalach >= 143.5
+|   |   ca < 1.5
+|   |   |   exang < 0.5 : 0 (20.44/8.72) [15.72/6.72]
+|   |   |   exang >= 0.5 : 1 (11.66/3) [6.72/1]
+|   |   ca >= 1.5 : 1 (12.39/1.28) [8.56/1]
+
+Size of the tree : 13
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -1292851487 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 2,10,13,4,12,11,8,14
+
+Filtered Header
+@relation 'clv_hun_swit_VA-weka.filters.unsupervised.attribute.Remove-V-R2,10,13,4,12,11,8,14'
+
+@attribute sex numeric
+@attribute oldpeak numeric
+@attribute thal numeric
+@attribute trestbps numeric
+@attribute ca numeric
+@attribute slope numeric
+@attribute thalach numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+thal < 4.5
+|   thalach < 156.5
+|   |   oldpeak < 2.2
+|   |   |   trestbps < 148
+|   |   |   |   oldpeak < 0.15
+|   |   |   |   |   ca < 0.5
+|   |   |   |   |   |   slope < 1.5 : 0 (5.5/0) [3/1]
+|   |   |   |   |   |   slope >= 1.5
+|   |   |   |   |   |   |   thalach < 137 : 1 (2.76/0) [0.59/0]
+|   |   |   |   |   |   |   thalach >= 137 : 0 (2.59/0.59) [1/0]
+|   |   |   |   |   ca >= 0.5 : 1 (7.66/2) [0.41/0]
+|   |   |   |   oldpeak >= 0.15
+|   |   |   |   |   sex < 0.5 : 0 (12/0) [6/1]
+|   |   |   |   |   sex >= 0.5
+|   |   |   |   |   |   ca < 0.5 : 0 (5.7/0.5) [2/1]
+|   |   |   |   |   |   ca >= 0.5 : 1 (3.8/1.8) [3/1]
+|   |   |   trestbps >= 148
+|   |   |   |   oldpeak < 0.05 : 1 (4/0) [3/2]
+|   |   |   |   oldpeak >= 0.05
+|   |   |   |   |   oldpeak < 0.9 : 0 (2/0) [1/0]
+|   |   |   |   |   oldpeak >= 0.9 : 1 (3/0) [2/1]
+|   |   oldpeak >= 2.2 : 1 (5/0) [5/2]
+|   thalach >= 156.5 : 0 (69/9) [31/4]
+thal >= 4.5 : 1 (124/23.5) [66/15]
+
+Size of the tree : 25
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -884688054 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 4,7,8,13,12,9,1,14
+
+Filtered Header
+@relation 'clv_hun_swit_VA-weka.filters.unsupervised.attribute.Remove-V-R4,7,8,13,12,9,1,14'
+
+@attribute trestbps numeric
+@attribute restecg numeric
+@attribute thalach numeric
+@attribute thal numeric
+@attribute ca numeric
+@attribute exang numeric
+@attribute age numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+thal < 4.5
+|   ca < 0.5 : 0 (80.37/11.83) [46.61/8.54]
+|   ca >= 0.5
+|   |   thalach < 119 : 1 (7.24/0) [1.62/0]
+|   |   thalach >= 119
+|   |   |   restecg < 0.5 : 0 (12.93/3.31) [5.93/1.31]
+|   |   |   restecg >= 0.5
+|   |   |   |   trestbps < 119 : 1 (5.31/0.31) [1.31/1.31]
+|   |   |   |   trestbps >= 119
+|   |   |   |   |   age < 55.5 : 0 (3/0) [3/0]
+|   |   |   |   |   age >= 55.5 : 1 (7.62/3) [6/2]
+thal >= 4.5
+|   ca < 0.5
+|   |   thalach < 159.5
+|   |   |   trestbps < 109 : 0 (3.47/0.47) [0/0]
+|   |   |   trestbps >= 109
+|   |   |   |   age < 52 : 1 (16.24/1) [5.88/0]
+|   |   |   |   age >= 52
+|   |   |   |   |   thalach < 110.5 : 1 (5.65/0) [3.83/0.47]
+|   |   |   |   |   thalach >= 110.5
+|   |   |   |   |   |   thalach < 148.5
+|   |   |   |   |   |   |   exang < 0.5 : 0 (5.94/0.94) [3.94/1.94]
+|   |   |   |   |   |   |   exang >= 0.5 : 1 (10.24/2.94) [6.83/0.47]
+|   |   |   |   |   |   thalach >= 148.5 : 1 (3.94/0) [3.53/2]
+|   |   thalach >= 159.5 : 0 (16/4) [2/1]
+|   ca >= 0.5 : 1 (69.04/6.59) [33.52/2.06]
+
+Size of the tree : 27
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1570263139 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 2,6,4,10,3,7,9,14
+
+Filtered Header
+@relation 'clv_hun_swit_VA-weka.filters.unsupervised.attribute.Remove-V-R2,6,4,10,3,7,9,14'
+
+@attribute sex numeric
+@attribute fbs numeric
+@attribute trestbps numeric
+@attribute oldpeak numeric
+@attribute cp numeric
+@attribute restecg numeric
+@attribute exang numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+cp < 3.5
+|   oldpeak < 2.45
+|   |   trestbps < 153 : 0 (100/16) [44/9]
+|   |   trestbps >= 153 : 1 (10/4) [9/4]
+|   oldpeak >= 2.45 : 1 (4/0) [7/3]
+cp >= 3.5 : 1 (133/27) [64/15]
+
+Size of the tree : 7
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -1701477515 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 12,9,2,6,11,13,10,14
+
+Filtered Header
+@relation 'clv_hun_swit_VA-weka.filters.unsupervised.attribute.Remove-V-R12,9,2,6,11,13,10,14'
+
+@attribute ca numeric
+@attribute exang numeric
+@attribute sex numeric
+@attribute fbs numeric
+@attribute slope numeric
+@attribute thal numeric
+@attribute oldpeak numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+thal < 4.5
+|   slope < 1.5
+|   |   ca < 0.5 : 0 (45.84/2.68) [27.68/3]
+|   |   ca >= 0.5
+|   |   |   sex < 0.5 : 0 (13.32/0.32) [2/1]
+|   |   |   sex >= 0.5
+|   |   |   |   fbs < 0.5
+|   |   |   |   |   oldpeak < 0.45 : 1 (4.32/0.32) [2.32/0.32]
+|   |   |   |   |   oldpeak >= 0.45 : 0 (2/1) [4/1]
+|   |   |   |   fbs >= 0.5 : 0 (2/0) [0/0]
+|   slope >= 1.5
+|   |   ca < 0.5 : 0 (38.9/10.67) [15.22/4.48]
+|   |   ca >= 0.5 : 1 (13.59/3.78) [9.78/2.26]
+thal >= 4.5
+|   ca < 0.5
+|   |   exang < 0.5 : 0 (22.34/8.83) [16.66/6.75]
+|   |   exang >= 0.5 : 1 (35.79/5.92) [11.95/0.46]
+|   ca >= 0.5
+|   |   oldpeak < 2.05
+|   |   |   oldpeak < 0.15 : 1 (12.42/0) [7.8/2.54]
+|   |   |   oldpeak >= 0.15
+|   |   |   |   oldpeak < 0.3 : 0 (2/1) [1.54/0.54]
+|   |   |   |   oldpeak >= 0.3 : 1 (35.47/3.08) [17.97/1.08]
+|   |   oldpeak >= 2.05 : 1 (19/0) [7.08/0]
+
+Size of the tree : 25
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         303               81.6712 %
+Incorrectly Classified Instances        68               18.3288 %
+Kappa statistic                          0.6323
+Mean absolute error                      0.3131
+Root mean squared error                  0.3695
+Relative absolute error                 62.9495 %
+Root relative squared error             74.0987 %
+Total Number of Instances              371     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.820    0.186    0.792      0.820    0.806      0.633    0.893     0.881     0
+                 0.814    0.180    0.839      0.814    0.827      0.633    0.893     0.890     1
+Weighted Avg.    0.817    0.183    0.817      0.817    0.817      0.633    0.893     0.886     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 141  31 |   a = 0
+  37 162 |   b = 1
+

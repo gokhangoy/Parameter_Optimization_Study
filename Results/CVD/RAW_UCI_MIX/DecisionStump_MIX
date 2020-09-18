@@ -1,0 +1,72 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     clv_hun_swit_VA
+Instances:    371
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+thal <= 4.5 : 0
+thal > 4.5 : 1
+thal is missing : 0
+
+Class distributions
+
+thal <= 4.5
+0	1	
+0.7388888888888889	0.2611111111111111	
+thal > 4.5
+0	1	
+0.20105820105820105	0.798941798941799	
+thal is missing
+0	1	
+0.5	0.5	
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         265               71.4286 %
+Incorrectly Classified Instances       106               28.5714 %
+Kappa statistic                          0.4273
+Mean absolute error                      0.3821
+Root mean squared error                  0.456 
+Relative absolute error                 76.8146 %
+Root relative squared error             91.4324 %
+Total Number of Instances              371     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.715    0.286    0.683      0.715    0.699      0.428    0.703     0.628     0
+                 0.714    0.285    0.743      0.714    0.728      0.428    0.703     0.691     1
+Weighted Avg.    0.714    0.286    0.716      0.714    0.715      0.428    0.703     0.662     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 123  49 |   a = 0
+  57 142 |   b = 1
+

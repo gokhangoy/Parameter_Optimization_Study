@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.rules.ZeroR
+Relation:     clv_hun_swit_VA
+Instances:    371
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+ZeroR predicts class value: 1
+Attribute mappings:
+
+Model attributes    	    Incoming attributes
+--------------------	    ----------------
+(numeric) age       	--> 1 (numeric) age
+(numeric) sex       	--> 2 (numeric) sex
+(numeric) cp        	--> 3 (numeric) cp
+(numeric) trestbps  	--> 4 (numeric) trestbps
+(numeric) chol      	--> 5 (numeric) chol
+(numeric) fbs       	--> 6 (numeric) fbs
+(numeric) restecg   	--> 7 (numeric) restecg
+(numeric) thalach   	--> 8 (numeric) thalach
+(numeric) exang     	--> 9 (numeric) exang
+(numeric) oldpeak   	--> 10 (numeric) oldpeak
+(numeric) slope     	--> 11 (numeric) slope
+(numeric) ca        	--> 12 (numeric) ca
+(numeric) thal      	--> 13 (numeric) thal
+(nominal) num       	--> 14 (nominal) num
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         199               53.6388 %
+Incorrectly Classified Instances       172               46.3612 %
+Kappa statistic                          0     
+Mean absolute error                      0.4974
+Root mean squared error                  0.4987
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances              371     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    ?          0.000    ?          ?        0.493     0.460     0
+                 1.000    1.000    0.536      1.000    0.698      ?        0.493     0.533     1
+Weighted Avg.    0.536    0.536    ?          0.536    ?          ?        0.493     0.499     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   0 172 |   a = 0
+   0 199 |   b = 1
+

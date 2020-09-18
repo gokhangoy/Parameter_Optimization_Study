@@ -1,0 +1,101 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.ClassificationViaRegression -W weka.classifiers.trees.M5P -- -M 4.0
+Relation:     clv_hun_swit_VA
+Instances:    371
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Classification via Regression
+
+Classifier for class with index 0:
+
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (371/67.697%)
+
+LM num: 1
+num = 
+	-0.1074 * sex 
+	- 0.0916 * cp 
+	- 0.0028 * trestbps 
+	+ 0.0005 * chol 
+	+ 0.0976 * fbs 
+	- 0.0369 * restecg 
+	+ 0.0027 * thalach 
+	- 0.1216 * exang 
+	- 0.0929 * slope 
+	- 0.151 * ca 
+	- 0.0612 * thal 
+	+ 1.3415
+
+Number of Rules : 1
+
+Classifier for class with index 1:
+
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (371/67.697%)
+
+LM num: 1
+num = 
+	0.1074 * sex 
+	+ 0.0916 * cp 
+	+ 0.0028 * trestbps 
+	- 0.0005 * chol 
+	- 0.0976 * fbs 
+	+ 0.0369 * restecg 
+	- 0.0027 * thalach 
+	+ 0.1216 * exang 
+	+ 0.0929 * slope 
+	+ 0.151 * ca 
+	+ 0.0612 * thal 
+	- 0.3415
+
+Number of Rules : 1
+
+
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         306               82.4798 %
+Incorrectly Classified Instances        65               17.5202 %
+Kappa statistic                          0.6495
+Mean absolute error                      0.2474
+Root mean squared error                  0.3532
+Relative absolute error                 49.7464 %
+Root relative squared error             70.8209 %
+Total Number of Instances              371     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.849    0.196    0.789      0.849    0.818      0.651    0.898     0.875     0
+                 0.804    0.151    0.860      0.804    0.831      0.651    0.898     0.897     1
+Weighted Avg.    0.825    0.172    0.827      0.825    0.825      0.651    0.898     0.887     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 146  26 |   a = 0
+  39 160 |   b = 1
+

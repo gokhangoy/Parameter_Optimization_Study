@@ -1,0 +1,92 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     clv_hun_swit_VA
+Instances:    371
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:32/32 (371)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+2.46 + 
+[age] * 0.01 +
+[sex] * -0.34 +
+[cp] * -0.3 +
+[trestbps] * -0.01 +
+[chol] * 0    +
+[fbs] * 0.4  +
+[restecg] * -0.17 +
+[thalach] * 0.01 +
+[exang] * -0.36 +
+[oldpeak] * -0.1 +
+[slope] * -0.29 +
+[ca] * -0.63 +
+[thal] * -0.19
+
+Class 1 :
+-2.46 + 
+[age] * -0.01 +
+[sex] * 0.34 +
+[cp] * 0.3  +
+[trestbps] * 0.01 +
+[chol] * -0 +
+[fbs] * -0.4 +
+[restecg] * 0.17 +
+[thalach] * -0.01 +
+[exang] * 0.36 +
+[oldpeak] * 0.1  +
+[slope] * 0.29 +
+[ca] * 0.63 +
+[thal] * 0.19
+
+
+Time taken to build model: 0.17 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         310               83.558  %
+Incorrectly Classified Instances        61               16.442  %
+Kappa statistic                          0.6701
+Mean absolute error                      0.2279
+Root mean squared error                  0.3462
+Relative absolute error                 45.81   %
+Root relative squared error             69.4213 %
+Total Number of Instances              371     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.837    0.166    0.814      0.837    0.825      0.670    0.904     0.882     0
+                 0.834    0.163    0.856      0.834    0.845      0.670    0.904     0.912     1
+Weighted Avg.    0.836    0.164    0.836      0.836    0.836      0.670    0.904     0.898     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 144  28 |   a = 0
+  33 166 |   b = 1
+

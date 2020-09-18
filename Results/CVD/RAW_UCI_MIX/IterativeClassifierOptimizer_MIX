@@ -1,0 +1,144 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.IterativeClassifierOptimizer -W weka.classifiers.meta.LogitBoost -L 50 -P 1 -E 1 -I 1 -F 10 -R 1 -percentage 0.0 -metric RMSE -S 1 -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     clv_hun_swit_VA
+Instances:    371
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Best value found: 0.343734835289117
+Best number of iterations found: 6
+
+
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+thal <= 4.5 : 0.9555555555555556
+thal > 4.5 : -1.1957671957671958
+thal is missing : 0.0
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 2
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+ca <= 0.5 : 0.8573595756137375
+ca > 0.5 : -0.8822737542628251
+ca is missing : -0.9610118403512257
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 3
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+cp <= 3.5 : 0.7784572303597993
+cp > 3.5 : -0.8242787228631965
+cp is missing : -0.013966960213482047
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 4
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+slope <= 1.5 : 0.6417066037552814
+slope > 1.5 : -0.48849178529971077
+slope is missing : -0.005239016681290078
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 5
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+oldpeak <= 2.45 : 0.15146476245123397
+oldpeak > 2.45 : -1.194754075170628
+oldpeak is missing : 0.015730707842534514
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 6
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+chol <= 113.0 : -1.1009250918851863
+chol > 113.0 : 0.10439292174465509
+chol is missing : -0.01714555304339339
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+Number of performed iterations: 6
+
+
+Time taken to build model: 0.13 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         303               81.6712 %
+Incorrectly Classified Instances        68               18.3288 %
+Kappa statistic                          0.6321
+Mean absolute error                      0.2439
+Root mean squared error                  0.3532
+Relative absolute error                 49.0433 %
+Root relative squared error             70.8176 %
+Total Number of Instances              371     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.814    0.181    0.795      0.814    0.805      0.632    0.898     0.859     0
+                 0.819    0.186    0.836      0.819    0.827      0.632    0.898     0.906     1
+Weighted Avg.    0.817    0.184    0.817      0.817    0.817      0.632    0.898     0.884     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 140  32 |   a = 0
+  36 163 |   b = 1
+

@@ -1,0 +1,191 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     clv_hun_swit_VA
+Instances:    371
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    7.9578815157238045
+    Node 2    -9.628943355808639
+    Node 3    -5.245692966134538
+    Node 4    -5.604851483635825
+    Node 5    -9.89369208137921
+    Node 6    -6.8444694888865945
+    Node 7    11.335304038751687
+    Node 8    -7.491068801099081
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -7.957947403530451
+    Node 2    9.629030231606535
+    Node 3    5.24573867810253
+    Node 4    5.604893092817201
+    Node 5    9.893779106814787
+    Node 6    6.844521068403689
+    Node 7    -11.335405975598588
+    Node 8    7.4911343375883535
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -6.947036546363206
+    Attrib age    -4.268837978290265
+    Attrib sex    -1.9340649615702068
+    Attrib cp    5.7356873406543905
+    Attrib trestbps    1.7410112939837468
+    Attrib chol    2.4419905322990196
+    Attrib fbs    -5.773775871246926
+    Attrib restecg    0.4156155014773064
+    Attrib thalach    3.9073766210478356
+    Attrib exang    0.8082693165916144
+    Attrib oldpeak    6.926421175445546
+    Attrib slope    -0.6457178249557924
+    Attrib ca    6.198305503521432
+    Attrib thal    6.853519004495016
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -3.852230488345134
+    Attrib age    0.2207048318354963
+    Attrib sex    -1.8700293487442996
+    Attrib cp    -2.4617746169741253
+    Attrib trestbps    1.297544610069793
+    Attrib chol    1.8434166998566677
+    Attrib fbs    -0.4205325516454191
+    Attrib restecg    3.6019148050595047
+    Attrib thalach    4.624021333061757
+    Attrib exang    4.929044741013302
+    Attrib oldpeak    1.5124616454218924
+    Attrib slope    -1.0919360529375035
+    Attrib ca    -1.86202172173959
+    Attrib thal    -3.2829755547244273
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -2.072141635842773
+    Attrib age    -0.34900050204339883
+    Attrib sex    0.11545681862368236
+    Attrib cp    7.7172072384020325
+    Attrib trestbps    1.02130870378295
+    Attrib chol    -7.320806588494304
+    Attrib fbs    3.834937936624888
+    Attrib restecg    3.558006349375046
+    Attrib thalach    -3.9460155415357603
+    Attrib exang    -0.407687695290392
+    Attrib oldpeak    -3.5643990507485777
+    Attrib slope    -0.9441393718655443
+    Attrib ca    6.8734083015037974
+    Attrib thal    4.123479481264843
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -1.5170216494084237
+    Attrib age    -3.375932579804626
+    Attrib sex    1.1711469029710013
+    Attrib cp    0.9648190416833694
+    Attrib trestbps    -1.7918304724670975
+    Attrib chol    -4.782876507684739
+    Attrib fbs    2.2351634966095753
+    Attrib restecg    1.8801163741966482
+    Attrib thalach    -3.7871610694656312
+    Attrib exang    -6.370120562371372
+    Attrib oldpeak    2.083552394718387
+    Attrib slope    1.7721993568441066
+    Attrib ca    8.28241208709554
+    Attrib thal    -5.423646111010656
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    0.7243606683389674
+    Attrib age    -4.769896960371114
+    Attrib sex    -4.504951110533494
+    Attrib cp    2.432881367299949
+    Attrib trestbps    1.9659847965552624
+    Attrib chol    -2.825694685696226
+    Attrib fbs    2.5155681376019645
+    Attrib restecg    -2.952970474618409
+    Attrib thalach    -0.5620457461794204
+    Attrib exang    4.43840251077216
+    Attrib oldpeak    0.710549572244164
+    Attrib slope    7.472633719951372
+    Attrib ca    1.5258141155263263
+    Attrib thal    4.692445424687605
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    1.157715791448317
+    Attrib age    -7.155567388661795
+    Attrib sex    -6.975706884388475
+    Attrib cp    -2.2445555908551897
+    Attrib trestbps    1.019182555138119
+    Attrib chol    1.360765183760465
+    Attrib fbs    5.748693994280674
+    Attrib restecg    -0.40371805978302394
+    Attrib thalach    4.63999005808892
+    Attrib exang    -6.1471702152801395
+    Attrib oldpeak    -3.607700052155438
+    Attrib slope    2.47496847286077
+    Attrib ca    1.8452335683164913
+    Attrib thal    -2.9911278005669493
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    4.650283712702866
+    Attrib age    3.052800761545703
+    Attrib sex    -2.6389699612926467
+    Attrib cp    -7.149783281250497
+    Attrib trestbps    3.789677461268177
+    Attrib chol    -0.07250117092929473
+    Attrib fbs    0.6066330705658882
+    Attrib restecg    -1.9183933783216085
+    Attrib thalach    -4.350309801789316
+    Attrib exang    -3.5057664726434172
+    Attrib oldpeak    2.8919864611717574
+    Attrib slope    5.181049371438083
+    Attrib ca    -0.5534771247952786
+    Attrib thal    3.165079101131942
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+Time taken to build model: 0.48 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         297               80.0539 %
+Incorrectly Classified Instances        74               19.9461 %
+Kappa statistic                          0.599 
+Mean absolute error                      0.2077
+Root mean squared error                  0.4223
+Relative absolute error                 41.762  %
+Root relative squared error             84.6864 %
+Total Number of Instances              371     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.785    0.186    0.785      0.785    0.785      0.599    0.868     0.827     0
+                 0.814    0.215    0.814      0.814    0.814      0.599    0.868     0.888     1
+Weighted Avg.    0.801    0.202    0.801      0.801    0.801      0.599    0.868     0.859     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 135  37 |   a = 0
+  37 162 |   b = 1
+

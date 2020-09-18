@@ -1,0 +1,96 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.MultiClassClassifier -M 0 -R 2.0 -S 1 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     clv_hun_swit_VA
+Instances:    371
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+MultiClassClassifier
+
+Classifier 1
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable           0
+====================
+age           0.0181
+sex          -0.7235
+cp            -0.624
+trestbps     -0.0279
+chol          0.0045
+fbs            0.906
+restecg      -0.3503
+thalach        0.021
+exang        -0.7319
+oldpeak       -0.201
+slope        -0.6109
+ca           -1.2844
+thal         -0.3698
+Intercept     5.2282
+
+
+Odds Ratios...
+               Class
+Variable           0
+====================
+age           1.0183
+sex           0.4851
+cp            0.5358
+trestbps      0.9725
+chol          1.0045
+fbs           2.4744
+restecg       0.7045
+thalach       1.0212
+exang          0.481
+oldpeak       0.8179
+slope         0.5429
+ca            0.2768
+thal          0.6909
+
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         313               84.3666 %
+Incorrectly Classified Instances        58               15.6334 %
+Kappa statistic                          0.6859
+Mean absolute error                      0.2222
+Root mean squared error                  0.3431
+Relative absolute error                 44.6758 %
+Root relative squared error             68.8033 %
+Total Number of Instances              371     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.837    0.151    0.828      0.837    0.832      0.686    0.905     0.882     0
+                 0.849    0.163    0.858      0.849    0.854      0.686    0.905     0.919     1
+Weighted Avg.    0.844    0.157    0.844      0.844    0.844      0.686    0.905     0.902     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 144  28 |   a = 0
+  30 169 |   b = 1
+

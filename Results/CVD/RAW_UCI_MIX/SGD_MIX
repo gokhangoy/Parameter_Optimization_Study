@@ -1,0 +1,72 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SGD -F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S 1
+Relation:     clv_hun_swit_VA
+Instances:    371
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Loss function: Hinge loss (SVM)
+
+Squared loss (linear regression)
+
+num = 
+
+        -0.8005 (normalized) age
+ +       0.4798 (normalized) sex
+ +       1.5659 (normalized) cp
+ +       1.9581 (normalized) trestbps
+ +      -1.1627 (normalized) chol
+ +      -0.5497 (normalized) fbs
+ +       0.4298 (normalized) restecg
+ +      -2.1447 (normalized) thalach
+ +       0.4298 (normalized) exang
+ +       0.7119 (normalized) oldpeak
+ +       0.7846 (normalized) slope
+ +       2.5797 (normalized) ca
+ +       1.1344 (normalized) thal
+ -       1.77  
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         308               83.0189 %
+Incorrectly Classified Instances        63               16.9811 %
+Kappa statistic                          0.659 
+Mean absolute error                      0.1698
+Root mean squared error                  0.4121
+Relative absolute error                 34.1409 %
+Root relative squared error             82.6325 %
+Total Number of Instances              371     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.826    0.166    0.811      0.826    0.818      0.659    0.830     0.751     0
+                 0.834    0.174    0.847      0.834    0.841      0.659    0.830     0.795     1
+Weighted Avg.    0.830    0.170    0.830      0.830    0.830      0.659    0.830     0.775     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 142  30 |   a = 0
+  33 166 |   b = 1
+

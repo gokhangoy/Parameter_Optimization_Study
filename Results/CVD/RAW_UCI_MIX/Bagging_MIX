@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     clv_hun_swit_VA
+Instances:    371
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         303               81.6712 %
+Incorrectly Classified Instances        68               18.3288 %
+Kappa statistic                          0.6306
+Mean absolute error                      0.2656
+Root mean squared error                  0.3541
+Relative absolute error                 53.3964 %
+Root relative squared error             71.0144 %
+Total Number of Instances              371     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.785    0.156    0.813      0.785    0.799      0.631    0.899     0.887     0
+                 0.844    0.215    0.820      0.844    0.832      0.631    0.899     0.898     1
+Weighted Avg.    0.817    0.188    0.817      0.817    0.816      0.631    0.899     0.893     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 135  37 |   a = 0
+  31 168 |   b = 1
+

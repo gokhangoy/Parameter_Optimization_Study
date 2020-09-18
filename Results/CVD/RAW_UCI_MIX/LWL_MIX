@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.LWL -U 0 -K -1 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" -W weka.classifiers.trees.DecisionStump
+Relation:     clv_hun_swit_VA
+Instances:    371
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Locally weighted learning
+===========================
+Using classifier: weka.classifiers.trees.DecisionStump
+Using linear weighting kernels
+Using all neighbours
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         265               71.4286 %
+Incorrectly Classified Instances       106               28.5714 %
+Kappa statistic                          0.4282
+Mean absolute error                      0.3527
+Root mean squared error                  0.4331
+Relative absolute error                 70.9056 %
+Root relative squared error             86.8422 %
+Total Number of Instances              371     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.727    0.296    0.679      0.727    0.702      0.429    0.856     0.839     0
+                 0.704    0.273    0.749      0.704    0.725      0.429    0.856     0.848     1
+Weighted Avg.    0.714    0.284    0.717      0.714    0.715      0.429    0.856     0.844     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 125  47 |   a = 0
+  59 140 |   b = 1
+

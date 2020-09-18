@@ -1,0 +1,137 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     clv_hun_swit_VA
+Instances:    371
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                  Class
+Attribute             0        1
+                 (0.46)   (0.54)
+=================================
+age
+  mean           52.6014  56.5881
+  std. dev.       9.6208   8.0365
+  weight sum         172      199
+  precision       1.1163   1.1163
+
+sex
+  mean            0.5814   0.8392
+  std. dev.       0.4933   0.3674
+  weight sum         172      199
+  precision            1        1
+
+cp
+  mean            2.8198   3.6432
+  std. dev.       0.9067   0.7624
+  weight sum         172      199
+  precision            1        1
+
+trestbps
+  mean          129.0858 134.9023
+  std. dev.      15.9868  18.6921
+  weight sum         172      199
+  precision         2.12     2.12
+
+chol
+  mean          241.4344 195.3439
+  std. dev.      59.2249 114.1446
+  weight sum         172      199
+  precision       3.5472   3.5472
+
+fbs
+  mean            0.1395   0.1357
+  std. dev.       0.3465   0.3424
+  weight sum         172      199
+  precision            1        1
+
+restecg
+  mean             0.814   0.9648
+  std. dev.       0.9766   0.9478
+  weight sum         172      199
+  precision            1        1
+
+thalach
+  mean          157.2898 132.2812
+  std. dev.      20.1106  24.5882
+  weight sum         172      199
+  precision         1.42     1.42
+
+exang
+  mean            0.1628    0.598
+  std. dev.       0.3692   0.4903
+  weight sum         172      199
+  precision            1        1
+
+oldpeak
+  mean            0.6126   1.3696
+  std. dev.       0.7825   1.2326
+  weight sum         172      199
+  precision       0.1756   0.1756
+
+slope
+  mean            1.4302   1.8593
+  std. dev.       0.6012   0.5401
+  weight sum         172      199
+  precision            1        1
+
+ca
+  mean            0.2733   1.1214
+  std. dev.       0.6304   1.0175
+  weight sum         161      140
+  precision            1        1
+
+thal
+  mean             4.807   6.8283
+  std. dev.       1.5534    1.694
+  weight sum         171      198
+  precision            2        2
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         318               85.7143 %
+Incorrectly Classified Instances        53               14.2857 %
+Kappa statistic                          0.714 
+Mean absolute error                      0.1674
+Root mean squared error                  0.35  
+Relative absolute error                 33.655  %
+Root relative squared error             70.1826 %
+Total Number of Instances              371     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.878    0.161    0.825      0.878    0.851      0.715    0.902     0.888     0
+                 0.839    0.122    0.888      0.839    0.863      0.715    0.902     0.905     1
+Weighted Avg.    0.857    0.140    0.859      0.857    0.857      0.715    0.902     0.897     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 151  21 |   a = 0
+  32 167 |   b = 1
+

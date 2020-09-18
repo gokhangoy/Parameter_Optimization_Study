@@ -1,0 +1,195 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.LogitBoost -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     clv_hun_swit_VA
+Instances:    371
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+thal <= 4.5 : 0.9555555555555556
+thal > 4.5 : -1.1957671957671958
+thal is missing : 0.0
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 2
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+ca <= 0.5 : 0.8573595756137375
+ca > 0.5 : -0.8822737542628251
+ca is missing : -0.9610118403512257
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 3
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+cp <= 3.5 : 0.7784572303597993
+cp > 3.5 : -0.8242787228631965
+cp is missing : -0.013966960213482047
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 4
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+slope <= 1.5 : 0.6417066037552814
+slope > 1.5 : -0.48849178529971077
+slope is missing : -0.005239016681290078
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 5
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+oldpeak <= 2.45 : 0.15146476245123397
+oldpeak > 2.45 : -1.194754075170628
+oldpeak is missing : 0.015730707842534514
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 6
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+chol <= 113.0 : -1.1009250918851863
+chol > 113.0 : 0.10439292174465509
+chol is missing : -0.01714555304339339
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 7
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+restecg <= 0.5 : 0.28989375481229557
+restecg > 0.5 : -0.36179660108796613
+restecg is missing : -0.02464050859496553
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 8
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+trestbps <= 107.0 : 1.3496077752870828
+trestbps > 107.0 : -0.06644659060370334
+trestbps is missing : 0.0070694401344311795
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 9
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+thalach <= 96.5 : -1.6549810248137915
+thalach > 96.5 : 0.04911272626877184
+thalach is missing : 5.833520901784654E-4
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 10
+	Class 1 (num=0)
+
+Decision Stump
+
+Classifications
+
+ca <= 1.5 : 0.018141554887356925
+ca > 1.5 : -0.6271751279956993
+ca is missing : 0.4900759750806002
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+Number of performed iterations: 10
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         308               83.0189 %
+Incorrectly Classified Instances        63               16.9811 %
+Kappa statistic                          0.659 
+Mean absolute error                      0.2335
+Root mean squared error                  0.3559
+Relative absolute error                 46.9373 %
+Root relative squared error             71.3684 %
+Total Number of Instances              371     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.826    0.166    0.811      0.826    0.818      0.659    0.900     0.871     0
+                 0.834    0.174    0.847      0.834    0.841      0.659    0.900     0.909     1
+Weighted Avg.    0.830    0.170    0.830      0.830    0.830      0.659    0.900     0.891     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 142  30 |   a = 0
+  33 166 |   b = 1
+
