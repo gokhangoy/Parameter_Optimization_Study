@@ -1,0 +1,113 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     south_African_Dataset_Categorized
+Instances:    462
+Attributes:   10
+              sbp
+              tobacco
+              ldl
+              adiposity
+              famhist
+              typea
+              obesity
+              alcohol
+              age
+              chd
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable           0
+====================
+sbp=1        -0.1443
+sbp=2         0.4236
+sbp=3        -0.0498
+sbp=4        -0.0464
+sbp=5        -0.8903
+tobacco      -0.0787
+ldl          -0.1861
+adiposity    -0.0145
+famhist=1    -0.9906
+typea        -0.0383
+obesity=1    -0.2977
+obesity=2     0.1579
+obesity=3      0.377
+obesity=4     0.0094
+obesity=5    -0.7959
+alcohol       0.0005
+age=1              0
+age=2              0
+age=3              0
+age=4         1.8979
+age=5         0.0544
+age=6        -0.0032
+age=7        -0.2719
+age=8        -0.9623
+age=9              0
+age=10             0
+Intercept     4.9915
+
+
+Odds Ratios...
+               Class
+Variable           0
+====================
+sbp=1         0.8656
+sbp=2         1.5275
+sbp=3         0.9515
+sbp=4         0.9547
+sbp=5         0.4105
+tobacco       0.9243
+ldl           0.8302
+adiposity     0.9856
+famhist=1     0.3713
+typea         0.9625
+obesity=1     0.7425
+obesity=2      1.171
+obesity=3     1.4579
+obesity=4     1.0095
+obesity=5     0.4512
+alcohol       1.0005
+age=1              1
+age=2              1
+age=3              1
+age=4          6.672
+age=5         1.0559
+age=6         0.9968
+age=7         0.7619
+age=8          0.382
+age=9              1
+age=10             1
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         333               72.0779 %
+Incorrectly Classified Instances       129               27.9221 %
+Kappa statistic                          0.3499
+Mean absolute error                      0.3513
+Root mean squared error                  0.4291
+Relative absolute error                 77.5472 %
+Root relative squared error             90.1902 %
+Total Number of Instances              462     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.844    0.513    0.757      0.844    0.798      0.355    0.767     0.853     0
+                 0.488    0.156    0.624      0.488    0.547      0.355    0.767     0.604     1
+Weighted Avg.    0.721    0.389    0.711      0.721    0.711      0.355    0.767     0.767     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 255  47 |   a = 0
+  82  78 |   b = 1
+

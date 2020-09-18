@@ -1,0 +1,132 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.CfsSubsetEval -P 1 -E 1" -S "weka.attributeSelection.BestFirst -D 1 -N 5" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 96
+	Merit of best subset found:    0.33 
+
+Attribute Subset Evaluator (supervised, Class (nominal): 14 num):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 3,8,9,10,11,12,13 : 7
+                     cp
+                     thalach
+                     exang
+                     oldpeak
+                     slope
+                     ca
+                     thal
+
+
+Header of reduced data:
+@relation 'cleveland-14-heart-disease-weka.filters.unsupervised.attribute.Remove-V-R3,8-14'
+
+@attribute cp numeric
+@attribute thalach numeric
+@attribute exang numeric
+@attribute oldpeak numeric
+@attribute slope numeric
+@attribute ca numeric
+@attribute thal numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+J48 pruned tree
+------------------
+
+thal <= 1
+|   ca <= 0: 0 (122.0/14.0)
+|   ca > 0
+|   |   thal <= 0: 1 (10.0)
+|   |   thal > 0
+|   |   |   cp <= 1
+|   |   |   |   cp <= 0
+|   |   |   |   |   slope <= 0: 0 (4.0/1.0)
+|   |   |   |   |   slope > 0: 1 (3.0/1.0)
+|   |   |   |   cp > 0: 1 (20.0/3.0)
+|   |   |   cp > 1: 0 (22.0/4.0)
+thal > 1
+|   cp <= 1
+|   |   cp <= 0: 0 (8.0/3.0)
+|   |   cp > 0
+|   |   |   oldpeak <= 0.6
+|   |   |   |   exang <= 0
+|   |   |   |   |   thalach <= 151: 0 (2.0)
+|   |   |   |   |   thalach > 151: 1 (9.0/2.0)
+|   |   |   |   exang > 0
+|   |   |   |   |   thalach <= 117: 0 (2.0)
+|   |   |   |   |   thalach > 117: 1 (7.0/1.0)
+|   |   |   oldpeak > 0.6: 1 (57.0)
+|   cp > 1
+|   |   ca <= 0
+|   |   |   thalach <= 152: 1 (6.0/2.0)
+|   |   |   thalach > 152: 0 (10.0/1.0)
+|   |   ca > 0: 1 (14.0/4.0)
+
+Number of Leaves  : 	15
+
+Size of the tree : 	29
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         232               78.3784 %
+Incorrectly Classified Instances        64               21.6216 %
+Kappa statistic                          0.5633
+Mean absolute error                      0.2725
+Root mean squared error                  0.4279
+Relative absolute error                 54.8606 %
+Root relative squared error             85.8637 %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.819    0.257    0.789      0.819    0.804      0.564    0.796     0.764     0
+                 0.743    0.181    0.777      0.743    0.759      0.564    0.796     0.724     1
+Weighted Avg.    0.784    0.222    0.784      0.784    0.783      0.564    0.796     0.746     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131  29 |   a = 0
+  35 101 |   b = 1
+

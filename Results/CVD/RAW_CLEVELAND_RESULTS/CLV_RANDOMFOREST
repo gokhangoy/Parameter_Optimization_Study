@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         242               81.7568 %
+Incorrectly Classified Instances        54               18.2432 %
+Kappa statistic                          0.6323
+Mean absolute error                      0.2719
+Root mean squared error                  0.3609
+Relative absolute error                 54.7406 %
+Root relative squared error             72.4073 %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.838    0.206    0.827      0.838    0.832      0.632    0.895     0.894     0
+                 0.794    0.163    0.806      0.794    0.800      0.632    0.895     0.891     1
+Weighted Avg.    0.818    0.186    0.817      0.818    0.817      0.632    0.895     0.892     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 134  26 |   a = 0
+  28 108 |   b = 1
+

@@ -1,0 +1,182 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.IterativeClassifierOptimizer -W weka.classifiers.meta.LogitBoost -L 50 -P 1 -E 1 -I 1 -F 10 -R 1 -percentage 0.0 -metric RMSE -S 1 -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     south_African_Dataset_Categorized
+Instances:    462
+Attributes:   10
+              sbp
+              tobacco
+              ldl
+              adiposity
+              famhist
+              typea
+              obesity
+              alcohol
+              age
+              chd
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Best value found: 0.427789813766134
+Best number of iterations found: 9
+
+
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (chd=0)
+
+Decision Stump
+
+Classifications
+
+tobacco <= 0.49 : 1.4594594594594594
+tobacco > 0.49 : 0.21656050955414013
+tobacco is missing : 0.6147186147186147
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 2
+	Class 1 (chd=0)
+
+Decision Stump
+
+Classifications
+
+famhist = 0 : 0.515050618424523
+famhist != 0 : -0.4931014593353256
+famhist is missing : 0.07771016506686886
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 3
+	Class 1 (chd=0)
+
+Decision Stump
+
+Classifications
+
+tobacco <= 8.04 : 0.2125722198900997
+tobacco > 8.04 : -1.029720005355169
+tobacco is missing : 0.029490240405189036
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 4
+	Class 1 (chd=0)
+
+Decision Stump
+
+Classifications
+
+typea <= 68.5 : 0.10124223018624331
+typea > 68.5 : -1.5302845935239127
+typea is missing : 0.006201349191693588
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 5
+	Class 1 (chd=0)
+
+Decision Stump
+
+Classifications
+
+age = 8 : -0.5763985876126647
+age != 8 : 0.25670914465575995
+age is missing : -0.0049035566413330135
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 6
+	Class 1 (chd=0)
+
+Decision Stump
+
+Classifications
+
+ldl <= 8.25 : 0.09545676482536204
+ldl > 8.25 : -1.3826308912959018
+ldl is missing : 0.006884937493012009
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 7
+	Class 1 (chd=0)
+
+Decision Stump
+
+Classifications
+
+ldl <= 2.825 : 0.7865316218039491
+ldl > 2.825 : -0.11403702232123812
+ldl is missing : 0.0035920195778314646
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 8
+	Class 1 (chd=0)
+
+Decision Stump
+
+Classifications
+
+adiposity <= 37.94 : 0.07033556113966132
+adiposity > 37.94 : -1.3119191299314337
+adiposity is missing : 0.011501682750857287
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 9
+	Class 1 (chd=0)
+
+Decision Stump
+
+Classifications
+
+tobacco <= 5.125 : -0.1525443596010282
+tobacco > 5.125 : 0.35047061104586674
+tobacco is missing : 7.38811466460493E-4
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+Number of performed iterations: 9
+
+
+Time taken to build model: 0.31 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         329               71.2121 %
+Incorrectly Classified Instances       133               28.7879 %
+Kappa statistic                          0.3297
+Mean absolute error                      0.3524
+Root mean squared error                  0.4323
+Relative absolute error                 77.7868 %
+Root relative squared error             90.8548 %
+Total Number of Instances              462     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.838    0.525    0.751      0.838    0.792      0.335    0.756     0.846     0
+                 0.475    0.162    0.608      0.475    0.533      0.335    0.756     0.626     1
+Weighted Avg.    0.712    0.399    0.701      0.712    0.702      0.335    0.756     0.770     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 253  49 |   a = 0
+  84  76 |   b = 1
+

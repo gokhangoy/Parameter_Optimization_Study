@@ -1,0 +1,81 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.1557 * (normalized) age
+ +      -0.7571 * (normalized) sex
+ +      -0.6818 * (normalized) cp
+ +       0.9027 * (normalized) trestbps
+ +       0.4516 * (normalized) chol
+ +      -0.603  * (normalized) fbs
+ +      -0.393  * (normalized) restecg
+ +      -1.7249 * (normalized) thalach
+ +       0.8072 * (normalized) exang
+ +       0.7132 * (normalized) oldpeak
+ +       0.7551 * (normalized) slope
+ +       2.1676 * (normalized) ca
+ +       1.381  * (normalized) thal
+ -       0.6506
+
+Number of kernel evaluations: 11889 (77.59% cached)
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         246               83.1081 %
+Incorrectly Classified Instances        50               16.8919 %
+Kappa statistic                          0.6592
+Mean absolute error                      0.1689
+Root mean squared error                  0.411 
+Relative absolute error                 34.0046 %
+Root relative squared error             82.4679 %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.856    0.199    0.835      0.856    0.846      0.659    0.829     0.793     0
+                 0.801    0.144    0.826      0.801    0.813      0.659    0.829     0.753     1
+Weighted Avg.    0.831    0.173    0.831      0.831    0.831      0.659    0.829     0.775     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 137  23 |   a = 0
+  27 109 |   b = 1
+

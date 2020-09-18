@@ -1,0 +1,115 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     sampling_strategy_0.02-weka.filters.supervised.instance.SpreadSubsample-M1.5-X0.0-S1
+Instances:    13042
+Attributes:   31
+              Time
+              V1
+              V2
+              V3
+              V4
+              V5
+              V6
+              V7
+              V8
+              V9
+              V10
+              V11
+              V12
+              V13
+              V14
+              V15
+              V16
+              V17
+              V18
+              V19
+              V20
+              V21
+              V22
+              V23
+              V24
+              V25
+              V26
+              V27
+              V28
+              Amount
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.1255 * (normalized) Time
+ +       1.0754 * (normalized) V1
+ +       0.1117 * (normalized) V2
+ +      -1.5837 * (normalized) V3
+ +       4.0732 * (normalized) V4
+ +       0.8953 * (normalized) V5
+ +      -2.6888 * (normalized) V6
+ +      -2.7046 * (normalized) V7
+ +      -3.6931 * (normalized) V8
+ +      -2.1781 * (normalized) V9
+ +      -5.3271 * (normalized) V10
+ +       2.782  * (normalized) V11
+ +      -5.4206 * (normalized) V12
+ +      -0.623  * (normalized) V13
+ +      -8.9755 * (normalized) V14
+ +      -0.4706 * (normalized) V15
+ +      -3.4235 * (normalized) V16
+ +      -2.7166 * (normalized) V17
+ +      -0.6834 * (normalized) V18
+ +       0.0456 * (normalized) V19
+ +      -0.3083 * (normalized) V20
+ +       0.8638 * (normalized) V21
+ +      -0.1189 * (normalized) V22
+ +      -0.8003 * (normalized) V23
+ +       0.0645 * (normalized) V24
+ +      -0.4562 * (normalized) V25
+ +      -0.7952 * (normalized) V26
+ +       1.5717 * (normalized) V27
+ +       1.548  * (normalized) V28
+ +       0.6893 * (normalized) Amount
+ +      22.1569
+
+Number of kernel evaluations: 805698 (66.765% cached)
+
+
+
+Time taken to build model: 0.42 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12750               97.7611 %
+Incorrectly Classified Instances       292                2.2389 %
+Kappa statistic                          0.9531
+Mean absolute error                      0.0224
+Root mean squared error                  0.1496
+Relative absolute error                  4.6643 %
+Root relative squared error             30.5429 %
+Total Number of Instances            13042     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.992    0.045    0.971      0.992    0.982      0.953    0.974     0.968     0
+                 0.955    0.008    0.988      0.955    0.972      0.953    0.974     0.962     1
+Weighted Avg.    0.978    0.030    0.978      0.978    0.978      0.953    0.974     0.966     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 7766   59 |    a = 0
+  233 4984 |    b = 1
+

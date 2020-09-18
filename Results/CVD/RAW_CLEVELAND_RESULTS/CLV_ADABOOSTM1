@@ -1,0 +1,286 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+thal <= 1.5 : 0
+thal > 1.5 : 1
+thal is missing : 0
+
+Class distributions
+
+thal <= 1.5
+0	1	
+0.7348066298342542	0.26519337016574585	
+thal > 1.5
+0	1	
+0.23478260869565218	0.7652173913043478	
+thal is missing
+0	1	
+0.5405405405405406	0.4594594594594595	
+
+
+Weight: 1.08
+
+Decision Stump
+
+Classifications
+
+ca <= 0.5 : 0
+ca > 0.5 : 1
+ca is missing : 1
+
+Class distributions
+
+ca <= 0.5
+0	1	
+0.7045064970970414	0.29549350290295867	
+ca > 0.5
+0	1	
+0.21247925655492855	0.7875207434450715	
+ca is missing
+0	1	
+0.4809049773755654	0.5190950226244346	
+
+
+Weight: 1.06
+
+Decision Stump
+
+Classifications
+
+cp <= 1.5 : 1
+cp > 1.5 : 0
+cp is missing : 1
+
+Class distributions
+
+cp <= 1.5
+0	1	
+0.271048554017121	0.728951445982879	
+cp > 1.5
+0	1	
+0.6850205418826053	0.3149794581173947	
+cp is missing
+0	1	
+0.44621330658101904	0.5537866934189809	
+
+
+Weight: 0.9
+
+Decision Stump
+
+Classifications
+
+oldpeak <= 2.05 : 0
+oldpeak > 2.05 : 1
+oldpeak is missing : 1
+
+Class distributions
+
+oldpeak <= 2.05
+0	1	
+0.5473245432964429	0.4526754567035572	
+oldpeak > 2.05
+0	1	
+0.11915699418658056	0.8808430058134195	
+oldpeak is missing
+0	1	
+0.4739409873866924	0.5260590126133076	
+
+
+Weight: 0.42
+
+Decision Stump
+
+Classifications
+
+slope <= 0.5 : 0
+slope > 0.5 : 1
+slope is missing : 1
+
+Class distributions
+
+slope <= 0.5
+0	1	
+0.5629063542499367	0.4370936457500633	
+slope > 0.5
+0	1	
+0.2750723532028723	0.7249276467971277	
+slope is missing
+0	1	
+0.40094483442237816	0.5990551655776218	
+
+
+Weight: 0.64
+
+Decision Stump
+
+Classifications
+
+cp <= 0.5 : 0
+cp > 0.5 : 1
+cp is missing : 1
+
+Class distributions
+
+cp <= 0.5
+0	1	
+0.720467134381739	0.2795328656182609	
+cp > 0.5
+0	1	
+0.36717586222683724	0.6328241377731628	
+cp is missing
+0	1	
+0.4118970216876558	0.5881029783123444	
+
+
+Weight: 0.59
+
+Decision Stump
+
+Classifications
+
+chol <= 272.0 : 0
+chol > 272.0 : 1
+chol is missing : 0
+
+Class distributions
+
+chol <= 272.0
+0	1	
+0.5909685367991173	0.4090314632008827	
+chol > 272.0
+0	1	
+0.35718843650393567	0.6428115634960643	
+chol is missing
+0	1	
+0.5211304106082505	0.47886958939174945	
+
+
+Weight: 0.43
+
+Decision Stump
+
+Classifications
+
+sex <= 0.5 : 1
+sex > 0.5 : 0
+sex is missing : 1
+
+Class distributions
+
+sex <= 0.5
+0	1	
+0.4027865925847072	0.5972134074152927	
+sex > 0.5
+0	1	
+0.6866359482240071	0.3133640517759929	
+sex is missing
+0	1	
+0.47724717376627546	0.5227528262337245	
+
+
+Weight: 0.49
+
+Decision Stump
+
+Classifications
+
+thalach <= 177.5 : 0
+thalach > 177.5 : 0
+thalach is missing : 0
+
+Class distributions
+
+thalach <= 177.5
+0	1	
+0.5076165560007186	0.49238344399928147	
+thalach > 177.5
+0	1	
+0.8763226137958037	0.12367738620419638	
+thalach is missing
+0	1	
+0.536748832896742	0.4632511671032579	
+
+
+Weight: 0.15
+
+Decision Stump
+
+Classifications
+
+thalach <= 177.5 : 1
+thalach > 177.5 : 0
+thalach is missing : 1
+
+Class distributions
+
+thalach <= 177.5
+0	1	
+0.470835070101692	0.5291649298983081	
+thalach > 177.5
+0	1	
+0.859458168296601	0.14054183170339896	
+thalach is missing
+0	1	
+0.4999999999999999	0.5	
+
+
+Weight: 0.22
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         241               81.4189 %
+Incorrectly Classified Instances        55               18.5811 %
+Kappa statistic                          0.6253
+Mean absolute error                      0.2451
+Root mean squared error                  0.373 
+Relative absolute error                 49.3477 %
+Root relative squared error             74.8477 %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.838    0.213    0.822      0.838    0.830      0.625    0.878     0.868     0
+                 0.787    0.163    0.805      0.787    0.796      0.625    0.878     0.865     1
+Weighted Avg.    0.814    0.190    0.814      0.814    0.814      0.625    0.878     0.867     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 134  26 |   a = 0
+  29 107 |   b = 1
+

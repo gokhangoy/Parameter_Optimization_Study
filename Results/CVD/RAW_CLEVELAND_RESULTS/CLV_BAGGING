@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         234               79.0541 %
+Incorrectly Classified Instances        62               20.9459 %
+Kappa statistic                          0.5755
+Mean absolute error                      0.2925
+Root mean squared error                  0.3759
+Relative absolute error                 58.8765 %
+Root relative squared error             75.4234 %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.844    0.272    0.785      0.844    0.813      0.577    0.876     0.877     0
+                 0.728    0.156    0.798      0.728    0.762      0.577    0.876     0.873     1
+Weighted Avg.    0.791    0.219    0.791      0.791    0.789      0.577    0.876     0.875     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 135  25 |   a = 0
+  37  99 |   b = 1
+

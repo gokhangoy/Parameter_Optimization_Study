@@ -1,0 +1,96 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.MultiClassClassifier -M 0 -R 2.0 -S 1 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+MultiClassClassifier
+
+Classifier 1
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable           0
+====================
+age           0.0199
+sex           1.5574
+cp            0.1399
+trestbps     -0.0198
+chol         -0.0052
+fbs           0.9175
+restecg       0.2743
+thalach       0.0291
+exang        -1.2964
+oldpeak      -0.2372
+slope        -0.6787
+ca           -1.3508
+thal         -0.9985
+Intercept     0.8749
+
+
+Odds Ratios...
+               Class
+Variable           0
+====================
+age           1.0201
+sex           4.7465
+cp            1.1502
+trestbps      0.9804
+chol          0.9948
+fbs            2.503
+restecg       1.3156
+thalach       1.0296
+exang         0.2735
+oldpeak       0.7888
+slope         0.5073
+ca             0.259
+thal          0.3684
+
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         246               83.1081 %
+Incorrectly Classified Instances        50               16.8919 %
+Kappa statistic                          0.6592
+Mean absolute error                      0.2374
+Root mean squared error                  0.355 
+Relative absolute error                 47.7981 %
+Root relative squared error             71.2326 %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.856    0.199    0.835      0.856    0.846      0.659    0.899     0.908     0
+                 0.801    0.144    0.826      0.801    0.813      0.659    0.899     0.879     1
+Weighted Avg.    0.831    0.173    0.831      0.831    0.831      0.659    0.899     0.895     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 137  23 |   a = 0
+  27 109 |   b = 1
+

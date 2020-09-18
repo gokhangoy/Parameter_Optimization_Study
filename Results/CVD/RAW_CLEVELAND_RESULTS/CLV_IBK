@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         221               74.6622 %
+Incorrectly Classified Instances        75               25.3378 %
+Kappa statistic                          0.4902
+Mean absolute error                      0.2552
+Root mean squared error                  0.5015
+Relative absolute error                 51.3769 %
+Root relative squared error            100.628  %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.763    0.272    0.767      0.763    0.765      0.490    0.737     0.720     0
+                 0.728    0.238    0.723      0.728    0.725      0.490    0.737     0.648     1
+Weighted Avg.    0.747    0.256    0.747      0.747    0.747      0.490    0.737     0.687     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 122  38 |   a = 0
+  37  99 |   b = 1
+

@@ -1,0 +1,98 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     south_African_Dataset_Categorized
+Instances:    462
+Attributes:   10
+              sbp
+              tobacco
+              ldl
+              adiposity
+              famhist
+              typea
+              obesity
+              alcohol
+              age
+              chd
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+tobacco <= 0.48: 0 (148.0/20.0)
+tobacco > 0.48
+|   famhist = 0
+|   |   tobacco <= 7.6: 0 (134.0/35.0)
+|   |   tobacco > 7.6: 1 (33.0/13.0)
+|   famhist = 1
+|   |   ldl <= 8.03
+|   |   |   age = 1: 1 (0.0)
+|   |   |   age = 2: 1 (0.0)
+|   |   |   age = 3: 1 (0.0)
+|   |   |   age = 4: 0 (3.0)
+|   |   |   age = 5
+|   |   |   |   typea <= 50: 0 (5.0)
+|   |   |   |   typea > 50: 1 (10.0/4.0)
+|   |   |   age = 6
+|   |   |   |   obesity = 1
+|   |   |   |   |   ldl <= 4.82
+|   |   |   |   |   |   adiposity <= 18.96: 0 (2.0)
+|   |   |   |   |   |   adiposity > 18.96: 1 (5.0)
+|   |   |   |   |   ldl > 4.82: 0 (4.0)
+|   |   |   |   obesity = 2: 0 (8.0/1.0)
+|   |   |   |   obesity = 3
+|   |   |   |   |   ldl <= 4.69: 0 (2.0)
+|   |   |   |   |   ldl > 4.69: 1 (2.0)
+|   |   |   |   obesity = 4: 0 (2.0/1.0)
+|   |   |   |   obesity = 5: 0 (0.0)
+|   |   |   age = 7
+|   |   |   |   adiposity <= 36.59
+|   |   |   |   |   obesity = 1
+|   |   |   |   |   |   ldl <= 5.19: 0 (7.0/1.0)
+|   |   |   |   |   |   ldl > 5.19: 1 (6.0/2.0)
+|   |   |   |   |   obesity = 2
+|   |   |   |   |   |   adiposity <= 26.13: 1 (6.0/1.0)
+|   |   |   |   |   |   adiposity > 26.13: 0 (13.0/5.0)
+|   |   |   |   |   obesity = 3: 0 (2.0)
+|   |   |   |   |   obesity = 4: 0 (1.0)
+|   |   |   |   |   obesity = 5: 0 (0.0)
+|   |   |   |   adiposity > 36.59: 1 (6.0)
+|   |   |   age = 8: 1 (50.0/14.0)
+|   |   |   age = 9: 1 (0.0)
+|   |   |   age = 10: 1 (0.0)
+|   |   ldl > 8.03: 1 (13.0)
+
+Number of Leaves  : 	29
+
+Size of the tree : 	43
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         310               67.0996 %
+Incorrectly Classified Instances       152               32.9004 %
+Kappa statistic                          0.2107
+Mean absolute error                      0.4005
+Root mean squared error                  0.5002
+Relative absolute error                 88.414  %
+Root relative squared error            105.1336 %
+Total Number of Instances              462     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.838    0.644    0.711      0.838    0.769      0.220    0.602     0.690     0
+                 0.356    0.162    0.538      0.356    0.429      0.220    0.602     0.458     1
+Weighted Avg.    0.671    0.477    0.651      0.671    0.651      0.220    0.602     0.610     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 253  49 |   a = 0
+ 103  57 |   b = 1
+

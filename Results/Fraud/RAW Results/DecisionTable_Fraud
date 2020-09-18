@@ -1,0 +1,82 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     sampling_strategy_0.02-weka.filters.supervised.instance.SpreadSubsample-M1.5-X0.0-S1
+Instances:    13042
+Attributes:   31
+              Time
+              V1
+              V2
+              V3
+              V4
+              V5
+              V6
+              V7
+              V8
+              V9
+              V10
+              V11
+              V12
+              V13
+              V14
+              V15
+              V16
+              V17
+              V18
+              V19
+              V20
+              V21
+              V22
+              V23
+              V24
+              V25
+              V26
+              V27
+              V28
+              Amount
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 13042
+Number of Rules : 324
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 222
+	Merit of best subset found:   97.339
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 5,13,15,31
+
+Time taken to build model: 3.08 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12644               96.9483 %
+Incorrectly Classified Instances       398                3.0517 %
+Kappa statistic                          0.9359
+Mean absolute error                      0.053 
+Root mean squared error                  0.1503
+Relative absolute error                 11.0405 %
+Root relative squared error             30.6725 %
+Total Number of Instances            13042     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.991    0.062    0.960      0.991    0.975      0.937    0.994     0.995     0
+                 0.938    0.009    0.985      0.938    0.961      0.937    0.994     0.993     1
+Weighted Avg.    0.969    0.041    0.970      0.969    0.969      0.937    0.994     0.994     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 7752   73 |    a = 0
+  325 4892 |    b = 1
+

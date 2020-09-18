@@ -1,0 +1,108 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.rules.ZeroR
+Relation:     sampling_strategy_0.02-weka.filters.supervised.instance.SpreadSubsample-M1.5-X0.0-S1
+Instances:    13042
+Attributes:   31
+              Time
+              V1
+              V2
+              V3
+              V4
+              V5
+              V6
+              V7
+              V8
+              V9
+              V10
+              V11
+              V12
+              V13
+              V14
+              V15
+              V16
+              V17
+              V18
+              V19
+              V20
+              V21
+              V22
+              V23
+              V24
+              V25
+              V26
+              V27
+              V28
+              Amount
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+ZeroR predicts class value: 0
+Attribute mappings:
+
+Model attributes  	    Incoming attributes
+------------------	    ----------------
+(numeric) Time    	--> 1 (numeric) Time
+(numeric) V1      	--> 2 (numeric) V1
+(numeric) V2      	--> 3 (numeric) V2
+(numeric) V3      	--> 4 (numeric) V3
+(numeric) V4      	--> 5 (numeric) V4
+(numeric) V5      	--> 6 (numeric) V5
+(numeric) V6      	--> 7 (numeric) V6
+(numeric) V7      	--> 8 (numeric) V7
+(numeric) V8      	--> 9 (numeric) V8
+(numeric) V9      	--> 10 (numeric) V9
+(numeric) V10     	--> 11 (numeric) V10
+(numeric) V11     	--> 12 (numeric) V11
+(numeric) V12     	--> 13 (numeric) V12
+(numeric) V13     	--> 14 (numeric) V13
+(numeric) V14     	--> 15 (numeric) V14
+(numeric) V15     	--> 16 (numeric) V15
+(numeric) V16     	--> 17 (numeric) V16
+(numeric) V17     	--> 18 (numeric) V17
+(numeric) V18     	--> 19 (numeric) V18
+(numeric) V19     	--> 20 (numeric) V19
+(numeric) V20     	--> 21 (numeric) V20
+(numeric) V21     	--> 22 (numeric) V21
+(numeric) V22     	--> 23 (numeric) V22
+(numeric) V23     	--> 24 (numeric) V23
+(numeric) V24     	--> 25 (numeric) V24
+(numeric) V25     	--> 26 (numeric) V25
+(numeric) V26     	--> 27 (numeric) V26
+(numeric) V27     	--> 28 (numeric) V27
+(numeric) V28     	--> 29 (numeric) V28
+(numeric) Amount  	--> 30 (numeric) Amount
+(nominal) Class   	--> 31 (nominal) Class
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7825               59.9985 %
+Incorrectly Classified Instances      5217               40.0015 %
+Kappa statistic                          0     
+Mean absolute error                      0.48  
+Root mean squared error                  0.4899
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances            13042     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.600      1.000    0.750      ?        0.500     0.600     0
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.400     1
+Weighted Avg.    0.600    0.600    ?          0.600    ?          ?        0.500     0.520     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 7825    0 |    a = 0
+ 5217    0 |    b = 1
+

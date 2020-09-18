@@ -1,0 +1,85 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     south_African_Dataset_Categorized
+Instances:    462
+Attributes:   10
+              sbp
+              tobacco
+              ldl
+              adiposity
+              famhist
+              typea
+              obesity
+              alcohol
+              age
+              chd
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0883 * (normalized) sbp=1
+ +      -0.445  * (normalized) sbp=2
+ +      -0.0281 * (normalized) sbp=3
+ +      -0.1013 * (normalized) sbp=4
+ +       0.6626 * (normalized) sbp=5
+ +       1.9479 * (normalized) tobacco
+ +       1.9381 * (normalized) ldl
+ +       0.7058 * (normalized) adiposity
+ +       0.9386 * (normalized) famhist=1
+ +       1.7692 * (normalized) typea
+ +       0.1203 * (normalized) obesity=1
+ +      -0.3472 * (normalized) obesity=2
+ +      -0.674  * (normalized) obesity=3
+ +       0.2134 * (normalized) obesity=4
+ +       0.6875 * (normalized) obesity=5
+ +      -0.3631 * (normalized) alcohol
+ +      -0.7126 * (normalized) age=4
+ +       0.0323 * (normalized) age=5
+ +      -0.1503 * (normalized) age=6
+ +       0.0728 * (normalized) age=7
+ +       0.7578 * (normalized) age=8
+ -       3.0006
+
+Number of kernel evaluations: 63638 (83.486% cached)
+
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         331               71.645  %
+Incorrectly Classified Instances       131               28.355  %
+Kappa statistic                          0.3479
+Mean absolute error                      0.2835
+Root mean squared error                  0.5325
+Relative absolute error                 62.5946 %
+Root relative squared error            111.9156 %
+Total Number of Instances              462     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.828    0.494    0.760      0.828    0.792      0.351    0.667     0.742     0
+                 0.506    0.172    0.609      0.506    0.553      0.351    0.667     0.479     1
+Weighted Avg.    0.716    0.382    0.708      0.716    0.709      0.351    0.667     0.651     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 250  52 |   a = 0
+  79  81 |   b = 1
+

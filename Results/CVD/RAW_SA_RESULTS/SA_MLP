@@ -1,0 +1,495 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     south_African_Dataset_Categorized
+Instances:    462
+Attributes:   10
+              sbp
+              tobacco
+              ldl
+              adiposity
+              famhist
+              typea
+              obesity
+              alcohol
+              age
+              chd
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -8.050354752558043
+    Node 2    9.198254977190865
+    Node 3    -2.5391901054826156
+    Node 4    -7.315065322016856
+    Node 5    8.365920043689869
+    Node 6    0.2958096229226168
+    Node 7    5.1852456895471635
+    Node 8    7.132215886021621
+    Node 9    5.43023765256422
+    Node 10    8.03426398106179
+    Node 11    5.105974816654067
+    Node 12    -6.296855292652872
+    Node 13    7.096425168674191
+    Node 14    -6.854205733219243
+    Node 15    7.67287273280104
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    8.050457073415386
+    Node 2    -9.19839624820383
+    Node 3    2.539428832874512
+    Node 4    7.3143582068360935
+    Node 5    -8.366931454967471
+    Node 6    -0.3333648933015817
+    Node 7    -5.184477321547746
+    Node 8    -7.132349298681179
+    Node 9    -5.4305777787016005
+    Node 10    -8.032820412283982
+    Node 11    -5.1049209580784245
+    Node 12    6.297417844781928
+    Node 13    -7.096355208940443
+    Node 14    6.853454921721928
+    Node 15    -7.673344637128241
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.2394313014210179
+    Attrib sbp=1    1.4668798077919885
+    Attrib sbp=2    -1.1912966163693517
+    Attrib sbp=3    -3.5369887101068342
+    Attrib sbp=4    3.0250264785946976
+    Attrib sbp=5    4.0845824918782005
+    Attrib tobacco    -10.709243756168453
+    Attrib ldl    -6.665327127322335
+    Attrib adiposity    0.13911814087806817
+    Attrib famhist=1    3.3214873402982956
+    Attrib typea    -3.9345084177575047
+    Attrib obesity=1    -2.9378472109712193
+    Attrib obesity=2    -1.8789706048183135
+    Attrib obesity=3    3.7697989225286617
+    Attrib obesity=4    4.189840702375498
+    Attrib obesity=5    0.7422851513791409
+    Attrib alcohol    4.815708480026349
+    Attrib age=1    -0.030976939814757853
+    Attrib age=2    -0.0024388211832891
+    Attrib age=3    7.198841319274868E-4
+    Attrib age=4    3.161771271184944
+    Attrib age=5    4.573966910413751
+    Attrib age=6    -1.3121394020477122
+    Attrib age=7    -0.6083313777089462
+    Attrib age=8    -2.028935791240987
+    Attrib age=9    -0.027999476233965016
+    Attrib age=10    0.03985164753018654
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.3647434560468406
+    Attrib sbp=1    -0.19792956088759034
+    Attrib sbp=2    0.06813611678165789
+    Attrib sbp=3    0.7942354039955698
+    Attrib sbp=4    0.05143634636718908
+    Attrib sbp=5    0.2797761180425335
+    Attrib tobacco    -1.6010629612076752
+    Attrib ldl    -1.0623896800458543
+    Attrib adiposity    3.4612376724292786
+    Attrib famhist=1    -3.75096432658977
+    Attrib typea    -1.7821202407563692
+    Attrib obesity=1    -0.23098531898721125
+    Attrib obesity=2    0.7119824167466633
+    Attrib obesity=3    0.6260406802434892
+    Attrib obesity=4    -0.1377849771667834
+    Attrib obesity=5    0.1111528168918976
+    Attrib alcohol    -0.0804080081156842
+    Attrib age=1    0.017913736374224512
+    Attrib age=2    -5.044276800167738E-4
+    Attrib age=3    -0.03200160856440125
+    Attrib age=4    0.3727546624848136
+    Attrib age=5    -0.019358747941616357
+    Attrib age=6    -1.025389833452781
+    Attrib age=7    1.5670750807041471
+    Attrib age=8    0.044232028710500214
+    Attrib age=9    0.009480590194872261
+    Attrib age=10    -0.04682523728978238
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.015147398619460423
+    Attrib sbp=1    2.6518020434712617
+    Attrib sbp=2    -4.876386569580494
+    Attrib sbp=3    -0.6810033430252046
+    Attrib sbp=4    0.32034905446744777
+    Attrib sbp=5    2.6321637209231667
+    Attrib tobacco    5.13395661880402
+    Attrib ldl    6.988947295161779
+    Attrib adiposity    4.492201859743816
+    Attrib famhist=1    4.215124392484863
+    Attrib typea    -3.8922044037660104
+    Attrib obesity=1    2.6524163137859307
+    Attrib obesity=2    -1.4243811209209194
+    Attrib obesity=3    -4.808662621510423
+    Attrib obesity=4    -0.35831937963008537
+    Attrib obesity=5    3.9959722558498494
+    Attrib alcohol    11.643723269649012
+    Attrib age=1    -0.023481814179526085
+    Attrib age=2    -0.007828561332701524
+    Attrib age=3    -0.02288184029933096
+    Attrib age=4    -0.3449510783554844
+    Attrib age=5    -1.4512734025580902
+    Attrib age=6    -4.600673210087825
+    Attrib age=7    0.47308231441539694
+    Attrib age=8    5.84848511223155
+    Attrib age=9    -0.04470998985673476
+    Attrib age=10    0.02848861674720185
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -1.1552028467309452
+    Attrib sbp=1    6.930082681211698
+    Attrib sbp=2    3.1896776428525073
+    Attrib sbp=3    -5.187615443897356
+    Attrib sbp=4    -0.1986419049990997
+    Attrib sbp=5    -1.1505365311841989
+    Attrib tobacco    -0.03567817695055641
+    Attrib ldl    -2.6757464197773664
+    Attrib adiposity    -1.6225418172583352
+    Attrib famhist=1    -4.102306923899888
+    Attrib typea    -10.959826111760012
+    Attrib obesity=1    -0.7531520095128393
+    Attrib obesity=2    3.1846368185363345
+    Attrib obesity=3    -1.152653261982177
+    Attrib obesity=4    1.6316831280025264
+    Attrib obesity=5    0.613785263553339
+    Attrib alcohol    0.36779314321648937
+    Attrib age=1    -0.04023436628053656
+    Attrib age=2    -0.004780660310035115
+    Attrib age=3    -0.0026793461407886993
+    Attrib age=4    3.0748047116965873
+    Attrib age=5    0.3333119547150632
+    Attrib age=6    0.37732899316166935
+    Attrib age=7    3.053330216492176
+    Attrib age=8    -3.2248642679173543
+    Attrib age=9    -0.034948742229733334
+    Attrib age=10    0.032974978072039474
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.5771809853318146
+    Attrib sbp=1    0.416343861314032
+    Attrib sbp=2    -0.005797812312344271
+    Attrib sbp=3    0.6609905090310612
+    Attrib sbp=4    -0.09446826452868173
+    Attrib sbp=5    0.7595698554547735
+    Attrib tobacco    0.27634889632477255
+    Attrib ldl    0.3156789787969669
+    Attrib adiposity    0.09528761811941738
+    Attrib famhist=1    -0.6613125074244516
+    Attrib typea    0.04064060031062152
+    Attrib obesity=1    -0.3169212807159507
+    Attrib obesity=2    0.007543437501934483
+    Attrib obesity=3    1.0233751461152807
+    Attrib obesity=4    0.5537868875302401
+    Attrib obesity=5    0.38280505484648397
+    Attrib alcohol    0.030547274754076384
+    Attrib age=1    0.005733662092497885
+    Attrib age=2    -0.030810208193569333
+    Attrib age=3    -0.03597123205737001
+    Attrib age=4    0.9240247847394212
+    Attrib age=5    0.05003551324352658
+    Attrib age=6    -0.03897196331432146
+    Attrib age=7    0.3833086025052446
+    Attrib age=8    0.26061336609811114
+    Attrib age=9    0.009472087138097128
+    Attrib age=10    -0.011587479527129699
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.27297835812161636
+    Attrib sbp=1    1.4496755455400017
+    Attrib sbp=2    -1.8090845714668475
+    Attrib sbp=3    3.090497680235036
+    Attrib sbp=4    -1.3117314077831186
+    Attrib sbp=5    -0.5556847150263762
+    Attrib tobacco    3.3286678859812766
+    Attrib ldl    0.17760967695719818
+    Attrib adiposity    -2.4812751090986054
+    Attrib famhist=1    -2.3956549219653556
+    Attrib typea    -4.306778882916597
+    Attrib obesity=1    0.9690026595242235
+    Attrib obesity=2    0.11828438595664334
+    Attrib obesity=3    -0.2288161065198963
+    Attrib obesity=4    0.5303727843767174
+    Attrib obesity=5    -0.5923287015365508
+    Attrib alcohol    5.742756380110294
+    Attrib age=1    -0.028003310293400877
+    Attrib age=2    -0.049862343578946616
+    Attrib age=3    0.009241069401754301
+    Attrib age=4    1.388185047330662
+    Attrib age=5    -1.1848428935016
+    Attrib age=6    0.22589551794854026
+    Attrib age=7    4.55482446377223
+    Attrib age=8    -4.154430795837839
+    Attrib age=9    0.04934023441720228
+    Attrib age=10    0.023298103976995152
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.6104723555239108
+    Attrib sbp=1    -4.370246821123923
+    Attrib sbp=2    7.1896689550828565
+    Attrib sbp=3    -3.202821175796871
+    Attrib sbp=4    8.756580636736825
+    Attrib sbp=5    -6.678252944674547
+    Attrib tobacco    -3.021543691633789
+    Attrib ldl    -12.023365796030468
+    Attrib adiposity    -10.551171052535532
+    Attrib famhist=1    0.1564302233988048
+    Attrib typea    -1.8081816918770135
+    Attrib obesity=1    4.135050079925532
+    Attrib obesity=2    0.6866520979632365
+    Attrib obesity=3    -1.977709507130646
+    Attrib obesity=4    -2.5914589582571974
+    Attrib obesity=5    1.5014546237043773
+    Attrib alcohol    8.53847981490739
+    Attrib age=1    0.04507592179788271
+    Attrib age=2    0.041930251337650756
+    Attrib age=3    0.03835386464147446
+    Attrib age=4    1.721629590021234
+    Attrib age=5    8.884878861514393
+    Attrib age=6    -2.8248908484925614
+    Attrib age=7    0.3347360494950296
+    Attrib age=8    -6.350598882833241
+    Attrib age=9    -0.008924508707079615
+    Attrib age=10    -0.00765049390211512
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -3.0694799343114574
+    Attrib sbp=1    1.1972795871923776
+    Attrib sbp=2    5.136825375007286
+    Attrib sbp=3    3.2668695852886795
+    Attrib sbp=4    -1.3735505824625711
+    Attrib sbp=5    1.071461979637224
+    Attrib tobacco    -4.973756010640116
+    Attrib ldl    -4.8792824794510254
+    Attrib adiposity    -4.610632485073306
+    Attrib famhist=1    1.6265821455340534
+    Attrib typea    9.844980049650877
+    Attrib obesity=1    3.8450083384940497
+    Attrib obesity=2    -0.7610222374112532
+    Attrib obesity=3    2.4436105208808088
+    Attrib obesity=4    2.6919533938088005
+    Attrib obesity=5    1.0480967345417391
+    Attrib alcohol    -11.172624370159689
+    Attrib age=1    0.029390607163941193
+    Attrib age=2    7.559040434180209E-4
+    Attrib age=3    -0.022331064821682414
+    Attrib age=4    4.260130230621576
+    Attrib age=5    -0.22800532072203056
+    Attrib age=6    -2.382943915502083
+    Attrib age=7    8.179338506369229
+    Attrib age=8    -0.49260646936528096
+    Attrib age=9    -0.002002110159697111
+    Attrib age=10    0.03236112282171552
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    0.5441153047255812
+    Attrib sbp=1    -1.621667546540429
+    Attrib sbp=2    -5.190349340335194
+    Attrib sbp=3    5.9540969758169195
+    Attrib sbp=4    -0.7086160603149592
+    Attrib sbp=5    -0.20162631149949153
+    Attrib tobacco    -4.473775347606996
+    Attrib ldl    -2.7840602641987076
+    Attrib adiposity    -1.5249343845797594
+    Attrib famhist=1    -2.726726965348629
+    Attrib typea    -13.160499778986223
+    Attrib obesity=1    -5.768051328067347
+    Attrib obesity=2    -3.1510231283785672
+    Attrib obesity=3    5.23009625818906
+    Attrib obesity=4    3.019119011954561
+    Attrib obesity=5    -1.1306896859839377
+    Attrib alcohol    12.960834564129213
+    Attrib age=1    0.003578187489315564
+    Attrib age=2    -0.043937128095720125
+    Attrib age=3    0.034736910378721675
+    Attrib age=4    0.807878161196404
+    Attrib age=5    -4.638980280205097
+    Attrib age=6    -0.6421252411294357
+    Attrib age=7    -1.1335053761408669
+    Attrib age=8    3.855379694706723
+    Attrib age=9    0.0376548669728992
+    Attrib age=10    -0.02282832899532481
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -1.411101856843662
+    Attrib sbp=1    1.1442004603597042
+    Attrib sbp=2    -0.5973931852987758
+    Attrib sbp=3    2.0331965801360696
+    Attrib sbp=4    -0.03267340458758825
+    Attrib sbp=5    1.5827727641701859
+    Attrib tobacco    4.279664802570564
+    Attrib ldl    4.637857879615766
+    Attrib adiposity    3.453319936091363
+    Attrib famhist=1    -4.458824088298605
+    Attrib typea    2.483207882871272
+    Attrib obesity=1    0.6166638074837092
+    Attrib obesity=2    0.29945138893730866
+    Attrib obesity=3    0.9729546400027551
+    Attrib obesity=4    1.0789896953297915
+    Attrib obesity=5    1.1573688575169574
+    Attrib alcohol    -5.9401283402761615
+    Attrib age=1    0.015677681830194704
+    Attrib age=2    0.026181588432829805
+    Attrib age=3    -0.03207196942760579
+    Attrib age=4    2.004714223173265
+    Attrib age=5    1.0167799057473679
+    Attrib age=6    -0.6029301238420808
+    Attrib age=7    0.016184594372259206
+    Attrib age=8    1.7033845580214029
+    Attrib age=9    0.03336311922240877
+    Attrib age=10    0.020163861045204
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -0.41044523849660375
+    Attrib sbp=1    3.2111067170753405
+    Attrib sbp=2    2.8421212783813843
+    Attrib sbp=3    -5.695719163884848
+    Attrib sbp=4    1.7292729748454903
+    Attrib sbp=5    -1.0441511982816345
+    Attrib tobacco    -15.013599991413285
+    Attrib ldl    8.196908952873601
+    Attrib adiposity    -4.560409152459689
+    Attrib famhist=1    -1.7208982610410382
+    Attrib typea    -2.7407441730009356
+    Attrib obesity=1    -5.576742580171141
+    Attrib obesity=2    -1.7621943329931247
+    Attrib obesity=3    4.162235175041113
+    Attrib obesity=4    3.6432155406552313
+    Attrib obesity=5    0.6473876643611601
+    Attrib alcohol    -0.30963231240935807
+    Attrib age=1    7.195092830844865E-4
+    Attrib age=2    -0.04481576484078928
+    Attrib age=3    -0.03695808517523128
+    Attrib age=4    -0.6095185767511739
+    Attrib age=5    3.895667411817983
+    Attrib age=6    2.014131879486844
+    Attrib age=7    1.293134690632372
+    Attrib age=8    -5.4615947054742495
+    Attrib age=9    -0.04398563352529236
+    Attrib age=10    -0.004138670428465663
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -1.790926603154297
+    Attrib sbp=1    4.533994996774962
+    Attrib sbp=2    6.1492329195115305
+    Attrib sbp=3    0.7597516870695681
+    Attrib sbp=4    -7.346875031883108
+    Attrib sbp=5    1.4001037668689273
+    Attrib tobacco    -5.505363213394883
+    Attrib ldl    6.739650455717409
+    Attrib adiposity    3.7150652954796164
+    Attrib famhist=1    -2.741636796432425
+    Attrib typea    -7.869049874751934
+    Attrib obesity=1    0.23879359239568662
+    Attrib obesity=2    7.350230389376126
+    Attrib obesity=3    -2.9183277107790415
+    Attrib obesity=4    -0.5956244251455544
+    Attrib obesity=5    1.4967886496324592
+    Attrib alcohol    -5.4569880816931295
+    Attrib age=1    0.0364150951605831
+    Attrib age=2    -0.008282173457854328
+    Attrib age=3    0.02028810918837022
+    Attrib age=4    4.161012182608293
+    Attrib age=5    1.0148872195474645
+    Attrib age=6    4.8279693220028665
+    Attrib age=7    -2.7495364485318734
+    Attrib age=8    -1.7979413721575561
+    Attrib age=9    -0.04956091631294676
+    Attrib age=10    0.00648900574424871
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -0.672324469754384
+    Attrib sbp=1    -1.834812537535502
+    Attrib sbp=2    -2.144277646617343
+    Attrib sbp=3    4.398484361661992
+    Attrib sbp=4    -2.2659235830834445
+    Attrib sbp=5    3.728251535515192
+    Attrib tobacco    5.311898641468299
+    Attrib ldl    -2.621040730854929
+    Attrib adiposity    2.6530478387491883
+    Attrib famhist=1    3.1488442375965047
+    Attrib typea    -3.590215518277659
+    Attrib obesity=1    -0.16230879418824687
+    Attrib obesity=2    4.362147646145908
+    Attrib obesity=3    -2.845898622155416
+    Attrib obesity=4    0.3779127723388965
+    Attrib obesity=5    0.25233111531652014
+    Attrib alcohol    10.494581099622247
+    Attrib age=1    0.029682515518316452
+    Attrib age=2    -0.027108384118115947
+    Attrib age=3    -0.0366103103725032
+    Attrib age=4    0.24429532796421538
+    Attrib age=5    4.309225171710319
+    Attrib age=6    -5.936970740367752
+    Attrib age=7    3.0631959265301174
+    Attrib age=8    0.37677279607774905
+    Attrib age=9    0.009847048744263051
+    Attrib age=10    -0.022022797558712538
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -1.8629160490741867
+    Attrib sbp=1    -0.927728243635051
+    Attrib sbp=2    -1.4738208947272402
+    Attrib sbp=3    0.21461050955129227
+    Attrib sbp=4    4.887645679919067
+    Attrib sbp=5    2.9462019795307515
+    Attrib tobacco    -4.23652141040948
+    Attrib ldl    -1.5850573265537593
+    Attrib adiposity    -5.951952446000054
+    Attrib famhist=1    -5.191547054462092
+    Attrib typea    -6.137256144128339
+    Attrib obesity=1    -0.9386575340207906
+    Attrib obesity=2    7.642496575100636
+    Attrib obesity=3    0.5114984059811751
+    Attrib obesity=4    -2.8477639442638902
+    Attrib obesity=5    1.2895582832319195
+    Attrib alcohol    -4.822828137346741
+    Attrib age=1    0.017844701183725914
+    Attrib age=2    0.04663281234310307
+    Attrib age=3    -0.005156269801430635
+    Attrib age=4    4.303694827030169
+    Attrib age=5    -0.39418042204846887
+    Attrib age=6    8.466064460627358
+    Attrib age=7    -6.807183276409952
+    Attrib age=8    0.06093416745275715
+    Attrib age=9    0.017910443057474704
+    Attrib age=10    -0.041578011083675294
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+Time taken to build model: 1.99 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         313               67.7489 %
+Incorrectly Classified Instances       149               32.2511 %
+Kappa statistic                          0.2866
+Mean absolute error                      0.334 
+Root mean squared error                  0.5334
+Relative absolute error                 73.7296 %
+Root relative squared error            112.1157 %
+Total Number of Instances              462     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.755    0.469    0.752      0.755    0.754      0.287    0.679     0.777     0
+                 0.531    0.245    0.535      0.531    0.533      0.287    0.679     0.531     1
+Weighted Avg.    0.677    0.391    0.677      0.677    0.677      0.287    0.679     0.692     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 228  74 |   a = 0
+  75  85 |   b = 1
+

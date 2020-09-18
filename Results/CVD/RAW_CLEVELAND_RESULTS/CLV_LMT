@@ -1,0 +1,92 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:31/31 (296)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+0.36 + 
+[age] * 0.01 +
+[sex] * 0.72 +
+[cp] * 0.06 +
+[trestbps] * -0.01 +
+[chol] * -0 +
+[fbs] * 0.37 +
+[restecg] * 0.15 +
+[thalach] * 0.01 +
+[exang] * -0.67 +
+[oldpeak] * -0.15 +
+[slope] * -0.28 +
+[ca] * -0.63 +
+[thal] * -0.51
+
+Class 1 :
+-0.36 + 
+[age] * -0.01 +
+[sex] * -0.72 +
+[cp] * -0.06 +
+[trestbps] * 0.01 +
+[chol] * 0    +
+[fbs] * -0.37 +
+[restecg] * -0.15 +
+[thalach] * -0.01 +
+[exang] * 0.67 +
+[oldpeak] * 0.15 +
+[slope] * 0.28 +
+[ca] * 0.63 +
+[thal] * 0.51
+
+
+Time taken to build model: 0.15 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         245               82.7703 %
+Incorrectly Classified Instances        51               17.2297 %
+Kappa statistic                          0.6518
+Mean absolute error                      0.2462
+Root mean squared error                  0.3623
+Relative absolute error                 49.564  %
+Root relative squared error             72.6965 %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.863    0.213    0.826      0.863    0.844      0.653    0.893     0.899     0
+                 0.787    0.138    0.829      0.787    0.808      0.653    0.893     0.874     1
+Weighted Avg.    0.828    0.178    0.828      0.828    0.827      0.653    0.893     0.888     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 138  22 |   a = 0
+  29 107 |   b = 1
+

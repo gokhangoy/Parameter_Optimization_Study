@@ -1,0 +1,580 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.RandomSubSpace -P 0.5 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     south_African_Dataset_Categorized
+Instances:    462
+Attributes:   10
+              sbp
+              tobacco
+              ldl
+              adiposity
+              famhist
+              typea
+              obesity
+              alcohol
+              age
+              chd
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 2061718358 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 4,1,6,5,9,10
+
+Filtered Header
+@relation 'south_African_Dataset_Categorized-weka.filters.unsupervised.attribute.Remove-V-R4,1,6,5,9,10'
+
+@attribute adiposity numeric
+@attribute sbp {1,2,3,4,5}
+@attribute typea numeric
+@attribute famhist {0,1}
+@attribute age {1,2,3,4,5,6,7,8,9,10}
+@attribute chd {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+age = 1 : 0 (0/0) [0/0]
+age = 2 : 0 (0/0) [0/0]
+age = 3 : 0 (0/0) [0/0]
+age = 4 : 0 (46/2) [21/0]
+age = 5 : 0 (51/12) [25/4]
+age = 6
+|   adiposity < 19.1 : 0 (9/0) [5/2]
+|   adiposity >= 19.1
+|   |   sbp = 1 : 0 (3/0) [6/2]
+|   |   sbp = 2
+|   |   |   typea < 53 : 0 (7/0) [1/1]
+|   |   |   typea >= 53 : 1 (5/2) [1/0]
+|   |   sbp = 3 : 0 (10/5) [7/1]
+|   |   sbp = 4 : 0 (15/6) [13/5]
+|   |   sbp = 5 : 0 (1/0) [1/0]
+age = 7 : 0 (68/28) [37/17]
+age = 8
+|   famhist = 0 : 0 (45/18) [22/9]
+|   famhist = 1 : 1 (48/15) [15/4]
+age = 9 : 0 (0/0) [0/0]
+age = 10 : 0 (0/0) [0/0]
+
+Size of the tree : 22
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 144283567 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 7,5,9,6,2,10
+
+Filtered Header
+@relation 'south_African_Dataset_Categorized-weka.filters.unsupervised.attribute.Remove-V-R7,5,9,6,2,10'
+
+@attribute obesity {1,2,3,4,5}
+@attribute famhist {0,1}
+@attribute age {1,2,3,4,5,6,7,8,9,10}
+@attribute typea numeric
+@attribute tobacco numeric
+@attribute chd {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+age = 1 : 0 (0/0) [0/0]
+age = 2 : 0 (0/0) [0/0]
+age = 3 : 0 (0/0) [0/0]
+age = 4 : 0 (40/1) [27/1]
+age = 5 : 0 (54/10) [22/6]
+age = 6
+|   typea < 68.5 : 0 (57/17) [21/4]
+|   typea >= 68.5 : 1 (3/0) [3/1]
+age = 7
+|   typea < 65
+|   |   tobacco < 2.39 : 0 (19/2) [7/2]
+|   |   tobacco >= 2.39
+|   |   |   typea < 59.5
+|   |   |   |   famhist = 0 : 0 (14/4) [10/5]
+|   |   |   |   famhist = 1
+|   |   |   |   |   typea < 35.5 : 0 (2/0) [0/0]
+|   |   |   |   |   typea >= 35.5
+|   |   |   |   |   |   typea < 49.5 : 1 (8/0) [3/1]
+|   |   |   |   |   |   typea >= 49.5
+|   |   |   |   |   |   |   obesity = 1 : 0 (3/0) [4/1]
+|   |   |   |   |   |   |   obesity = 2 : 1 (5/1) [4/1]
+|   |   |   |   |   |   |   obesity = 3 : 0 (0/0) [1/0]
+|   |   |   |   |   |   |   obesity = 4 : 0 (2/1) [0/0]
+|   |   |   |   |   |   |   obesity = 5 : 0 (0/0) [0/0]
+|   |   |   typea >= 59.5 : 0 (7/0) [5/3]
+|   typea >= 65 : 1 (9/1) [2/0]
+age = 8
+|   famhist = 0 : 0 (44/19) [23/8]
+|   famhist = 1 : 1 (41/11) [22/8]
+age = 9 : 0 (0/0) [0/0]
+age = 10 : 0 (0/0) [0/0]
+
+Size of the tree : 32
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1840826303 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 6,8,9,2,4,10
+
+Filtered Header
+@relation 'south_African_Dataset_Categorized-weka.filters.unsupervised.attribute.Remove-V-R6,8,9,2,4,10'
+
+@attribute typea numeric
+@attribute alcohol numeric
+@attribute age {1,2,3,4,5,6,7,8,9,10}
+@attribute tobacco numeric
+@attribute adiposity numeric
+@attribute chd {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+age = 1 : 0 (0/0) [0/0]
+age = 2 : 0 (0/0) [0/0]
+age = 3 : 0 (0/0) [0/0]
+age = 4 : 0 (43/1) [24/1]
+age = 5 : 0 (57/13) [19/3]
+age = 6 : 0 (58/21) [26/5]
+age = 7
+|   typea < 65
+|   |   tobacco < 2.45 : 0 (16/1) [11/4]
+|   |   tobacco >= 2.45
+|   |   |   tobacco < 4.03
+|   |   |   |   adiposity < 27.01 : 1 (7/0) [1/1]
+|   |   |   |   adiposity >= 27.01 : 0 (3/1) [2/0]
+|   |   |   tobacco >= 4.03
+|   |   |   |   tobacco < 9.78
+|   |   |   |   |   adiposity < 36.92 : 0 (24/5) [12/4]
+|   |   |   |   |   adiposity >= 36.92 : 1 (2/0) [3/1]
+|   |   |   |   tobacco >= 9.78 : 1 (12/4) [1/0]
+|   typea >= 65 : 1 (9/0) [2/1]
+age = 8
+|   tobacco < 7.34
+|   |   adiposity < 31.79
+|   |   |   adiposity < 29.2
+|   |   |   |   adiposity < 28.29
+|   |   |   |   |   tobacco < 0.82 : 0 (5/0) [4/3]
+|   |   |   |   |   tobacco >= 0.82
+|   |   |   |   |   |   typea < 63.5
+|   |   |   |   |   |   |   adiposity < 13.79 : 0 (2/0) [0/0]
+|   |   |   |   |   |   |   adiposity >= 13.79
+|   |   |   |   |   |   |   |   typea < 48.5
+|   |   |   |   |   |   |   |   |   typea < 45.5
+|   |   |   |   |   |   |   |   |   |   adiposity < 22.91 : 0 (4/1) [0/0]
+|   |   |   |   |   |   |   |   |   |   adiposity >= 22.91 : 1 (2/0) [2/0]
+|   |   |   |   |   |   |   |   |   typea >= 45.5 : 0 (2/0) [1/0]
+|   |   |   |   |   |   |   |   typea >= 48.5 : 1 (5/1) [7/3]
+|   |   |   |   |   |   typea >= 63.5 : 0 (2/0) [1/1]
+|   |   |   |   adiposity >= 28.29
+|   |   |   |   |   typea < 54.5 : 0 (2/1) [1/0]
+|   |   |   |   |   typea >= 54.5 : 1 (3/0) [1/0]
+|   |   |   adiposity >= 29.2 : 0 (11/1) [4/1]
+|   |   adiposity >= 31.79
+|   |   |   typea < 49.5 : 0 (9/4) [4/0]
+|   |   |   typea >= 49.5 : 1 (5/0) [15/5]
+|   tobacco >= 7.34 : 1 (25/7) [13/3]
+age = 9 : 0 (0/0) [0/0]
+age = 10 : 0 (0/0) [0/0]
+
+Size of the tree : 47
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 453733475 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 7,1,6,8,2,10
+
+Filtered Header
+@relation 'south_African_Dataset_Categorized-weka.filters.unsupervised.attribute.Remove-V-R7,1,6,8,2,10'
+
+@attribute obesity {1,2,3,4,5}
+@attribute sbp {1,2,3,4,5}
+@attribute typea numeric
+@attribute alcohol numeric
+@attribute tobacco numeric
+@attribute chd {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+tobacco < 0.49 : 0 (104/14) [44/6]
+tobacco >= 0.49
+|   tobacco < 7.55
+|   |   sbp = 1 : 0 (18/7) [16/5]
+|   |   sbp = 2 : 0 (32/12) [20/5]
+|   |   sbp = 3 : 0 (42/11) [20/10]
+|   |   sbp = 4
+|   |   |   typea < 62.5
+|   |   |   |   obesity = 1
+|   |   |   |   |   tobacco < 1.45 : 0 (3/0) [0/0]
+|   |   |   |   |   tobacco >= 1.45
+|   |   |   |   |   |   typea < 46.5 : 1 (2/0) [7/3]
+|   |   |   |   |   |   typea >= 46.5 : 0 (8/4) [5/0]
+|   |   |   |   obesity = 2 : 0 (29/14) [9/2]
+|   |   |   |   obesity = 3 : 0 (6/1) [4/2]
+|   |   |   |   obesity = 4 : 0 (2/1) [1/0]
+|   |   |   |   obesity = 5 : 1 (1/0) [0/0]
+|   |   |   typea >= 62.5 : 1 (8/1) [2/0]
+|   |   sbp = 5
+|   |   |   typea < 51 : 0 (3/0) [4/2]
+|   |   |   typea >= 51 : 1 (4/1) [1/0]
+|   tobacco >= 7.55 : 1 (46/16) [21/7]
+
+Size of the tree : 23
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 563036632 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 2,9,8,1,5,10
+
+Filtered Header
+@relation 'south_African_Dataset_Categorized-weka.filters.unsupervised.attribute.Remove-V-R2,9,8,1,5,10'
+
+@attribute tobacco numeric
+@attribute age {1,2,3,4,5,6,7,8,9,10}
+@attribute alcohol numeric
+@attribute sbp {1,2,3,4,5}
+@attribute famhist {0,1}
+@attribute chd {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+age = 1 : 0 (0/0) [0/0]
+age = 2 : 0 (0/0) [0/0]
+age = 3 : 0 (0/0) [0/0]
+age = 4 : 0 (43/1) [24/1]
+age = 5 : 0 (46/11) [30/5]
+age = 6 : 0 (61/21) [23/5]
+age = 7
+|   tobacco < 9.78
+|   |   sbp = 1 : 0 (11/4) [3/0]
+|   |   sbp = 2 : 0 (11/4) [6/1]
+|   |   sbp = 3 : 0 (17/4) [3/3]
+|   |   sbp = 4
+|   |   |   famhist = 0 : 0 (7/1) [8/3]
+|   |   |   famhist = 1 : 1 (15/7) [5/2]
+|   |   sbp = 5 : 1 (4/1) [1/0]
+|   tobacco >= 9.78 : 1 (6/1) [8/3]
+age = 8
+|   famhist = 0
+|   |   tobacco < 0.74 : 0 (8/0) [6/2]
+|   |   tobacco >= 0.74
+|   |   |   alcohol < 0.1 : 1 (10/3) [2/0]
+|   |   |   alcohol >= 0.1
+|   |   |   |   tobacco < 7.9 : 0 (21/5) [5/1]
+|   |   |   |   tobacco >= 7.9 : 1 (9/3) [6/2]
+|   famhist = 1 : 1 (39/12) [24/7]
+age = 9 : 0 (0/0) [0/0]
+age = 10 : 0 (0/0) [0/0]
+
+Size of the tree : 28
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 491837027 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 8,9,6,4,5,10
+
+Filtered Header
+@relation 'south_African_Dataset_Categorized-weka.filters.unsupervised.attribute.Remove-V-R8,9,6,4,5,10'
+
+@attribute alcohol numeric
+@attribute age {1,2,3,4,5,6,7,8,9,10}
+@attribute typea numeric
+@attribute adiposity numeric
+@attribute famhist {0,1}
+@attribute chd {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+age = 1 : 0 (0/0) [0/0]
+age = 2 : 0 (0/0) [0/0]
+age = 3 : 0 (0/0) [0/0]
+age = 4 : 0 (49/1) [18/1]
+age = 5 : 0 (44/6) [32/10]
+age = 6 : 0 (62/18) [22/8]
+age = 7
+|   typea < 35.5 : 0 (3/0) [1/0]
+|   typea >= 35.5
+|   |   famhist = 0 : 0 (26/9) [19/6]
+|   |   famhist = 1
+|   |   |   typea < 65.5
+|   |   |   |   typea < 49.5 : 1 (9/2) [7/2]
+|   |   |   |   typea >= 49.5 : 0 (24/10) [10/2]
+|   |   |   typea >= 65.5 : 1 (3/0) [3/0]
+age = 8
+|   famhist = 0 : 0 (48/23) [19/4]
+|   famhist = 1 : 1 (40/11) [23/8]
+age = 9 : 0 (0/0) [0/0]
+age = 10 : 0 (0/0) [0/0]
+
+Size of the tree : 21
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 466189118 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 2,1,6,7,5,10
+
+Filtered Header
+@relation 'south_African_Dataset_Categorized-weka.filters.unsupervised.attribute.Remove-V-R2,1,6,7,5,10'
+
+@attribute tobacco numeric
+@attribute sbp {1,2,3,4,5}
+@attribute typea numeric
+@attribute obesity {1,2,3,4,5}
+@attribute famhist {0,1}
+@attribute chd {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+tobacco < 0.89 : 0 (120/17) [57/14]
+tobacco >= 0.89
+|   famhist = 0
+|   |   typea < 65.5
+|   |   |   tobacco < 7.95 : 0 (71/16) [34/8]
+|   |   |   tobacco >= 7.95 : 1 (19/9) [11/3]
+|   |   typea >= 65.5
+|   |   |   sbp = 1 : 1 (2/0) [1/0]
+|   |   |   sbp = 2 : 0 (1/0) [2/0]
+|   |   |   sbp = 3 : 0 (1/0) [2/0]
+|   |   |   sbp = 4 : 1 (2/0) [0/0]
+|   |   |   sbp = 5 : 1 (2/0) [0/0]
+|   famhist = 1
+|   |   sbp = 1
+|   |   |   tobacco < 2.69 : 0 (4/2) [2/0]
+|   |   |   tobacco >= 2.69 : 1 (4/0) [3/2]
+|   |   sbp = 2
+|   |   |   obesity = 1 : 0 (4/1) [7/3]
+|   |   |   obesity = 2 : 1 (7/2) [4/3]
+|   |   |   obesity = 3 : 1 (4/0) [0/0]
+|   |   |   obesity = 4 : 1 (0/0) [0/0]
+|   |   |   obesity = 5 : 1 (0/0) [0/0]
+|   |   sbp = 3
+|   |   |   tobacco < 9.35
+|   |   |   |   typea < 60
+|   |   |   |   |   obesity = 1 : 0 (5/2) [4/1]
+|   |   |   |   |   obesity = 2 : 1 (10/4) [3/0]
+|   |   |   |   |   obesity = 3 : 0 (1/0) [1/0]
+|   |   |   |   |   obesity = 4 : 0 (0/0) [0/0]
+|   |   |   |   |   obesity = 5 : 0 (0/0) [0/0]
+|   |   |   |   typea >= 60 : 0 (5/0) [4/3]
+|   |   |   tobacco >= 9.35 : 1 (3/0) [2/0]
+|   |   sbp = 4
+|   |   |   tobacco < 4.04 : 1 (12/1) [5/2]
+|   |   |   tobacco >= 4.04
+|   |   |   |   typea < 63.5
+|   |   |   |   |   typea < 53.5
+|   |   |   |   |   |   tobacco < 4.49 : 0 (4/1) [1/0]
+|   |   |   |   |   |   tobacco >= 4.49
+|   |   |   |   |   |   |   typea < 48
+|   |   |   |   |   |   |   |   obesity = 1 : 1 (2/0) [1/0]
+|   |   |   |   |   |   |   |   obesity = 2 : 1 (4/1) [0/0]
+|   |   |   |   |   |   |   |   obesity = 3 : 0 (1/0) [1/0]
+|   |   |   |   |   |   |   |   obesity = 4 : 1 (0/0) [1/0]
+|   |   |   |   |   |   |   |   obesity = 5 : 1 (0/0) [0/0]
+|   |   |   |   |   |   |   typea >= 48 : 1 (5/0) [1/1]
+|   |   |   |   |   typea >= 53.5 : 0 (10/3) [2/1]
+|   |   |   |   typea >= 63.5 : 1 (3/0) [2/1]
+|   |   sbp = 5 : 1 (2/0) [3/1]
+
+Size of the tree : 50
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1560639113 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 3,6,9,2,7,10
+
+Filtered Header
+@relation 'south_African_Dataset_Categorized-weka.filters.unsupervised.attribute.Remove-V-R3,6,9,2,7,10'
+
+@attribute ldl numeric
+@attribute typea numeric
+@attribute age {1,2,3,4,5,6,7,8,9,10}
+@attribute tobacco numeric
+@attribute obesity {1,2,3,4,5}
+@attribute chd {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+age = 1 : 0 (0/0) [0/0]
+age = 2 : 0 (0/0) [0/0]
+age = 3 : 0 (0/0) [0/0]
+age = 4 : 0 (46/1) [21/1]
+age = 5 : 0 (48/9) [28/7]
+age = 6 : 0 (57/18) [27/8]
+age = 7
+|   typea < 64
+|   |   tobacco < 6.7
+|   |   |   ldl < 4.8
+|   |   |   |   obesity = 1 : 0 (8/0) [4/2]
+|   |   |   |   obesity = 2
+|   |   |   |   |   tobacco < 2.55 : 0 (7/0) [3/0]
+|   |   |   |   |   tobacco >= 2.55 : 1 (3/1) [5/2]
+|   |   |   |   obesity = 3 : 0 (4/0) [1/0]
+|   |   |   |   obesity = 4 : 0 (1/0) [0/0]
+|   |   |   |   obesity = 5 : 0 (0/0) [0/0]
+|   |   |   ldl >= 4.8
+|   |   |   |   tobacco < 4.68 : 1 (11/4) [8/3]
+|   |   |   |   tobacco >= 4.68 : 0 (9/1) [2/1]
+|   |   tobacco >= 6.7
+|   |   |   typea < 53.5 : 1 (7/0) [6/4]
+|   |   |   typea >= 53.5 : 0 (9/3) [5/2]
+|   typea >= 64 : 1 (6/0) [6/2]
+age = 8
+|   tobacco < 6.3 : 0 (64/32) [24/9]
+|   tobacco >= 6.3 : 1 (28/7) [14/5]
+age = 9 : 0 (0/0) [0/0]
+age = 10 : 0 (0/0) [0/0]
+
+Size of the tree : 30
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -137414786 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 9,1,8,5,6,10
+
+Filtered Header
+@relation 'south_African_Dataset_Categorized-weka.filters.unsupervised.attribute.Remove-V-R9,1,8,5,6,10'
+
+@attribute age {1,2,3,4,5,6,7,8,9,10}
+@attribute sbp {1,2,3,4,5}
+@attribute alcohol numeric
+@attribute famhist {0,1}
+@attribute typea numeric
+@attribute chd {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+age = 1 : 0 (0/0) [0/0]
+age = 2 : 0 (0/0) [0/0]
+age = 3 : 0 (0/0) [0/0]
+age = 4 : 0 (49/1) [18/1]
+age = 5 : 0 (56/14) [20/2]
+age = 6 : 0 (48/13) [36/13]
+age = 7
+|   sbp = 1 : 0 (5/1) [9/3]
+|   sbp = 2 : 0 (12/4) [6/1]
+|   sbp = 3 : 0 (17/8) [9/4]
+|   sbp = 4
+|   |   alcohol < 1.03 : 0 (5/0) [2/1]
+|   |   alcohol >= 1.03
+|   |   |   famhist = 0
+|   |   |   |   alcohol < 26.01 : 1 (5/2) [3/1]
+|   |   |   |   alcohol >= 26.01 : 0 (5/0) [2/0]
+|   |   |   famhist = 1 : 1 (15/4) [4/2]
+|   sbp = 5 : 1 (5/1) [1/0]
+age = 8
+|   famhist = 0
+|   |   alcohol < 32.69
+|   |   |   sbp = 1 : 1 (5/2) [0/0]
+|   |   |   sbp = 2 : 0 (5/1) [3/1]
+|   |   |   sbp = 3 : 0 (10/3) [5/1]
+|   |   |   sbp = 4
+|   |   |   |   typea < 54 : 0 (16/6) [2/0]
+|   |   |   |   typea >= 54 : 1 (4/0) [4/1]
+|   |   |   sbp = 5 : 0 (2/0) [2/0]
+|   |   alcohol >= 32.69 : 1 (2/0) [7/4]
+|   famhist = 1 : 1 (42/14) [21/5]
+age = 9 : 0 (0/0) [0/0]
+age = 10 : 0 (0/0) [0/0]
+
+Size of the tree : 33
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1112756370 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 6,4,3,9,5,10
+
+Filtered Header
+@relation 'south_African_Dataset_Categorized-weka.filters.unsupervised.attribute.Remove-V-R6,4,3,9,5,10'
+
+@attribute typea numeric
+@attribute adiposity numeric
+@attribute ldl numeric
+@attribute age {1,2,3,4,5,6,7,8,9,10}
+@attribute famhist {0,1}
+@attribute chd {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+age = 1 : 0 (0/0) [0/0]
+age = 2 : 0 (0/0) [0/0]
+age = 3 : 0 (0/0) [0/0]
+age = 4 : 0 (48/1) [19/1]
+age = 5 : 0 (50/13) [26/3]
+age = 6 : 0 (50/15) [34/11]
+age = 7
+|   typea < 64 : 0 (63/26) [30/9]
+|   typea >= 64 : 1 (4/0) [8/2]
+age = 8
+|   ldl < 2.44 : 0 (5/0) [0/0]
+|   ldl >= 2.44
+|   |   famhist = 0
+|   |   |   ldl < 5.51
+|   |   |   |   ldl < 5.04
+|   |   |   |   |   typea < 64.5 : 0 (22/10) [9/2]
+|   |   |   |   |   typea >= 64.5 : 1 (2/0) [1/0]
+|   |   |   |   ldl >= 5.04 : 1 (3/0) [1/0]
+|   |   |   ldl >= 5.51 : 0 (20/5) [5/3]
+|   |   famhist = 1 : 1 (41/13) [21/5]
+age = 9 : 0 (0/0) [0/0]
+age = 10 : 0 (0/0) [0/0]
+
+Size of the tree : 23
+
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         316               68.3983 %
+Incorrectly Classified Instances       146               31.6017 %
+Kappa statistic                          0.2195
+Mean absolute error                      0.3923
+Root mean squared error                  0.4389
+Relative absolute error                 86.5945 %
+Root relative squared error             92.253  %
+Total Number of Instances              462     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.877    0.681    0.709      0.877    0.784      0.238    0.736     0.842     0
+                 0.319    0.123    0.580      0.319    0.411      0.238    0.736     0.558     1
+Weighted Avg.    0.684    0.488    0.664      0.684    0.655      0.238    0.736     0.744     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 265  37 |   a = 0
+ 109  51 |   b = 1
+

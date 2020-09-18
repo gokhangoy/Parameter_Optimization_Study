@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 296
+Number of Rules : 29
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 86
+	Merit of best subset found:   84.459
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 3,11,12,13,14
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         234               79.0541 %
+Incorrectly Classified Instances        62               20.9459 %
+Kappa statistic                          0.575 
+Mean absolute error                      0.2822
+Root mean squared error                  0.3841
+Relative absolute error                 56.8127 %
+Root relative squared error             77.0793 %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.279    0.782      0.850    0.814      0.578    0.862     0.857     0
+                 0.721    0.150    0.803      0.721    0.760      0.578    0.862     0.825     1
+Weighted Avg.    0.791    0.220    0.792      0.791    0.789      0.578    0.862     0.842     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 136  24 |   a = 0
+  38  98 |   b = 1
+

@@ -1,0 +1,359 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     south_African_Dataset_Categorized
+Instances:    462
+Attributes:   10
+              sbp
+              tobacco
+              ldl
+              adiposity
+              famhist
+              typea
+              obesity
+              alcohol
+              age
+              chd
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+age = 1 : 0 (0/0)
+age = 2 : 0 (0/0)
+age = 3 : 0 (0/0)
+age = 4
+|   sbp = 1
+|   |   tobacco < 1.32
+|   |   |   ldl < 2.51
+|   |   |   |   adiposity < 14.05
+|   |   |   |   |   ldl < 2.17 : 0 (2/0)
+|   |   |   |   |   ldl >= 2.17 : 1 (1/0)
+|   |   |   |   adiposity >= 14.05 : 0 (3/0)
+|   |   |   ldl >= 2.51 : 0 (12/0)
+|   |   tobacco >= 1.32 : 1 (1/0)
+|   sbp = 2 : 0 (23/0)
+|   sbp = 3 : 0 (21/0)
+|   sbp = 4 : 0 (4/0)
+|   sbp = 5 : 0 (0/0)
+age = 5
+|   tobacco < 1.45
+|   |   ldl < 9.76
+|   |   |   sbp = 1
+|   |   |   |   typea < 63 : 0 (8/0)
+|   |   |   |   typea >= 63 : 1 (1/0)
+|   |   |   sbp = 2
+|   |   |   |   ldl < 3.47 : 1 (1/0)
+|   |   |   |   ldl >= 3.47 : 0 (11/0)
+|   |   |   sbp = 3 : 0 (11/0)
+|   |   |   sbp = 4
+|   |   |   |   alcohol < 7.45
+|   |   |   |   |   alcohol < 5.6 : 0 (4/0)
+|   |   |   |   |   alcohol >= 5.6 : 1 (1/0)
+|   |   |   |   alcohol >= 7.45 : 0 (6/0)
+|   |   |   sbp = 5 : 0 (0/0)
+|   |   ldl >= 9.76 : 1 (1/0)
+|   tobacco >= 1.45
+|   |   alcohol < 43.02
+|   |   |   alcohol < 23.03
+|   |   |   |   ldl < 3.71
+|   |   |   |   |   adiposity < 12.55
+|   |   |   |   |   |   sbp = 1 : 0 (0/0)
+|   |   |   |   |   |   sbp = 2 : 1 (1/0)
+|   |   |   |   |   |   sbp = 3 : 0 (2/0)
+|   |   |   |   |   |   sbp = 4 : 0 (0/0)
+|   |   |   |   |   |   sbp = 5 : 0 (0/0)
+|   |   |   |   |   adiposity >= 12.55 : 0 (5/0)
+|   |   |   |   ldl >= 3.71
+|   |   |   |   |   alcohol < 12.8
+|   |   |   |   |   |   ldl < 6.31
+|   |   |   |   |   |   |   typea < 49 : 1 (1/0)
+|   |   |   |   |   |   |   typea >= 49 : 0 (6/0)
+|   |   |   |   |   |   ldl >= 6.31
+|   |   |   |   |   |   |   tobacco < 3.37 : 1 (2/0)
+|   |   |   |   |   |   |   tobacco >= 3.37
+|   |   |   |   |   |   |   |   typea < 58.5 : 0 (1/0)
+|   |   |   |   |   |   |   |   typea >= 58.5 : 1 (1/0)
+|   |   |   |   |   alcohol >= 12.8 : 1 (3/0)
+|   |   |   alcohol >= 23.03 : 0 (4/0)
+|   |   alcohol >= 43.02
+|   |   |   sbp = 1 : 0 (1/0)
+|   |   |   sbp = 2
+|   |   |   |   alcohol < 67.03 : 1 (2/0)
+|   |   |   |   alcohol >= 67.03 : 0 (1/0)
+|   |   |   sbp = 3 : 1 (2/0)
+|   |   |   sbp = 4 : 0 (0/0)
+|   |   |   sbp = 5 : 0 (0/0)
+age = 6
+|   typea < 68.5
+|   |   typea < 42 : 0 (5/0)
+|   |   typea >= 42
+|   |   |   alcohol < 41.35
+|   |   |   |   adiposity < 16.8 : 0 (7/0)
+|   |   |   |   adiposity >= 16.8
+|   |   |   |   |   typea < 45 : 1 (2/0)
+|   |   |   |   |   typea >= 45
+|   |   |   |   |   |   ldl < 2.17 : 1 (1/0)
+|   |   |   |   |   |   ldl >= 2.17
+|   |   |   |   |   |   |   typea < 52.5
+|   |   |   |   |   |   |   |   ldl < 5.38
+|   |   |   |   |   |   |   |   |   tobacco < 1
+|   |   |   |   |   |   |   |   |   |   ldl < 3.92
+|   |   |   |   |   |   |   |   |   |   |   sbp = 1 : 0 (0/0)
+|   |   |   |   |   |   |   |   |   |   |   sbp = 2 : 0 (2/0)
+|   |   |   |   |   |   |   |   |   |   |   sbp = 3 : 0 (0/0)
+|   |   |   |   |   |   |   |   |   |   |   sbp = 4 : 1 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   sbp = 5 : 0 (0/0)
+|   |   |   |   |   |   |   |   |   |   ldl >= 3.92 : 0 (3/0)
+|   |   |   |   |   |   |   |   |   tobacco >= 1 : 0 (8/0)
+|   |   |   |   |   |   |   |   ldl >= 5.38
+|   |   |   |   |   |   |   |   |   obesity = 1
+|   |   |   |   |   |   |   |   |   |   tobacco < 0.64 : 1 (1/0)
+|   |   |   |   |   |   |   |   |   |   tobacco >= 0.64 : 0 (1/0)
+|   |   |   |   |   |   |   |   |   obesity = 2 : 0 (1/0)
+|   |   |   |   |   |   |   |   |   obesity = 3 : 1 (1/0)
+|   |   |   |   |   |   |   |   |   obesity = 4 : 0 (1/0)
+|   |   |   |   |   |   |   |   |   obesity = 5 : 0 (0/0)
+|   |   |   |   |   |   |   typea >= 52.5
+|   |   |   |   |   |   |   |   adiposity < 25.37
+|   |   |   |   |   |   |   |   |   ldl < 4.6
+|   |   |   |   |   |   |   |   |   |   typea < 66.5
+|   |   |   |   |   |   |   |   |   |   |   sbp = 1 : 1 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   sbp = 2 : 0 (0/0)
+|   |   |   |   |   |   |   |   |   |   |   sbp = 3
+|   |   |   |   |   |   |   |   |   |   |   |   tobacco < 2.55 : 1 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   tobacco >= 2.55
+|   |   |   |   |   |   |   |   |   |   |   |   |   ldl < 3.42 : 0 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ldl >= 3.42 : 1 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   sbp = 4
+|   |   |   |   |   |   |   |   |   |   |   |   ldl < 4.02 : 0 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   ldl >= 4.02 : 1 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   sbp = 5 : 0 (0/0)
+|   |   |   |   |   |   |   |   |   |   typea >= 66.5 : 0 (1/0)
+|   |   |   |   |   |   |   |   |   ldl >= 4.6 : 0 (6/0)
+|   |   |   |   |   |   |   |   adiposity >= 25.37
+|   |   |   |   |   |   |   |   |   alcohol < 25.59
+|   |   |   |   |   |   |   |   |   |   alcohol < 15.69
+|   |   |   |   |   |   |   |   |   |   |   alcohol < 7.33
+|   |   |   |   |   |   |   |   |   |   |   |   sbp = 1 : 1 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   sbp = 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   ldl < 10.32 : 0 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ldl >= 10.32 : 1 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   sbp = 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   adiposity < 32.95 : 0 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   adiposity >= 32.95 : 1 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   sbp = 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   typea < 55.5 : 0 (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   typea >= 55.5 : 1 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   sbp = 5 : 0 (0/0)
+|   |   |   |   |   |   |   |   |   |   |   alcohol >= 7.33 : 1 (3/0)
+|   |   |   |   |   |   |   |   |   |   alcohol >= 15.69
+|   |   |   |   |   |   |   |   |   |   |   adiposity < 29.1 : 1 (1/0)
+|   |   |   |   |   |   |   |   |   |   |   adiposity >= 29.1 : 0 (3/0)
+|   |   |   |   |   |   |   |   |   alcohol >= 25.59 : 1 (2/0)
+|   |   |   alcohol >= 41.35
+|   |   |   |   alcohol < 146.24 : 0 (13/0)
+|   |   |   |   alcohol >= 146.24 : 1 (1/0)
+|   typea >= 68.5
+|   |   tobacco < 2.11 : 1 (4/0)
+|   |   tobacco >= 2.11
+|   |   |   tobacco < 8.78 : 0 (1/0)
+|   |   |   tobacco >= 8.78 : 1 (1/0)
+age = 7
+|   typea < 65
+|   |   sbp = 1
+|   |   |   adiposity < 28.88
+|   |   |   |   adiposity < 18.08 : 0 (1/0)
+|   |   |   |   adiposity >= 18.08
+|   |   |   |   |   famhist = 0
+|   |   |   |   |   |   adiposity < 20.94 : 1 (1/0)
+|   |   |   |   |   |   adiposity >= 20.94 : 0 (1/0)
+|   |   |   |   |   famhist = 1 : 1 (2/0)
+|   |   |   adiposity >= 28.88 : 0 (8/0)
+|   |   sbp = 2
+|   |   |   ldl < 6.25 : 0 (11/0)
+|   |   |   ldl >= 6.25
+|   |   |   |   ldl < 9.82 : 1 (2/0)
+|   |   |   |   ldl >= 9.82
+|   |   |   |   |   alcohol < 7.33 : 1 (1/0)
+|   |   |   |   |   alcohol >= 7.33 : 0 (2/0)
+|   |   sbp = 3
+|   |   |   tobacco < 8.95
+|   |   |   |   ldl < 6.93
+|   |   |   |   |   tobacco < 2.71
+|   |   |   |   |   |   tobacco < 2.51
+|   |   |   |   |   |   |   obesity = 1
+|   |   |   |   |   |   |   |   adiposity < 29.05 : 0 (1/0)
+|   |   |   |   |   |   |   |   adiposity >= 29.05 : 1 (1/0)
+|   |   |   |   |   |   |   obesity = 2 : 0 (3/0)
+|   |   |   |   |   |   |   obesity = 3 : 0 (1/0)
+|   |   |   |   |   |   |   obesity = 4 : 0 (0/0)
+|   |   |   |   |   |   |   obesity = 5 : 0 (0/0)
+|   |   |   |   |   |   tobacco >= 2.51 : 1 (2/0)
+|   |   |   |   |   tobacco >= 2.71 : 0 (6/0)
+|   |   |   |   ldl >= 6.93
+|   |   |   |   |   tobacco < 7.75 : 1 (3/0)
+|   |   |   |   |   tobacco >= 7.75 : 0 (1/0)
+|   |   |   tobacco >= 8.95
+|   |   |   |   adiposity < 37.03 : 1 (5/0)
+|   |   |   |   adiposity >= 37.03 : 0 (1/0)
+|   |   sbp = 4
+|   |   |   famhist = 0
+|   |   |   |   alcohol < 7.02
+|   |   |   |   |   adiposity < 29.29 : 0 (2/0)
+|   |   |   |   |   adiposity >= 29.29
+|   |   |   |   |   |   tobacco < 2.25 : 0 (1/0)
+|   |   |   |   |   |   tobacco >= 2.25 : 1 (3/0)
+|   |   |   |   alcohol >= 7.02 : 0 (9/0)
+|   |   |   famhist = 1
+|   |   |   |   alcohol < 10.54
+|   |   |   |   |   ldl < 4.38 : 0 (3/0)
+|   |   |   |   |   ldl >= 4.38
+|   |   |   |   |   |   typea < 49 : 1 (3/0)
+|   |   |   |   |   |   typea >= 49
+|   |   |   |   |   |   |   typea < 60.5 : 0 (4/0)
+|   |   |   |   |   |   |   typea >= 60.5
+|   |   |   |   |   |   |   |   tobacco < 2.25 : 0 (1/0)
+|   |   |   |   |   |   |   |   tobacco >= 2.25 : 1 (1/0)
+|   |   |   |   alcohol >= 10.54
+|   |   |   |   |   adiposity < 18.88 : 0 (1/0)
+|   |   |   |   |   adiposity >= 18.88
+|   |   |   |   |   |   ldl < 3.04 : 0 (1/0)
+|   |   |   |   |   |   ldl >= 3.04 : 1 (8/0)
+|   |   sbp = 5
+|   |   |   ldl < 5.22 : 1 (3/0)
+|   |   |   ldl >= 5.22 : 0 (1/0)
+|   typea >= 65
+|   |   typea < 74.5 : 1 (9/0)
+|   |   typea >= 74.5
+|   |   |   ldl < 5.74 : 0 (1/0)
+|   |   |   ldl >= 5.74 : 1 (1/0)
+age = 8
+|   typea < 56.5
+|   |   famhist = 0
+|   |   |   tobacco < 7.8
+|   |   |   |   adiposity < 35.5
+|   |   |   |   |   sbp = 1
+|   |   |   |   |   |   tobacco < 1.9 : 1 (1/0)
+|   |   |   |   |   |   tobacco >= 1.9 : 0 (1/0)
+|   |   |   |   |   sbp = 2 : 0 (5/0)
+|   |   |   |   |   sbp = 3
+|   |   |   |   |   |   adiposity < 29.38 : 0 (4/0)
+|   |   |   |   |   |   adiposity >= 29.38
+|   |   |   |   |   |   |   tobacco < 0.88 : 0 (1/0)
+|   |   |   |   |   |   |   tobacco >= 0.88 : 1 (3/0)
+|   |   |   |   |   sbp = 4
+|   |   |   |   |   |   typea < 50
+|   |   |   |   |   |   |   typea < 42.5 : 0 (5/0)
+|   |   |   |   |   |   |   typea >= 42.5
+|   |   |   |   |   |   |   |   typea < 46.5
+|   |   |   |   |   |   |   |   |   tobacco < 1.5 : 0 (1/0)
+|   |   |   |   |   |   |   |   |   tobacco >= 1.5 : 1 (2/0)
+|   |   |   |   |   |   |   |   typea >= 46.5 : 0 (3/0)
+|   |   |   |   |   |   typea >= 50 : 1 (2/0)
+|   |   |   |   |   sbp = 5 : 0 (2/0)
+|   |   |   |   adiposity >= 35.5 : 0 (5/0)
+|   |   |   tobacco >= 7.8
+|   |   |   |   tobacco < 10.4 : 1 (3/0)
+|   |   |   |   tobacco >= 10.4
+|   |   |   |   |   adiposity < 28.95 : 1 (3/0)
+|   |   |   |   |   adiposity >= 28.95
+|   |   |   |   |   |   tobacco < 17.73 : 0 (5/0)
+|   |   |   |   |   |   tobacco >= 17.73
+|   |   |   |   |   |   |   adiposity < 34.3 : 1 (2/0)
+|   |   |   |   |   |   |   adiposity >= 34.3 : 0 (1/0)
+|   |   famhist = 1
+|   |   |   adiposity < 34.4
+|   |   |   |   adiposity < 28
+|   |   |   |   |   typea < 48
+|   |   |   |   |   |   tobacco < 3.35 : 0 (3/0)
+|   |   |   |   |   |   tobacco >= 3.35
+|   |   |   |   |   |   |   typea < 45.5 : 1 (5/0)
+|   |   |   |   |   |   |   typea >= 45.5 : 0 (1/0)
+|   |   |   |   |   typea >= 48 : 1 (8/0)
+|   |   |   |   adiposity >= 28
+|   |   |   |   |   alcohol < 1.72 : 0 (4/0)
+|   |   |   |   |   alcohol >= 1.72
+|   |   |   |   |   |   alcohol < 17.75
+|   |   |   |   |   |   |   sbp = 1 : 0 (0/0)
+|   |   |   |   |   |   |   sbp = 2 : 1 (1/0)
+|   |   |   |   |   |   |   sbp = 3
+|   |   |   |   |   |   |   |   ldl < 5.87 : 1 (1/0)
+|   |   |   |   |   |   |   |   ldl >= 5.87 : 0 (1/0)
+|   |   |   |   |   |   |   sbp = 4 : 1 (2/0)
+|   |   |   |   |   |   |   sbp = 5 : 0 (0/0)
+|   |   |   |   |   |   alcohol >= 17.75
+|   |   |   |   |   |   |   typea < 52.5
+|   |   |   |   |   |   |   |   obesity = 1 : 0 (0/0)
+|   |   |   |   |   |   |   |   obesity = 2 : 1 (2/0)
+|   |   |   |   |   |   |   |   obesity = 3 : 0 (1/0)
+|   |   |   |   |   |   |   |   obesity = 4 : 0 (0/0)
+|   |   |   |   |   |   |   |   obesity = 5 : 0 (0/0)
+|   |   |   |   |   |   |   typea >= 52.5 : 0 (4/0)
+|   |   |   adiposity >= 34.4
+|   |   |   |   ldl < 4.13 : 0 (1/0)
+|   |   |   |   ldl >= 4.13 : 1 (10/0)
+|   typea >= 56.5
+|   |   ldl < 6.38
+|   |   |   adiposity < 31.79
+|   |   |   |   ldl < 5.39
+|   |   |   |   |   adiposity < 29.23
+|   |   |   |   |   |   adiposity < 24.82
+|   |   |   |   |   |   |   ldl < 2.42 : 0 (1/0)
+|   |   |   |   |   |   |   ldl >= 2.42
+|   |   |   |   |   |   |   |   sbp = 1 : 1 (1/0)
+|   |   |   |   |   |   |   |   sbp = 2 : 0 (0/0)
+|   |   |   |   |   |   |   |   sbp = 3
+|   |   |   |   |   |   |   |   |   famhist = 0 : 0 (1/0)
+|   |   |   |   |   |   |   |   |   famhist = 1 : 1 (2/0)
+|   |   |   |   |   |   |   |   sbp = 4 : 0 (1/0)
+|   |   |   |   |   |   |   |   sbp = 5 : 0 (0/0)
+|   |   |   |   |   |   adiposity >= 24.82 : 1 (4/0)
+|   |   |   |   |   adiposity >= 29.23 : 0 (2/0)
+|   |   |   |   ldl >= 5.39 : 0 (4/0)
+|   |   |   adiposity >= 31.79
+|   |   |   |   adiposity < 36.99 : 1 (7/0)
+|   |   |   |   adiposity >= 36.99
+|   |   |   |   |   sbp = 1 : 0 (0/0)
+|   |   |   |   |   sbp = 2 : 1 (1/0)
+|   |   |   |   |   sbp = 3 : 0 (1/0)
+|   |   |   |   |   sbp = 4
+|   |   |   |   |   |   ldl < 4.36 : 0 (1/0)
+|   |   |   |   |   |   ldl >= 4.36 : 1 (1/0)
+|   |   |   |   |   sbp = 5 : 1 (1/0)
+|   |   ldl >= 6.38 : 1 (9/0)
+age = 9 : 0 (0/0)
+age = 10 : 0 (0/0)
+
+Size of the tree : 306
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         284               61.4719 %
+Incorrectly Classified Instances       178               38.5281 %
+Kappa statistic                          0.1614
+Mean absolute error                      0.3833
+Root mean squared error                  0.6139
+Relative absolute error                 84.6091 %
+Root relative squared error            129.017  %
+Total Number of Instances              462     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.689    0.525    0.712      0.689    0.700      0.162    0.593     0.703     0
+                 0.475    0.311    0.447      0.475    0.461      0.162    0.593     0.400     1
+Weighted Avg.    0.615    0.451    0.620      0.615    0.617      0.162    0.593     0.598     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 208  94 |   a = 0
+  84  76 |   b = 1
+

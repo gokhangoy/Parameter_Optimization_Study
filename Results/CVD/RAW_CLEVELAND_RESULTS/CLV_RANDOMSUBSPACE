@@ -1,0 +1,515 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.RandomSubSpace -P 0.5 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -839530648 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 6,10,4,5,1,2,9,14
+
+Filtered Header
+@relation 'cleveland-14-heart-disease-weka.filters.unsupervised.attribute.Remove-V-R6,10,4,5,1,2,9,14'
+
+@attribute fbs numeric
+@attribute oldpeak numeric
+@attribute trestbps numeric
+@attribute chol numeric
+@attribute age numeric
+@attribute sex numeric
+@attribute exang numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+oldpeak < 0.75
+|   exang < 0.5
+|   |   chol < 272
+|   |   |   oldpeak < 0.3
+|   |   |   |   chol < 196.5 : 0 (7/0) [5/1]
+|   |   |   |   chol >= 196.5
+|   |   |   |   |   chol < 254.5
+|   |   |   |   |   |   age < 56.5 : 0 (28/4) [7/0]
+|   |   |   |   |   |   age >= 56.5
+|   |   |   |   |   |   |   age < 61.5 : 1 (2/0) [3/1]
+|   |   |   |   |   |   |   age >= 61.5 : 0 (6/1) [1/0]
+|   |   |   |   |   chol >= 254.5 : 0 (6/0) [5/1]
+|   |   |   oldpeak >= 0.3 : 0 (12/0) [6/3]
+|   |   chol >= 272 : 0 (13/5) [14/4]
+|   exang >= 0.5
+|   |   chol < 206.5 : 1 (3/0) [0/0]
+|   |   chol >= 206.5
+|   |   |   chol < 238.5 : 0 (6/0) [1/1]
+|   |   |   chol >= 238.5
+|   |   |   |   chol < 258.5 : 1 (3/0) [5/2]
+|   |   |   |   chol >= 258.5 : 0 (8/3) [3/1]
+oldpeak >= 0.75
+|   exang < 0.5
+|   |   sex < 0.5
+|   |   |   age < 44 : 0 (6/1) [2/0]
+|   |   |   age >= 44 : 1 (30/8) [16/7]
+|   |   sex >= 0.5 : 0 (19/4) [11/3]
+|   exang >= 0.5 : 1 (48/5) [20/3]
+
+Size of the tree : 29
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 2088930779 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 9,8,7,2,4,10,1,14
+
+Filtered Header
+@relation 'cleveland-14-heart-disease-weka.filters.unsupervised.attribute.Remove-V-R9,8,7,2,4,10,1,14'
+
+@attribute exang numeric
+@attribute thalach numeric
+@attribute restecg numeric
+@attribute sex numeric
+@attribute trestbps numeric
+@attribute oldpeak numeric
+@attribute age numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+exang < 0.5
+|   age < 56.5
+|   |   sex < 0.5
+|   |   |   thalach < 168.5
+|   |   |   |   trestbps < 127.5
+|   |   |   |   |   thalach < 157
+|   |   |   |   |   |   oldpeak < 0.7 : 0 (7/1) [3/1]
+|   |   |   |   |   |   oldpeak >= 0.7 : 1 (2/0) [4/0]
+|   |   |   |   |   thalach >= 157 : 1 (4/0) [5/4]
+|   |   |   |   trestbps >= 127.5 : 0 (11/2) [5/1]
+|   |   |   thalach >= 168.5 : 0 (22/2) [12/1]
+|   |   sex >= 0.5 : 0 (25/0) [10/0]
+|   age >= 56.5
+|   |   age < 62.5
+|   |   |   oldpeak < 1.75
+|   |   |   |   oldpeak < 1.5
+|   |   |   |   |   oldpeak < 1.1
+|   |   |   |   |   |   trestbps < 152 : 0 (16/7) [8/2]
+|   |   |   |   |   |   trestbps >= 152 : 1 (2/0) [3/0]
+|   |   |   |   |   oldpeak >= 1.1 : 1 (3/0) [1/1]
+|   |   |   |   oldpeak >= 1.5 : 0 (2/0) [0/0]
+|   |   |   oldpeak >= 1.75 : 1 (9/1) [5/1]
+|   |   age >= 62.5
+|   |   |   sex < 0.5
+|   |   |   |   trestbps < 154 : 1 (8/2) [8/2]
+|   |   |   |   trestbps >= 154 : 0 (3/0) [1/0]
+|   |   |   sex >= 0.5 : 0 (16/2) [4/0]
+exang >= 0.5
+|   oldpeak < 1.55
+|   |   age < 46.5 : 0 (4/0) [4/2]
+|   |   age >= 46.5
+|   |   |   oldpeak < 0.7
+|   |   |   |   thalach < 162.5 : 1 (15/6) [4/1]
+|   |   |   |   thalach >= 162.5 : 0 (3/0) [1/0]
+|   |   |   oldpeak >= 0.7 : 1 (16/3) [5/1]
+|   oldpeak >= 1.55 : 1 (29/0) [16/2]
+
+Size of the tree : 37
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 27243500 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 4,2,3,9,8,5,10,14
+
+Filtered Header
+@relation 'cleveland-14-heart-disease-weka.filters.unsupervised.attribute.Remove-V-R4,2,3,9,8,5,10,14'
+
+@attribute trestbps numeric
+@attribute sex numeric
+@attribute cp numeric
+@attribute exang numeric
+@attribute thalach numeric
+@attribute chol numeric
+@attribute oldpeak numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+cp < 1.5
+|   exang < 0.5
+|   |   thalach < 181.5
+|   |   |   sex < 0.5
+|   |   |   |   thalach < 129.5 : 1 (6/0) [3/0]
+|   |   |   |   thalach >= 129.5
+|   |   |   |   |   chol < 192.5 : 0 (2/0) [2/1]
+|   |   |   |   |   chol >= 192.5
+|   |   |   |   |   |   trestbps < 149 : 1 (24/7) [8/4]
+|   |   |   |   |   |   trestbps >= 149 : 0 (7/2) [1/0]
+|   |   |   sex >= 0.5
+|   |   |   |   oldpeak < 3.1 : 0 (15/3) [6/1]
+|   |   |   |   oldpeak >= 3.1 : 1 (2/0) [1/0]
+|   |   thalach >= 181.5 : 0 (4/0) [1/0]
+|   exang >= 0.5
+|   |   chol < 264.5
+|   |   |   chol < 198 : 1 (7/0) [3/0]
+|   |   |   chol >= 198
+|   |   |   |   chol < 227
+|   |   |   |   |   cp < 0.5 : 0 (2/0) [1/0]
+|   |   |   |   |   cp >= 0.5 : 1 (9/3) [6/1]
+|   |   |   |   chol >= 227 : 1 (12/1) [9/3]
+|   |   chol >= 264.5 : 1 (18/0) [15/2]
+cp >= 1.5
+|   oldpeak < 1.7 : 0 (76/11) [41/6]
+|   oldpeak >= 1.7 : 1 (13/5) [2/0]
+
+Size of the tree : 27
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -916649560 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 2,8,7,11,12,3,6,14
+
+Filtered Header
+@relation 'cleveland-14-heart-disease-weka.filters.unsupervised.attribute.Remove-V-R2,8,7,11,12,3,6,14'
+
+@attribute sex numeric
+@attribute thalach numeric
+@attribute restecg numeric
+@attribute slope numeric
+@attribute ca numeric
+@attribute cp numeric
+@attribute fbs numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+ca < 0.5
+|   thalach < 159.5
+|   |   cp < 2.5
+|   |   |   sex < 0.5
+|   |   |   |   thalach < 134.5 : 1 (8/1) [9/2]
+|   |   |   |   thalach >= 134.5 : 0 (26/13) [6/1]
+|   |   |   sex >= 0.5 : 0 (23/8) [8/0]
+|   |   cp >= 2.5 : 0 (5/0) [5/1]
+|   thalach >= 159.5 : 0 (53/1) [30/6]
+ca >= 0.5
+|   slope < 0.5
+|   |   sex < 0.5
+|   |   |   cp < 1.5 : 1 (13/2) [9/1]
+|   |   |   cp >= 1.5
+|   |   |   |   restecg < 0.5 : 1 (3/1) [2/0]
+|   |   |   |   restecg >= 0.5 : 0 (4/0) [2/0]
+|   |   sex >= 0.5 : 0 (12/1) [3/0]
+|   slope >= 0.5 : 1 (50/3) [25/4]
+
+Size of the tree : 19
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1859479370 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 12,5,3,4,9,10,2,14
+
+Filtered Header
+@relation 'cleveland-14-heart-disease-weka.filters.unsupervised.attribute.Remove-V-R12,5,3,4,9,10,2,14'
+
+@attribute ca numeric
+@attribute chol numeric
+@attribute cp numeric
+@attribute trestbps numeric
+@attribute exang numeric
+@attribute oldpeak numeric
+@attribute sex numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+ca < 0.5
+|   exang < 0.5 : 0 (86/12) [44/7]
+|   exang >= 0.5
+|   |   cp < 1.5
+|   |   |   chol < 198.5 : 1 (6/0) [0/0]
+|   |   |   chol >= 198.5
+|   |   |   |   oldpeak < 3.05
+|   |   |   |   |   chol < 238.5 : 0 (7/1) [1/0]
+|   |   |   |   |   chol >= 238.5
+|   |   |   |   |   |   oldpeak < 0.7 : 0 (6/3) [1/0]
+|   |   |   |   |   |   oldpeak >= 0.7 : 1 (3/0) [5/0]
+|   |   |   |   oldpeak >= 3.05 : 1 (3/0) [2/0]
+|   |   cp >= 1.5 : 0 (6/0) [3/2]
+ca >= 0.5
+|   cp < 1.5 : 1 (57/6) [27/3]
+|   cp >= 1.5 : 0 (23/11) [16/6]
+
+Size of the tree : 17
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -305410903 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 2,6,8,3,9,12,4,14
+
+Filtered Header
+@relation 'cleveland-14-heart-disease-weka.filters.unsupervised.attribute.Remove-V-R2,6,8,3,9,12,4,14'
+
+@attribute sex numeric
+@attribute fbs numeric
+@attribute thalach numeric
+@attribute cp numeric
+@attribute exang numeric
+@attribute ca numeric
+@attribute trestbps numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+ca < 0.5
+|   thalach < 160.5
+|   |   exang < 0.5 : 0 (45/12) [16/3]
+|   |   exang >= 0.5 : 1 (19/7) [15/4]
+|   thalach >= 160.5 : 0 (51/2) [27/4]
+ca >= 0.5
+|   cp < 1.5 : 1 (61/6) [23/3]
+|   cp >= 1.5
+|   |   thalach < 140.5
+|   |   |   sex < 0.5 : 1 (3/0) [3/0]
+|   |   |   sex >= 0.5 : 0 (2/1) [1/0]
+|   |   thalach >= 140.5 : 0 (16/5) [14/5]
+
+Size of the tree : 13
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -918711284 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 10,4,9,6,8,12,3,14
+
+Filtered Header
+@relation 'cleveland-14-heart-disease-weka.filters.unsupervised.attribute.Remove-V-R10,4,9,6,8,12,3,14'
+
+@attribute oldpeak numeric
+@attribute trestbps numeric
+@attribute exang numeric
+@attribute fbs numeric
+@attribute thalach numeric
+@attribute ca numeric
+@attribute cp numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+ca < 0.5
+|   exang < 0.5 : 0 (89/13) [41/6]
+|   exang >= 0.5
+|   |   oldpeak < 1.55
+|   |   |   cp < 1.5
+|   |   |   |   thalach < 149 : 1 (5/1) [4/1]
+|   |   |   |   thalach >= 149 : 0 (7/2) [2/0]
+|   |   |   cp >= 1.5 : 0 (5/0) [2/0]
+|   |   oldpeak >= 1.55 : 1 (11/0) [7/2]
+ca >= 0.5
+|   cp < 1.5 : 1 (59/8) [25/1]
+|   cp >= 1.5
+|   |   oldpeak < 1.95 : 0 (17/5) [16/6]
+|   |   oldpeak >= 1.95 : 1 (4/0) [2/0]
+
+Size of the tree : 15
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1750833761 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 10,9,5,12,8,4,1,14
+
+Filtered Header
+@relation 'cleveland-14-heart-disease-weka.filters.unsupervised.attribute.Remove-V-R10,9,5,12,8,4,1,14'
+
+@attribute oldpeak numeric
+@attribute exang numeric
+@attribute chol numeric
+@attribute ca numeric
+@attribute thalach numeric
+@attribute trestbps numeric
+@attribute age numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+ca < 0.5
+|   thalach < 160.5
+|   |   exang < 0.5 : 0 (44/13) [17/2]
+|   |   exang >= 0.5
+|   |   |   chol < 243.5
+|   |   |   |   chol < 205.5 : 1 (7/2) [3/0]
+|   |   |   |   chol >= 205.5 : 0 (5/0) [5/2]
+|   |   |   chol >= 243.5 : 1 (11/0) [3/1]
+|   thalach >= 160.5 : 0 (48/3) [30/3]
+ca >= 0.5 : 1 (82/24) [41/7]
+
+Size of the tree : 11
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -564949000 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 13,10,11,7,4,2,1,14
+
+Filtered Header
+@relation 'cleveland-14-heart-disease-weka.filters.unsupervised.attribute.Remove-V-R13,10,11,7,4,2,1,14'
+
+@attribute thal numeric
+@attribute oldpeak numeric
+@attribute slope numeric
+@attribute restecg numeric
+@attribute trestbps numeric
+@attribute sex numeric
+@attribute age numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+thal < 1.5
+|   oldpeak < 1.7
+|   |   sex < 0.5
+|   |   |   age < 53.5
+|   |   |   |   trestbps < 113.5
+|   |   |   |   |   restecg < 0.5 : 1 (2/0) [1/0]
+|   |   |   |   |   restecg >= 0.5 : 0 (6/2) [1/0]
+|   |   |   |   trestbps >= 113.5 : 0 (22/0) [13/1]
+|   |   |   age >= 53.5
+|   |   |   |   restecg < 0.5
+|   |   |   |   |   oldpeak < 0.55 : 0 (10/5) [2/0]
+|   |   |   |   |   oldpeak >= 0.55 : 1 (4/0) [4/0]
+|   |   |   |   restecg >= 0.5 : 0 (7/1) [7/3]
+|   |   sex >= 0.5 : 0 (44/1) [28/5]
+|   oldpeak >= 1.7 : 1 (21/5) [9/6]
+thal >= 1.5
+|   oldpeak < 0.7
+|   |   trestbps < 122 : 0 (7/1) [4/1]
+|   |   trestbps >= 122 : 1 (16/7) [9/2]
+|   oldpeak >= 0.7 : 1 (58/8) [21/1]
+
+Size of the tree : 21
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1877441889 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 8,5,1,4,6,9,11,14
+
+Filtered Header
+@relation 'cleveland-14-heart-disease-weka.filters.unsupervised.attribute.Remove-V-R8,5,1,4,6,9,11,14'
+
+@attribute thalach numeric
+@attribute chol numeric
+@attribute age numeric
+@attribute trestbps numeric
+@attribute fbs numeric
+@attribute exang numeric
+@attribute slope numeric
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+exang < 0.5
+|   age < 56.5 : 0 (77/13) [33/6]
+|   age >= 56.5
+|   |   age < 70.5
+|   |   |   chol < 337.5
+|   |   |   |   chol < 251
+|   |   |   |   |   fbs < 0.5
+|   |   |   |   |   |   age < 67.5 : 1 (26/12) [5/2]
+|   |   |   |   |   |   age >= 67.5 : 0 (2/0) [1/0]
+|   |   |   |   |   fbs >= 0.5 : 0 (7/1) [3/2]
+|   |   |   |   chol >= 251
+|   |   |   |   |   chol < 266 : 1 (6/0) [2/1]
+|   |   |   |   |   chol >= 266
+|   |   |   |   |   |   chol < 271.5 : 0 (2/0) [2/1]
+|   |   |   |   |   |   chol >= 271.5
+|   |   |   |   |   |   |   age < 63 : 1 (6/0) [8/3]
+|   |   |   |   |   |   |   age >= 63 : 0 (6/3) [3/0]
+|   |   |   chol >= 337.5 : 0 (3/0) [3/1]
+|   |   age >= 70.5 : 0 (4/0) [0/0]
+exang >= 0.5
+|   thalach < 151
+|   |   chol < 244.5
+|   |   |   chol < 199 : 1 (7/0) [3/0]
+|   |   |   chol >= 199
+|   |   |   |   age < 53.5 : 0 (2/0) [3/1]
+|   |   |   |   age >= 53.5 : 1 (11/2) [4/1]
+|   |   chol >= 244.5 : 1 (23/0) [19/2]
+|   thalach >= 151
+|   |   age < 58.5 : 0 (11/4) [6/1]
+|   |   age >= 58.5 : 1 (4/0) [4/2]
+
+Size of the tree : 31
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         239               80.7432 %
+Incorrectly Classified Instances        57               19.2568 %
+Kappa statistic                          0.6104
+Mean absolute error                      0.3321
+Root mean squared error                  0.3823
+Relative absolute error                 66.8589 %
+Root relative squared error             76.7145 %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.850    0.243    0.805      0.850    0.827      0.612    0.876     0.875     0
+                 0.757    0.150    0.811      0.757    0.783      0.612    0.876     0.867     1
+Weighted Avg.    0.807    0.200    0.808      0.807    0.807      0.612    0.876     0.871     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 136  24 |   a = 0
+  33 103 |   b = 1
+

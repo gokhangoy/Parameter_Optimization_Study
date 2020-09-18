@@ -1,0 +1,142 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     sampling_strategy_0.02-weka.filters.supervised.instance.SpreadSubsample-M1.5-X0.0-S1
+Instances:    13042
+Attributes:   31
+              Time
+              V1
+              V2
+              V3
+              V4
+              V5
+              V6
+              V7
+              V8
+              V9
+              V10
+              V11
+              V12
+              V13
+              V14
+              V15
+              V16
+              V17
+              V18
+              V19
+              V20
+              V21
+              V22
+              V23
+              V24
+              V25
+              V26
+              V27
+              V28
+              Amount
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable           0
+====================
+Time               0
+V1           -1.1788
+V2           -0.8934
+V3           -0.6076
+V4           -0.8984
+V5           -1.1664
+V6            0.7535
+V7            1.0538
+V8            0.5246
+V9            0.4988
+V10           1.1247
+V11            -0.81
+V12           1.5664
+V13           0.4261
+V14           1.9938
+V15           0.2954
+V16           1.2832
+V17           1.5281
+V18           0.5612
+V19          -0.4393
+V20           1.2796
+V21            0.002
+V22          -0.8477
+V23          -0.9292
+V24          -0.2286
+V25          -0.0717
+V26           0.6628
+V27          -0.1368
+V28          -1.7284
+Amount       -0.0127
+Intercept     6.4215
+
+
+Odds Ratios...
+               Class
+Variable           0
+====================
+Time               1
+V1            0.3076
+V2            0.4093
+V3            0.5447
+V4            0.4072
+V5            0.3115
+V6            2.1244
+V7            2.8685
+V8            1.6898
+V9            1.6468
+V10           3.0792
+V11           0.4449
+V12           4.7894
+V13           1.5312
+V14           7.3436
+V15           1.3437
+V16           3.6083
+V17           4.6093
+V18           1.7528
+V19           0.6445
+V20           3.5952
+V21            1.002
+V22           0.4284
+V23           0.3949
+V24           0.7956
+V25           0.9308
+V26           1.9403
+V27           0.8721
+V28           0.1776
+Amount        0.9874
+
+
+Time taken to build model: 0.86 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12840               98.4512 %
+Incorrectly Classified Instances       202                1.5488 %
+Kappa statistic                          0.9676
+Mean absolute error                      0.0249
+Root mean squared error                  0.1115
+Relative absolute error                  5.1858 %
+Root relative squared error             22.7621 %
+Total Number of Instances            13042     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.994    0.030    0.980      0.994    0.987      0.968    0.998     0.998     0
+                 0.970    0.006    0.991      0.970    0.980      0.968    0.998     0.997     1
+Weighted Avg.    0.985    0.020    0.985      0.985    0.984      0.968    0.998     0.998     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 7778   47 |    a = 0
+  155 5062 |    b = 1
+

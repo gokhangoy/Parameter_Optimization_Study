@@ -1,0 +1,72 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+thal <= 1.5 : 0
+thal > 1.5 : 1
+thal is missing : 0
+
+Class distributions
+
+thal <= 1.5
+0	1	
+0.7348066298342542	0.26519337016574585	
+thal > 1.5
+0	1	
+0.23478260869565218	0.7652173913043478	
+thal is missing
+0	1	
+0.5405405405405406	0.4594594594594595	
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         202               68.2432 %
+Incorrectly Classified Instances        94               31.7568 %
+Kappa statistic                          0.3535
+Mean absolute error                      0.4079
+Root mean squared error                  0.472 
+Relative absolute error                 82.123  %
+Root relative squared error             94.716  %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.769    0.419    0.683      0.769    0.724      0.357    0.656     0.645     0
+                 0.581    0.231    0.681      0.581    0.627      0.357    0.656     0.598     1
+Weighted Avg.    0.682    0.333    0.682      0.682    0.679      0.357    0.656     0.623     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 123  37 |   a = 0
+  57  79 |   b = 1
+

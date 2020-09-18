@@ -1,0 +1,76 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=14 #classindex=13
+Network structure (nodes followed by parents)
+age(2): num 
+sex(2): num 
+cp(2): num 
+trestbps(1): num 
+chol(1): num 
+fbs(1): num 
+restecg(1): num 
+thalach(2): num 
+exang(2): num 
+oldpeak(2): num 
+slope(2): num 
+ca(2): num 
+thal(2): num 
+num(2): 
+LogScore Bayes: -1773.0292802622532
+LogScore BDeu: -1788.4903842334509
+LogScore MDL: -1790.7457177830831
+LogScore ENTROPY: -1736.6873029670046
+LogScore AIC: -1755.6873029670041
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         241               81.4189 %
+Incorrectly Classified Instances        55               18.5811 %
+Kappa statistic                          0.6257
+Mean absolute error                      0.2047
+Root mean squared error                  0.383 
+Relative absolute error                 41.2109 %
+Root relative squared error             76.8505 %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.831    0.206    0.826      0.831    0.829      0.626    0.898     0.909     0
+                 0.794    0.169    0.800      0.794    0.797      0.626    0.898     0.887     1
+Weighted Avg.    0.814    0.189    0.814      0.814    0.814      0.626    0.898     0.899     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 133  27 |   a = 0
+  28 108 |   b = 1
+

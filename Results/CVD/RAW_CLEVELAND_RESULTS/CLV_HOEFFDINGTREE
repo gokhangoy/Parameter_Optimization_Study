@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.HoeffdingTree -L 2 -S 1 -E 1.0E-7 -H 0.05 -M 0.01 -G 200.0 -N 0.0
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+0 (161.000) NB1 NB adaptive1
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         242               81.7568 %
+Incorrectly Classified Instances        54               18.2432 %
+Kappa statistic                          0.6331
+Mean absolute error                      0.1968
+Root mean squared error                  0.3834
+Relative absolute error                 39.6265 %
+Root relative squared error             76.9374 %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.825    0.191    0.835      0.825    0.830      0.633    0.890     0.901     0
+                 0.809    0.175    0.797      0.809    0.803      0.633    0.890     0.872     1
+Weighted Avg.    0.818    0.184    0.818      0.818    0.818      0.633    0.890     0.888     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 132  28 |   a = 0
+  26 110 |   b = 1
+

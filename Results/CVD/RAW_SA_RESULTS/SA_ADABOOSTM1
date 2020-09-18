@@ -1,0 +1,282 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     south_African_Dataset_Categorized
+Instances:    462
+Attributes:   10
+              sbp
+              tobacco
+              ldl
+              adiposity
+              famhist
+              typea
+              obesity
+              alcohol
+              age
+              chd
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+tobacco <= 0.49 : 0
+tobacco > 0.49 : 0
+tobacco is missing : 0
+
+Class distributions
+
+tobacco <= 0.49
+0	1	
+0.8648648648648649	0.13513513513513514	
+tobacco > 0.49
+0	1	
+0.554140127388535	0.445859872611465	
+tobacco is missing
+0	1	
+0.6536796536796536	0.3463203463203463	
+
+
+Weight: 0.64
+
+Decision Stump
+
+Classifications
+
+age = 4 : 0
+age != 4 : 1
+age is missing : 1
+
+Class distributions
+
+age = 4
+0	1	
+0.9451108687749908	0.0548891312250091	
+age != 4
+0	1	
+0.4428044280442804	0.5571955719557197	
+age is missing
+0	1	
+0.49999999999999994	0.5	
+
+
+Weight: 0.41
+
+Decision Stump
+
+Classifications
+
+tobacco <= 0.49 : 0
+tobacco > 0.49 : 1
+tobacco is missing : 0
+
+Class distributions
+
+tobacco <= 0.49
+0	1	
+0.807693106722911	0.192306893277089	
+tobacco > 0.49
+0	1	
+0.49498983768655863	0.5050101623134414	
+tobacco is missing
+0	1	
+0.5816369509467463	0.41836304905325367	
+
+
+Weight: 0.36
+
+Decision Stump
+
+Classifications
+
+famhist = 0 : 0
+famhist != 0 : 1
+famhist is missing : 0
+
+Class distributions
+
+famhist = 0
+0	1	
+0.7320222797545165	0.26797772024548355	
+famhist != 0
+0	1	
+0.4841648748909763	0.5158351251090236	
+famhist is missing
+0	1	
+0.6252184644608053	0.37478153553919474	
+
+
+Weight: 0.57
+
+Decision Stump
+
+Classifications
+
+tobacco <= 8.04 : 0
+tobacco > 8.04 : 1
+tobacco is missing : 0
+
+Class distributions
+
+tobacco <= 8.04
+0	1	
+0.662193051672038	0.33780694832796193	
+tobacco > 8.04
+0	1	
+0.33419973218693516	0.6658002678130649	
+tobacco is missing
+0	1	
+0.6148916735313922	0.3851083264686077	
+
+
+Weight: 0.68
+
+Decision Stump
+
+Classifications
+
+typea <= 68.5 : 0
+typea > 68.5 : 1
+typea is missing : 1
+
+Class distributions
+
+typea <= 68.5
+0	1	
+0.5254845387370257	0.4745154612629743	
+typea > 68.5
+0	1	
+0.14282449457833502	0.857175505421665	
+typea is missing
+0	1	
+0.4990041567436623	0.5009958432563377	
+
+
+Weight: 0.19
+
+Decision Stump
+
+Classifications
+
+ldl <= 3.71 : 0
+ldl > 3.71 : 1
+ldl is missing : 1
+
+Class distributions
+
+ldl <= 3.71
+0	1	
+0.5971770426436855	0.40282295735631446	
+ldl > 3.71
+0	1	
+0.39789421426218236	0.6021057857378175	
+ldl is missing
+0	1	
+0.4568653955106602	0.5431346044893399	
+
+
+Weight: 0.41
+
+Decision Stump
+
+Classifications
+
+typea <= 68.5 : 0
+typea > 68.5 : 1
+typea is missing : 1
+
+Class distributions
+
+typea <= 68.5
+0	1	
+0.5210257528550657	0.4789742471449342	
+typea > 68.5
+0	1	
+0.1675082066571289	0.8324917933428712	
+typea is missing
+0	1	
+0.49785945767241846	0.5021405423275815	
+
+
+Weight: 0.17
+
+Decision Stump
+
+Classifications
+
+age = 8 : 1
+age != 8 : 0
+age is missing : 1
+
+Class distributions
+
+age = 8
+0	1	
+0.3474384755398581	0.6525615244601419	
+age != 8
+0	1	
+0.519156898714604	0.4808431012853959	
+age is missing
+0	1	
+0.46159000338315354	0.5384099966168464	
+
+
+Weight: 0.26
+
+Decision Stump
+
+Classifications
+
+typea <= 66.5 : 1
+typea > 66.5 : 1
+typea is missing : 1
+
+Class distributions
+
+typea <= 66.5
+0	1	
+0.4659707737068021	0.5340292262931978	
+typea > 66.5
+0	1	
+0.20255269303086548	0.7974473069691345	
+typea is missing
+0	1	
+0.4395538237930143	0.5604461762069858	
+
+
+Weight: 0.24
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         325               70.3463 %
+Incorrectly Classified Instances       137               29.6537 %
+Kappa statistic                          0.2782
+Mean absolute error                      0.3621
+Root mean squared error                  0.436 
+Relative absolute error                 79.9311 %
+Root relative squared error             91.6282 %
+Total Number of Instances              462     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.877    0.625    0.726      0.877    0.795      0.295    0.744     0.837     0
+                 0.375    0.123    0.619      0.375    0.467      0.295    0.744     0.598     1
+Weighted Avg.    0.703    0.451    0.689      0.703    0.681      0.295    0.744     0.754     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 265  37 |   a = 0
+ 100  60 |   b = 1
+

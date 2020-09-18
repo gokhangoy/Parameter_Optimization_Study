@@ -1,0 +1,118 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+thal <= 1
+|   ca <= 0
+|   |   exang <= 0: 0 (102.0/8.0)
+|   |   exang > 0
+|   |   |   restecg <= 0: 0 (7.0)
+|   |   |   restecg > 0
+|   |   |   |   cp <= 1
+|   |   |   |   |   slope <= 0: 0 (2.0)
+|   |   |   |   |   slope > 0: 1 (7.0/1.0)
+|   |   |   |   cp > 1: 0 (4.0)
+|   ca > 0
+|   |   thal <= 0: 1 (10.0)
+|   |   thal > 0
+|   |   |   cp <= 1
+|   |   |   |   sex <= 0
+|   |   |   |   |   cp <= 0
+|   |   |   |   |   |   restecg <= 0: 0 (4.0/1.0)
+|   |   |   |   |   |   restecg > 0: 1 (2.0)
+|   |   |   |   |   cp > 0: 1 (14.0)
+|   |   |   |   sex > 0
+|   |   |   |   |   slope <= 0: 0 (3.0)
+|   |   |   |   |   slope > 0: 1 (4.0/1.0)
+|   |   |   cp > 1
+|   |   |   |   restecg <= 0
+|   |   |   |   |   chol <= 241: 1 (3.0)
+|   |   |   |   |   chol > 241: 0 (9.0/1.0)
+|   |   |   |   restecg > 0: 0 (10.0)
+thal > 1
+|   cp <= 1
+|   |   cp <= 0
+|   |   |   chol <= 229: 0 (3.0)
+|   |   |   chol > 229
+|   |   |   |   age <= 48: 1 (2.0)
+|   |   |   |   age > 48: 0 (3.0/1.0)
+|   |   cp > 0
+|   |   |   oldpeak <= 0.6
+|   |   |   |   restecg <= 0: 1 (7.0/1.0)
+|   |   |   |   restecg > 0
+|   |   |   |   |   trestbps <= 136
+|   |   |   |   |   |   ca <= 0: 0 (4.0)
+|   |   |   |   |   |   ca > 0
+|   |   |   |   |   |   |   thalach <= 151: 0 (2.0)
+|   |   |   |   |   |   |   thalach > 151: 1 (3.0)
+|   |   |   |   |   trestbps > 136: 1 (4.0)
+|   |   |   oldpeak > 0.6: 1 (57.0)
+|   cp > 1
+|   |   slope <= 0
+|   |   |   restecg <= 0
+|   |   |   |   thalach <= 169: 0 (2.0)
+|   |   |   |   thalach > 169: 1 (2.0)
+|   |   |   restecg > 0: 0 (9.0/1.0)
+|   |   slope > 0
+|   |   |   cp <= 2
+|   |   |   |   ca <= 0
+|   |   |   |   |   trestbps <= 122: 0 (4.0)
+|   |   |   |   |   trestbps > 122: 1 (3.0)
+|   |   |   |   ca > 0: 1 (8.0/1.0)
+|   |   |   cp > 2: 1 (2.0)
+
+Number of Leaves  : 	30
+
+Size of the tree : 	59
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         225               76.0135 %
+Incorrectly Classified Instances        71               23.9865 %
+Kappa statistic                          0.5147
+Mean absolute error                      0.2697
+Root mean squared error                  0.4592
+Relative absolute error                 54.2902 %
+Root relative squared error             92.1381 %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.806    0.294    0.763      0.806    0.784      0.516    0.747     0.696     0
+                 0.706    0.194    0.756      0.706    0.730      0.516    0.747     0.698     1
+Weighted Avg.    0.760    0.248    0.760      0.760    0.759      0.516    0.747     0.697     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 129  31 |   a = 0
+  40  96 |   b = 1
+

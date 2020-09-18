@@ -1,0 +1,256 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     sampling_strategy_0.02-weka.filters.supervised.instance.SpreadSubsample-M1.5-X0.0-S1
+Instances:    13042
+Attributes:   31
+              Time
+              V1
+              V2
+              V3
+              V4
+              V5
+              V6
+              V7
+              V8
+              V9
+              V10
+              V11
+              V12
+              V13
+              V14
+              V15
+              V16
+              V17
+              V18
+              V19
+              V20
+              V21
+              V22
+              V23
+              V24
+              V25
+              V26
+              V27
+              V28
+              Amount
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                    Class
+Attribute               0          1
+                    (0.6)      (0.4)
+=====================================
+Time
+  mean           95194.196 79957.2834
+  std. dev.     47449.4819 47476.3003
+  weight sum          7825       5217
+  precision        13.6874    13.6874
+
+V1
+  mean             -0.0288    -5.3058
+  std. dev.         2.0856     6.8273
+  weight sum          7825       5217
+  precision         0.0033     0.0033
+
+V2
+  mean               -0.01     4.0922
+  std. dev.         1.7464     4.1528
+  weight sum          7825       5217
+  precision         0.0046     0.0046
+
+V3
+  mean              0.0098    -7.7408
+  std. dev.         1.5177      6.985
+  weight sum          7825       5217
+  precision         0.0027     0.0027
+
+V4
+  mean             -0.0376      4.833
+  std. dev.          1.443     2.6006
+  weight sum          7825       5217
+  precision         0.0013     0.0013
+
+V5
+  mean             -0.0344    -3.4864
+  std. dev.         1.4234      5.422
+  weight sum          7825       5217
+  precision         0.0038     0.0038
+
+V6
+  mean              0.0092    -1.5344
+  std. dev.         1.3464     1.7825
+  weight sum          7825       5217
+  precision         0.0025     0.0025
+
+V7
+  mean              0.0153    -6.3407
+  std. dev.         1.3031     6.9224
+  weight sum          7825       5217
+  precision         0.0063     0.0063
+
+V8
+  mean             -0.0284     0.6122
+  std. dev.          1.194       7.27
+  weight sum          7825       5217
+  precision         0.0048     0.0048
+
+V9
+  mean              0.0263    -2.8112
+  std. dev.         1.1371     2.3079
+  weight sum          7825       5217
+  precision         0.0017     0.0017
+
+V10
+  mean              0.0581    -6.1219
+  std. dev.         1.1474     4.6226
+  weight sum          7825       5217
+  precision         0.0029     0.0029
+
+V11
+  mean             -0.0194     4.0481
+  std. dev.         1.0041     2.4457
+  weight sum          7825       5217
+  precision         0.0012     0.0012
+
+V12
+  mean             -0.0029    -6.6829
+  std. dev.         0.9386     4.3827
+  weight sum          7825       5217
+  precision         0.0017     0.0017
+
+V13
+  mean             -0.0005    -0.0756
+  std. dev.         0.9991      1.021
+  weight sum          7825       5217
+  precision         0.0006     0.0006
+
+V14
+  mean             -0.0055    -7.4146
+  std. dev.         0.8971     3.7995
+  weight sum          7825       5217
+  precision         0.0019     0.0019
+
+V15
+  mean              0.0052     -0.121
+  std. dev.         0.9204     0.9428
+  weight sum          7825       5217
+  precision         0.0008     0.0008
+
+V16
+  mean              0.0043    -4.4745
+  std. dev.         0.8626     3.6621
+  weight sum          7825       5217
+  precision         0.0017     0.0017
+
+V17
+  mean              0.0018     -7.251
+  std. dev.         0.7486     6.6454
+  weight sum          7825       5217
+  precision         0.0025     0.0025
+
+V18
+  mean              0.0063    -2.4711
+  std. dev.         0.8244     2.7784
+  weight sum          7825       5217
+  precision          0.001      0.001
+
+V19
+  mean              0.0019     0.7284
+  std. dev.         0.8135     1.4107
+  weight sum          7825       5217
+  precision         0.0007     0.0007
+
+V20
+  mean              0.0051     0.3841
+  std. dev.         0.8837     1.2634
+  weight sum          7825       5217
+  precision         0.0035     0.0035
+
+V21
+  mean              0.0071     0.8479
+  std. dev.         0.7862     4.1384
+  weight sum          7825       5217
+  precision         0.0039     0.0039
+
+V22
+  mean             -0.0077    -0.0342
+  std. dev.         0.7255     1.5563
+  weight sum          7825       5217
+  precision         0.0013     0.0013
+
+V23
+  mean              0.0051    -0.0183
+  std. dev.         0.6928     1.3377
+  weight sum          7825       5217
+  precision          0.003      0.003
+
+V24
+  mean              0.0035    -0.1062
+  std. dev.         0.6048     0.4705
+  weight sum          7825       5217
+  precision         0.0005     0.0005
+
+V25
+  mean              0.0014     0.0637
+  std. dev.         0.5307     0.7084
+  weight sum          7825       5217
+  precision         0.0007     0.0007
+
+V26
+  mean             -0.0126     0.0518
+  std. dev.         0.4764     0.4049
+  weight sum          7825       5217
+  precision         0.0004     0.0004
+
+V27
+  mean                   0     0.1614
+  std. dev.         0.4296     1.3286
+  weight sum          7825       5217
+  precision          0.001      0.001
+
+V28
+  mean              0.0034     0.0866
+  std. dev.         0.3896     0.5037
+  weight sum          7825       5217
+  precision         0.0017     0.0017
+
+Amount
+  mean              90.017    89.2305
+  std. dev.       265.6471   177.8933
+  weight sum          7825       5217
+  precision         1.0562     1.0562
+
+
+
+Time taken to build model: 0.16 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12304               94.3414 %
+Incorrectly Classified Instances       738                5.6586 %
+Kappa statistic                          0.8808
+Mean absolute error                      0.057 
+Root mean squared error                  0.235 
+Relative absolute error                 11.8713 %
+Root relative squared error             47.9714 %
+Total Number of Instances            13042     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.104    0.933      0.975    0.954      0.882    0.980     0.981     0
+                 0.896    0.025    0.960      0.896    0.927      0.882    0.979     0.963     1
+Weighted Avg.    0.943    0.073    0.944      0.943    0.943      0.882    0.979     0.974     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 7632  193 |    a = 0
+  545 4672 |    b = 1
+

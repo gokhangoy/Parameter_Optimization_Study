@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     south_African_Dataset_Categorized
+Instances:    462
+Attributes:   10
+              sbp
+              tobacco
+              ldl
+              adiposity
+              famhist
+              typea
+              obesity
+              alcohol
+              age
+              chd
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 462
+Number of Rules : 40
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 57
+	Merit of best subset found:   73.81 
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 2,4,5,9,10
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         321               69.4805 %
+Incorrectly Classified Instances       141               30.5195 %
+Kappa statistic                          0.285 
+Mean absolute error                      0.3914
+Root mean squared error                  0.4499
+Relative absolute error                 86.4008 %
+Root relative squared error             94.5604 %
+Total Number of Instances              462     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.831    0.563    0.736      0.831    0.781      0.291    0.705     0.814     0
+                 0.438    0.169    0.579      0.438    0.498      0.291    0.705     0.517     1
+Weighted Avg.    0.695    0.426    0.682      0.695    0.683      0.291    0.705     0.712     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 251  51 |   a = 0
+  90  70 |   b = 1
+

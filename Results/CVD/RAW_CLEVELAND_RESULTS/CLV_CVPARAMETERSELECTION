@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CVParameterSelection -X 10 -S 1 -W weka.classifiers.rules.ZeroR
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.rules.ZeroR
+Classifier Options: 
+
+ZeroR predicts class value: 0
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         160               54.0541 %
+Incorrectly Classified Instances       136               45.9459 %
+Kappa statistic                          0     
+Mean absolute error                      0.4968
+Root mean squared error                  0.4984
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.541      1.000    0.702      ?        0.491     0.536     0
+                 0.000    0.000    ?          0.000    ?          ?        0.491     0.455     1
+Weighted Avg.    0.541    0.541    ?          0.541    ?          ?        0.491     0.499     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 160   0 |   a = 0
+ 136   0 |   b = 1
+

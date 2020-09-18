@@ -1,0 +1,68 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     south_African_Dataset_Categorized
+Instances:    462
+Attributes:   10
+              sbp
+              tobacco
+              ldl
+              adiposity
+              famhist
+              typea
+              obesity
+              alcohol
+              age
+              chd
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=10 #classindex=9
+Network structure (nodes followed by parents)
+sbp(5): chd 
+tobacco(2): chd 
+ldl(2): chd 
+adiposity(2): chd 
+famhist(2): chd 
+typea(1): chd 
+obesity(5): chd 
+alcohol(1): chd 
+age(10): chd 
+chd(2): 
+LogScore Bayes: -3347.2754678186398
+LogScore BDeu: -3439.744958407387
+LogScore MDL: -3446.745239246336
+LogScore ENTROPY: -3314.830594088079
+LogScore AIC: -3357.830594088079
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         312               67.5325 %
+Incorrectly Classified Instances       150               32.4675 %
+Kappa statistic                          0.3054
+Mean absolute error                      0.3513
+Root mean squared error                  0.4651
+Relative absolute error                 77.5489 %
+Root relative squared error             97.7559 %
+Total Number of Instances              462     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.715    0.400    0.771      0.715    0.742      0.307    0.735     0.836     0
+                 0.600    0.285    0.527      0.600    0.561      0.307    0.735     0.552     1
+Weighted Avg.    0.675    0.360    0.687      0.675    0.680      0.307    0.735     0.738     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 216  86 |   a = 0
+  64  96 |   b = 1
+

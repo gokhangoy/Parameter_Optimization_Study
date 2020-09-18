@@ -6,7 +6,7 @@ from collections import Counter
 from sklearn.datasets import make_classification
 from imblearn.combine import SMOTETomek
 
-churnPredictionDataset = pd.read_csv('Categorical_Only_First_Month.csv', sep=';', decimal=',')
+churnPredictionDataset = pd.read_csv('creditcard.csv', sep=';', decimal=',')
 
 churnPredictionDataset=churnPredictionDataset.dropna()
 print(churnPredictionDataset.shape)
@@ -16,7 +16,7 @@ input=churnPredictionDataset.iloc[:,0:-1]
 output=churnPredictionDataset.iloc[:,-1]
 ###print(input)
 
-smt = SMOTETomek(sampling_strategy=0.05, random_state=42)
+smt = SMOTETomek(sampling_strategy=0.02, random_state=42)
 
 nFV , labels = smt.fit_resample(input,output)
 

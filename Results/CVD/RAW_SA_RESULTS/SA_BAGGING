@@ -1,0 +1,51 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     south_African_Dataset_Categorized
+Instances:    462
+Attributes:   10
+              sbp
+              tobacco
+              ldl
+              adiposity
+              famhist
+              typea
+              obesity
+              alcohol
+              age
+              chd
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+
+Time taken to build model: 0.07 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         328               70.9957 %
+Incorrectly Classified Instances       134               29.0043 %
+Kappa statistic                          0.3173
+Mean absolute error                      0.3844
+Root mean squared error                  0.4516
+Relative absolute error                 84.8612 %
+Root relative squared error             94.9038 %
+Total Number of Instances              462     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.848    0.550    0.744      0.848    0.793      0.325    0.706     0.820     0
+                 0.450    0.152    0.610      0.450    0.518      0.325    0.706     0.503     1
+Weighted Avg.    0.710    0.412    0.698      0.710    0.697      0.325    0.706     0.710     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 256  46 |   a = 0
+  88  72 |   b = 1
+

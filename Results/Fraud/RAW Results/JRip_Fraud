@@ -1,0 +1,93 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     sampling_strategy_0.02-weka.filters.supervised.instance.SpreadSubsample-M1.5-X0.0-S1
+Instances:    13042
+Attributes:   31
+              Time
+              V1
+              V2
+              V3
+              V4
+              V5
+              V6
+              V7
+              V8
+              V9
+              V10
+              V11
+              V12
+              V13
+              V14
+              V15
+              V16
+              V17
+              V18
+              V19
+              V20
+              V21
+              V22
+              V23
+              V24
+              V25
+              V26
+              V27
+              V28
+              Amount
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(V14 <= -2.336759) and (V10 <= -2.075865) => Class=1 (4422.0/3.0)
+(V14 <= -1.943473) and (V12 <= -1.508318) and (V7 <= -0.046723) => Class=1 (242.0/0.0)
+(V14 <= -1.391308) and (V4 >= 1.792569) and (V10 <= -0.162599) => Class=1 (171.0/7.0)
+(V4 >= 1.259646) and (V14 <= -0.648258) and (V12 <= -0.029501) and (V16 <= -0.469531) and (V5 <= 0.525015) and (V3 <= 1.226317) => Class=1 (54.0/0.0)
+(V4 >= 0.700816) and (V14 <= -1.001668) and (V12 <= -0.035188) and (V21 >= 0.021121) and (V3 <= 0.066732) and (V1 <= 1.93214) => Class=1 (57.0/3.0)
+(V3 <= 0.102051) and (V16 <= -0.125604) and (V4 >= 5.046699) => Class=1 (44.0/0.0)
+(V4 >= 0.487144) and (V19 <= -1.058096) and (V14 <= -2.757557) and (V18 >= 1.018948) => Class=1 (15.0/0.0)
+(V4 >= 0.700638) and (V14 <= -0.34703) and (V12 <= -0.428659) and (V18 <= 0.382616) and (V28 >= 0.051641) => Class=1 (27.0/1.0)
+(V14 <= -1.00367) and (V4 >= 0.382609) and (V11 >= -0.191191) and (V11 <= 1.339401) and (Time >= 152751.5423) and (V16 <= 0.662535) => Class=1 (21.0/2.0)
+(V4 >= 0.694992) and (V8 <= -0.202669) and (V13 <= -0.672751) and (V1 <= -1.111495) and (V2 <= 0.165955) and (V6 <= 0.537924) => Class=1 (23.0/1.0)
+(V14 <= -1.001668) and (V4 >= 0.460751) and (V9 <= -0.825795) and (V22 >= -0.563201) => Class=1 (26.0/9.0)
+(V4 >= 1.731595) and (V8 <= -0.00682) and (Amount <= 3.848802) and (V15 <= -0.88755) and (V3 <= 0.904997) => Class=1 (20.0/2.0)
+(V14 <= -0.705906) and (V4 >= -0.457662) and (V9 <= -0.108604) and (V8 <= -0.526262) and (Amount >= 19.063207) => Class=1 (14.0/0.0)
+(V4 >= 0.807445) and (V11 >= 0.652142) and (V12 <= -0.209055) and (Time >= 52814) and (V14 <= 0.334119) and (V5 <= 0.878115) => Class=1 (20.0/4.0)
+(V4 >= 1.733632) and (V10 <= 0.225934) and (V2 >= 0.375763) and (V1 >= -0.311617) and (V5 <= 0.280447) => Class=1 (18.0/2.0)
+(V21 >= 0.604534) and (V16 <= -0.915605) and (V26 <= -0.582831) and (Time >= 101112.9094) => Class=1 (9.0/0.0)
+(V4 >= -0.020913) and (V10 <= -1.011468) and (V17 <= 0.8292) and (V14 <= -1.711576) => Class=1 (8.0/0.0)
+ => Class=0 (7851.0/60.0)
+
+Number of Rules : 18
+
+
+Time taken to build model: 4.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12843               98.4742 %
+Incorrectly Classified Instances       199                1.5258 %
+Kappa statistic                          0.9682
+Mean absolute error                      0.0217
+Root mean squared error                  0.1208
+Relative absolute error                  4.5281 %
+Root relative squared error             24.6546 %
+Total Number of Instances            13042     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.989    0.022    0.985      0.989    0.987      0.968    0.986     0.984     0
+                 0.978    0.011    0.984      0.978    0.981      0.968    0.986     0.979     1
+Weighted Avg.    0.985    0.018    0.985      0.985    0.985      0.968    0.986     0.982     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 7742   83 |    a = 0
+  116 5101 |    b = 1
+

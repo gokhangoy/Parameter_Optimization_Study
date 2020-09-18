@@ -1,0 +1,106 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SGD -F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S 1
+Relation:     sampling_strategy_0.02-weka.filters.supervised.instance.SpreadSubsample-M1.5-X0.0-S1
+Instances:    13042
+Attributes:   31
+              Time
+              V1
+              V2
+              V3
+              V4
+              V5
+              V6
+              V7
+              V8
+              V9
+              V10
+              V11
+              V12
+              V13
+              V14
+              V15
+              V16
+              V17
+              V18
+              V19
+              V20
+              V21
+              V22
+              V23
+              V24
+              V25
+              V26
+              V27
+              V28
+              Amount
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Loss function: Hinge loss (SVM)
+
+Squared loss (linear regression)
+
+Class = 
+
+         0.0711 (normalized) Time
+ +       6.9437 (normalized) V1
+ +       2.524  (normalized) V2
+ +       1.9651 (normalized) V3
+ +       6.8317 (normalized) V4
+ +       8.6057 (normalized) V5
+ +      -4.2594 (normalized) V6
+ +      -2.7875 (normalized) V7
+ +      -9.7162 (normalized) V8
+ +      -0.5349 (normalized) V9
+ +     -12.0152 (normalized) V10
+ +       5.1315 (normalized) V11
+ +      -8.8144 (normalized) V12
+ +      -1.1456 (normalized) V13
+ +     -13.2166 (normalized) V14
+ +      -0.5706 (normalized) V15
+ +      -4.1165 (normalized) V16
+ +      -8.3815 (normalized) V17
+ +      -3.3925 (normalized) V18
+ +       1.076  (normalized) V19
+ +       1.8965 (normalized) V20
+ +       7.3868 (normalized) V21
+ +       2.5823 (normalized) V22
+ +       1.9326 (normalized) V23
+ +       0.4104 (normalized) V24
+ +       0.0413 (normalized) V25
+ +      -1.0056 (normalized) V26
+ +       5.5504 (normalized) V27
+ +       8.5539 (normalized) V28
+ +       5.8662 (normalized) Amount
+ +      13.14  
+
+Time taken to build model: 0.77 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12799               98.1368 %
+Incorrectly Classified Instances       243                1.8632 %
+Kappa statistic                          0.961 
+Mean absolute error                      0.0186
+Root mean squared error                  0.1365
+Relative absolute error                  3.8816 %
+Root relative squared error             27.8627 %
+Total Number of Instances            13042     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.994    0.037    0.976      0.994    0.985      0.961    0.978     0.973     0
+                 0.963    0.006    0.990      0.963    0.976      0.961    0.978     0.968     1
+Weighted Avg.    0.981    0.025    0.982      0.981    0.981      0.961    0.978     0.971     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 7776   49 |    a = 0
+  194 5023 |    b = 1
+

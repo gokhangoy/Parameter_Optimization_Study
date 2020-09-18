@@ -1,0 +1,137 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                  Class
+Attribute             0        1
+                 (0.54)   (0.46)
+=================================
+age
+  mean           52.6125  56.7353
+  std. dev.       9.5375   7.8967
+  weight sum         160      136
+  precision          1.2      1.2
+
+sex
+  mean            0.4437   0.1765
+  std. dev.       0.4968   0.3812
+  weight sum         160      136
+  precision            1        1
+
+cp
+  mean            1.8062   1.2132
+  std. dev.       0.9253   0.6349
+  weight sum         160      136
+  precision            1        1
+
+trestbps
+  mean          129.0081 134.4323
+  std. dev.      16.2532  18.8098
+  weight sum         160      136
+  precision       2.2083   2.2083
+
+chol
+  mean          243.4562 251.5258
+  std. dev.      53.5662   49.514
+  weight sum         160      136
+  precision       2.9007   2.9007
+
+fbs
+  mean            0.1437   0.1471
+  std. dev.       0.3508   0.3542
+  weight sum         160      136
+  precision            1        1
+
+restecg
+  mean            0.5875   0.4485
+  std. dev.       0.5048   0.5399
+  weight sum         160      136
+  precision            1        1
+
+thalach
+  mean          158.5282  138.952
+  std. dev.      18.9574  22.6321
+  weight sum         160      136
+  precision       1.4556   1.4556
+
+exang
+  mean            0.1437   0.5441
+  std. dev.       0.3508    0.498
+  weight sum         160      136
+  precision            1        1
+
+oldpeak
+  mean            0.6021   1.6084
+  std. dev.       0.7807   1.2981
+  weight sum         160      136
+  precision        0.159    0.159
+
+slope
+  mean            0.4125   0.8309
+  std. dev.       0.5957    0.563
+  weight sum         160      136
+  precision            1        1
+
+ca
+  mean             0.275   1.1544
+  std. dev.        0.632   1.0137
+  weight sum         160      136
+  precision            1        1
+
+thal
+  mean            1.1313   1.5588
+  std. dev.       0.4348   0.6504
+  weight sum         160      136
+  precision            1        1
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         245               82.7703 %
+Incorrectly Classified Instances        51               17.2297 %
+Kappa statistic                          0.6522
+Mean absolute error                      0.2063
+Root mean squared error                  0.3803
+Relative absolute error                 41.5244 %
+Root relative squared error             76.315  %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.856    0.206    0.830      0.856    0.843      0.653    0.885     0.897     0
+                 0.794    0.144    0.824      0.794    0.809      0.653    0.885     0.867     1
+Weighted Avg.    0.828    0.177    0.828      0.828    0.827      0.653    0.885     0.883     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 137  23 |   a = 0
+  28 108 |   b = 1
+

@@ -1,0 +1,108 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.supervised.attribute.Discretize -R first-last -precision 6" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.trees.J48 -C 0.25 -M 2 on data filtered through weka.filters.supervised.attribute.Discretize -R first-last -precision 6
+
+Filtered Header
+@relation cleveland-14-heart-disease-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6
+
+@attribute age {'\'(-inf-54.5]\'','\'(54.5-inf)\''}
+@attribute sex {'\'(-inf-0.5]\'','\'(0.5-inf)\''}
+@attribute cp {'\'(-inf-1.5]\'','\'(1.5-inf)\''}
+@attribute trestbps {'\'All\''}
+@attribute chol {'\'All\''}
+@attribute fbs {'\'All\''}
+@attribute restecg {'\'All\''}
+@attribute thalach {'\'(-inf-147.5]\'','\'(147.5-inf)\''}
+@attribute exang {'\'(-inf-0.5]\'','\'(0.5-inf)\''}
+@attribute oldpeak {'\'(-inf-1.7]\'','\'(1.7-inf)\''}
+@attribute slope {'\'(-inf-0.5]\'','\'(0.5-inf)\''}
+@attribute ca {'\'(-inf-0.5]\'','\'(0.5-inf)\''}
+@attribute thal {'\'(-inf-1.5]\'','\'(1.5-inf)\''}
+@attribute num {0,1}
+
+@data
+
+
+Classifier Model
+J48 pruned tree
+------------------
+
+thal = '(-inf-1.5]'
+|   ca = '(-inf-0.5]': 0 (122.0/14.0)
+|   ca = '(0.5-inf)'
+|   |   cp = '(-inf-1.5]'
+|   |   |   sex = '(-inf-0.5]': 1 (26.0/3.0)
+|   |   |   sex = '(0.5-inf)'
+|   |   |   |   slope = '(-inf-0.5]': 0 (3.0)
+|   |   |   |   slope = '(0.5-inf)': 1 (5.0/1.0)
+|   |   cp = '(1.5-inf)'
+|   |   |   thalach = '(-inf-147.5]'
+|   |   |   |   sex = '(-inf-0.5]': 1 (4.0)
+|   |   |   |   sex = '(0.5-inf)': 0 (3.0)
+|   |   |   thalach = '(147.5-inf)': 0 (18.0/3.0)
+thal = '(1.5-inf)'
+|   cp = '(-inf-1.5]'
+|   |   ca = '(-inf-0.5]'
+|   |   |   age = '(-inf-54.5]': 1 (21.0/4.0)
+|   |   |   age = '(54.5-inf)'
+|   |   |   |   exang = '(-inf-0.5]': 0 (6.0/1.0)
+|   |   |   |   exang = '(0.5-inf)': 1 (8.0/1.0)
+|   |   ca = '(0.5-inf)': 1 (50.0/2.0)
+|   cp = '(1.5-inf)'
+|   |   slope = '(-inf-0.5]': 0 (13.0/3.0)
+|   |   slope = '(0.5-inf)': 1 (17.0/5.0)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	25
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         229               77.3649 %
+Incorrectly Classified Instances        67               22.6351 %
+Kappa statistic                          0.5435
+Mean absolute error                      0.2856
+Root mean squared error                  0.4238
+Relative absolute error                 57.489  %
+Root relative squared error             85.0461 %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.800    0.257    0.785      0.800    0.793      0.544    0.796     0.770     0
+                 0.743    0.200    0.759      0.743    0.751      0.544    0.796     0.714     1
+Weighted Avg.    0.774    0.231    0.773      0.774    0.773      0.544    0.796     0.744     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 128  32 |   a = 0
+  35 101 |   b = 1
+

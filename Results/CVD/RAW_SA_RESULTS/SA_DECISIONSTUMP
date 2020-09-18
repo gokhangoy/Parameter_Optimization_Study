@@ -1,0 +1,68 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     south_African_Dataset_Categorized
+Instances:    462
+Attributes:   10
+              sbp
+              tobacco
+              ldl
+              adiposity
+              famhist
+              typea
+              obesity
+              alcohol
+              age
+              chd
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+tobacco <= 0.49 : 0
+tobacco > 0.49 : 0
+tobacco is missing : 0
+
+Class distributions
+
+tobacco <= 0.49
+0	1	
+0.8648648648648649	0.13513513513513514	
+tobacco > 0.49
+0	1	
+0.554140127388535	0.445859872611465	
+tobacco is missing
+0	1	
+0.6536796536796536	0.3463203463203463	
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         302               65.368  %
+Incorrectly Classified Instances       160               34.632  %
+Kappa statistic                          0     
+Mean absolute error                      0.4206
+Root mean squared error                  0.4629
+Relative absolute error                 92.8537 %
+Root relative squared error             97.299  %
+Total Number of Instances              462     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.654      1.000    0.791      ?        0.608     0.747     0
+                 0.000    0.000    ?          0.000    ?          ?        0.608     0.403     1
+Weighted Avg.    0.654    0.654    ?          0.654    ?          ?        0.608     0.628     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 302   0 |   a = 0
+ 160   0 |   b = 1
+

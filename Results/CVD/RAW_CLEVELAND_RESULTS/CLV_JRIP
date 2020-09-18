@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     cleveland-14-heart-disease
+Instances:    296
+Attributes:   14
+              age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(thal >= 2) and (oldpeak >= 0.8) => num=1 (79.0/9.0)
+(ca >= 1) and (cp <= 1) => num=1 (44.0/9.0)
+ => num=0 (173.0/31.0)
+
+Number of Rules : 3
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         231               78.0405 %
+Incorrectly Classified Instances        65               21.9595 %
+Kappa statistic                          0.5562
+Mean absolute error                      0.2977
+Root mean squared error                  0.4155
+Relative absolute error                 59.9279 %
+Root relative squared error             83.3721 %
+Total Number of Instances              296     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.819    0.265    0.784      0.819    0.801      0.557    0.789     0.751     0
+                 0.735    0.181    0.775      0.735    0.755      0.557    0.789     0.779     1
+Weighted Avg.    0.780    0.226    0.780      0.780    0.780      0.557    0.789     0.764     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131  29 |   a = 0
+  36 100 |   b = 1
+

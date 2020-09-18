@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     south_African_Dataset_Categorized
+Instances:    462
+Attributes:   10
+              sbp
+              tobacco
+              ldl
+              adiposity
+              famhist
+              typea
+              obesity
+              alcohol
+              age
+              chd
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(famhist = 1) and (ldl >= 5.1) => chd=1 (85.0/26.0)
+(tobacco >= 8.08) => chd=1 (50.0/19.0)
+ => chd=0 (327.0/70.0)
+
+Number of Rules : 3
+
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         329               71.2121 %
+Incorrectly Classified Instances       133               28.7879 %
+Kappa statistic                          0.3318
+Mean absolute error                      0.3898
+Root mean squared error                  0.4531
+Relative absolute error                 86.0599 %
+Root relative squared error             95.231  %
+Total Number of Instances              462     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.834    0.519    0.752      0.834    0.791      0.336    0.629     0.715     0
+                 0.481    0.166    0.606      0.481    0.537      0.336    0.629     0.481     1
+Weighted Avg.    0.712    0.396    0.702      0.712    0.703      0.336    0.629     0.634     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 252  50 |   a = 0
+  83  77 |   b = 1
+

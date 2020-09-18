@@ -1,0 +1,217 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.IterativeClassifierOptimizer -W weka.classifiers.meta.LogitBoost -L 50 -P 1 -E 1 -I 1 -F 10 -R 1 -percentage 0.0 -metric RMSE -S 1 -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     sampling_strategy_0.02-weka.filters.supervised.instance.SpreadSubsample-M1.5-X0.0-S1
+Instances:    13042
+Attributes:   31
+              Time
+              V1
+              V2
+              V3
+              V4
+              V5
+              V6
+              V7
+              V8
+              V9
+              V10
+              V11
+              V12
+              V13
+              V14
+              V15
+              V16
+              V17
+              V18
+              V19
+              V20
+              V21
+              V22
+              V23
+              V24
+              V25
+              V26
+              V27
+              V28
+              Amount
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Best value found: 0.1421176142388202
+Best number of iterations found: 10
+
+
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (Class=0)
+
+Decision Stump
+
+Classifications
+
+V14 <= -2.2322261505 : -1.8795664391810518
+V14 > -2.2322261505 : 1.8089330024813897
+V14 is missing : 0.39993865971476766
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 2
+	Class 1 (Class=0)
+
+Decision Stump
+
+Classifications
+
+V4 <= 1.6492234135000001 : 0.9501685010342211
+V4 > 1.6492234135000001 : -1.0317748964146034
+V4 is missing : 0.14645868621084698
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 3
+	Class 1 (Class=0)
+
+Decision Stump
+
+Classifications
+
+V10 <= -1.5759406165 : -1.1344829107445649
+V10 > -1.5759406165 : 0.6999076339457316
+V10 is missing : 0.09842813776587485
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 4
+	Class 1 (Class=0)
+
+Decision Stump
+
+Classifications
+
+V12 <= -1.2423129375 : -0.943567347772001
+V12 > -1.2423129375 : 0.4900396122135861
+V12 is missing : 0.007266681524364779
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 5
+	Class 1 (Class=0)
+
+Decision Stump
+
+Classifications
+
+V4 <= 0.382544025 : 0.8652694955409754
+V4 > 0.382544025 : -0.41526328266652146
+V4 is missing : 0.023401231132175317
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 6
+	Class 1 (Class=0)
+
+Decision Stump
+
+Classifications
+
+V14 <= -0.3774493975 : -0.5454539809810759
+V14 > -0.3774493975 : 0.6771872153615602
+V14 is missing : 0.06395694695098843
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 7
+	Class 1 (Class=0)
+
+Decision Stump
+
+Classifications
+
+V7 <= -1.619732413 : -1.289903723273046
+V7 > -1.619732413 : 0.26527109167496365
+V7 is missing : 0.04029237067426361
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 8
+	Class 1 (Class=0)
+
+Decision Stump
+
+Classifications
+
+V3 <= 1.226405816 : -0.21651437420458514
+V3 > 1.226405816 : 1.0300301580858753
+V3 is missing : 0.0013073044302776425
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 9
+	Class 1 (Class=0)
+
+Decision Stump
+
+Classifications
+
+V14 <= -2.239192877 : 1.1318955769168546
+V14 > -2.239192877 : -0.2371584052868023
+V14 is missing : 0.028624911067878494
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 10
+	Class 1 (Class=0)
+
+Decision Stump
+
+Classifications
+
+V16 <= -0.463516276 : -0.6618909696792019
+V16 > -0.463516276 : 0.26039192483046714
+V16 is missing : -0.031191153004273612
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+Number of performed iterations: 10
+
+
+Time taken to build model: 6.82 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12688               97.2857 %
+Incorrectly Classified Instances       354                2.7143 %
+Kappa statistic                          0.9432
+Mean absolute error                      0.0418
+Root mean squared error                  0.1421
+Relative absolute error                  8.7086 %
+Root relative squared error             29.0094 %
+Total Number of Instances            13042     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.987    0.048    0.968      0.987    0.978      0.943    0.993     0.994     0
+                 0.952    0.013    0.980      0.952    0.966      0.943    0.993     0.993     1
+Weighted Avg.    0.973    0.034    0.973      0.973    0.973      0.943    0.993     0.994     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 7724  101 |    a = 0
+  253 4964 |    b = 1
+
