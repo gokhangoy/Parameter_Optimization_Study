@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:16/16 (303)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.61 + 
+[typical_Chest_Pain=1] * -1.31 +
+[Region_RWMA=0] * 1.17 +
+[Hyper_Tension=1] * -0.6 +
+[ejection_Fraction=0] * 0.34 +
+[ejection_Fraction=1] * -0.26 +
+[nonanginal=1] * 0.8  +
+[dialostic_Murmur=1] * -0.75 +
+[Tinversion=1] * -0.54 +
+[Valvular_Heart_Disease=0] * -0.29 +
+[age=5] * 1.53 +
+[age=6] * 0.76 +
+[age=7] * 0.45 +
+[age=10] * -0.59
+
+Class 1 :
+0.61 + 
+[typical_Chest_Pain=1] * 1.31 +
+[Region_RWMA=0] * -1.17 +
+[Hyper_Tension=1] * 0.6  +
+[ejection_Fraction=0] * -0.34 +
+[ejection_Fraction=1] * 0.26 +
+[nonanginal=1] * -0.8 +
+[dialostic_Murmur=1] * 0.75 +
+[Tinversion=1] * 0.54 +
+[Valvular_Heart_Disease=0] * 0.29 +
+[age=5] * -1.53 +
+[age=6] * -0.76 +
+[age=7] * -0.45 +
+[age=10] * 0.59
+
+
+Time taken to build model: 0.26 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         259               85.4785 %
+Incorrectly Classified Instances        44               14.5215 %
+Kappa statistic                          0.6428
+Mean absolute error                      0.1875
+Root mean squared error                  0.3153
+Relative absolute error                 45.7163 %
+Root relative squared error             69.6845 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.736    0.097    0.753      0.736    0.744      0.643    0.926     0.841     0
+                 0.903    0.264    0.894      0.903    0.899      0.643    0.926     0.970     1
+Weighted Avg.    0.855    0.216    0.854      0.855    0.854      0.643    0.926     0.933     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  64  23 |   a = 0
+  21 195 |   b = 1
+

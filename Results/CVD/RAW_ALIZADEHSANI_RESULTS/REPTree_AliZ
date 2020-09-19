@@ -1,0 +1,87 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+typical_Chest_Pain = 0
+|   Hyper_Tension = 0
+|   |   Region_RWMA = 0 : 0 (35/6) [22/5]
+|   |   Region_RWMA = 1 : 0 (3/1) [1/0]
+|   |   Region_RWMA = 2 : 1 (2/0) [1/0]
+|   |   Region_RWMA = 3 : 0 (0/0) [0/0]
+|   |   Region_RWMA = 4 : 1 (1/0) [1/0]
+|   Hyper_Tension = 1
+|   |   age = 0 : 1 (0/0) [0/0]
+|   |   age = 1 : 1 (0/0) [0/0]
+|   |   age = 2 : 1 (0/0) [0/0]
+|   |   age = 3 : 1 (0/0) [0/0]
+|   |   age = 4 : 1 (0/0) [0/0]
+|   |   age = 5 : 1 (0/0) [0/0]
+|   |   age = 6 : 0 (3/1) [1/0]
+|   |   age = 7
+|   |   |   st_depression = 0 : 0 (17/3) [6/1]
+|   |   |   st_depression = 1 : 1 (4/0) [1/0]
+|   |   age = 8
+|   |   |   Region_RWMA = 0
+|   |   |   |   Valvular_Heart_Disease = 0 : 1 (2/0) [0/0]
+|   |   |   |   Valvular_Heart_Disease = 1 : 0 (6/3) [1/0]
+|   |   |   |   Valvular_Heart_Disease = 2 : 1 (0/0) [0/0]
+|   |   |   |   Valvular_Heart_Disease = 3 : 1 (0/0) [0/0]
+|   |   |   Region_RWMA = 1 : 1 (2/0) [0/0]
+|   |   |   Region_RWMA = 2 : 1 (4/0) [0/0]
+|   |   |   Region_RWMA = 3 : 1 (0/0) [0/0]
+|   |   |   Region_RWMA = 4 : 1 (0/0) [0/0]
+|   |   age = 9 : 1 (11/2) [7/0]
+|   |   age = 10 : 1 (6/0) [2/0]
+typical_Chest_Pain = 1 : 1 (106/6) [58/4]
+
+Size of the tree : 32
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         255               84.1584 %
+Incorrectly Classified Instances        48               15.8416 %
+Kappa statistic                          0.6183
+Mean absolute error                      0.2289
+Root mean squared error                  0.3564
+Relative absolute error                 55.8169 %
+Root relative squared error             78.7745 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.747    0.120    0.714      0.747    0.730      0.619    0.820     0.665     0
+                 0.880    0.253    0.896      0.880    0.888      0.619    0.820     0.871     1
+Weighted Avg.    0.842    0.215    0.844      0.842    0.843      0.619    0.820     0.812     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  65  22 |   a = 0
+  26 190 |   b = 1
+

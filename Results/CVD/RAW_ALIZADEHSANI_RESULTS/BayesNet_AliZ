@@ -1,0 +1,72 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=12 #classindex=11
+Network structure (nodes followed by parents)
+typical_Chest_Pain(2): class 
+atypical(2): class 
+Region_RWMA(5): class 
+Hyper_Tension(2): class 
+ejection_Fraction(3): class 
+nonanginal(2): class 
+dialostic_Murmur(2): class 
+Tinversion(2): class 
+Valvular_Heart_Disease(4): class 
+st_depression(2): class 
+age(11): class 
+class(2): 
+LogScore Bayes: -2671.291558011807
+LogScore BDeu: -2777.097757240797
+LogScore MDL: -2789.984125861598
+LogScore ENTROPY: -2638.5702065155992
+LogScore AIC: -2691.5702065155992
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         267               88.1188 %
+Incorrectly Classified Instances        36               11.8812 %
+Kappa statistic                          0.7098
+Mean absolute error                      0.1626
+Root mean squared error                  0.3148
+Relative absolute error                 39.6438 %
+Root relative squared error             69.5716 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.793    0.083    0.793      0.793    0.793      0.710    0.924     0.809     0
+                 0.917    0.207    0.917      0.917    0.917      0.710    0.924     0.968     1
+Weighted Avg.    0.881    0.171    0.881      0.881    0.881      0.710    0.924     0.922     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  69  18 |   a = 0
+  18 198 |   b = 1
+

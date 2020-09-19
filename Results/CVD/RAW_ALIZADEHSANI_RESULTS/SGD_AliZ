@@ -1,0 +1,87 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SGD -F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S 1
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Loss function: Hinge loss (SVM)
+
+Squared loss (linear regression)
+
+class = 
+
+         1.8891 (normalized) typical_Chest_Pain=1
+ +      -0.6497 (normalized) atypical=1
+ +      -1.1794 (normalized) Region_RWMA=0
+ +      -0.02   (normalized) Region_RWMA=1
+ +       0.4898 (normalized) Region_RWMA=2
+ +       0.04   (normalized) Region_RWMA=3
+ +       0.7596 (normalized) Region_RWMA=4
+ +       0.8496 (normalized) Hyper_Tension=1
+ +      -0.5997 (normalized) ejection_Fraction=0
+ +       0.8796 (normalized) ejection_Fraction=1
+ +      -0.1899 (normalized) ejection_Fraction=2
+ +      -2.0391 (normalized) nonanginal=1
+ +       1.3794 (normalized) dialostic_Murmur=1
+ +       1.1694 (normalized) Tinversion=1
+ +       0.5098 (normalized) Valvular_Heart_Disease=0
+ +      -0.09   (normalized) Valvular_Heart_Disease=1
+ +      -0.08   (normalized) Valvular_Heart_Disease=2
+ +      -0.2499 (normalized) Valvular_Heart_Disease=3
+ +       0.2499 (normalized) st_depression=1
+ +       0      (normalized) age=0
+ +       0      (normalized) age=1
+ +       0      (normalized) age=2
+ +       0      (normalized) age=3
+ +       0      (normalized) age=4
+ +      -1.8792 (normalized) age=5
+ +      -1.3294 (normalized) age=6
+ +      -0.0799 (normalized) age=7
+ +       0.4698 (normalized) age=8
+ +       0.9795 (normalized) age=9
+ +       1.9291 (normalized) age=10
+ +       0.09  
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         258               85.1485 %
+Incorrectly Classified Instances        45               14.8515 %
+Kappa statistic                          0.6283
+Mean absolute error                      0.1485
+Root mean squared error                  0.3854
+Relative absolute error                 36.2168 %
+Root relative squared error             85.1709 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.701    0.088    0.763      0.701    0.731      0.629    0.807     0.620     0
+                 0.912    0.299    0.883      0.912    0.897      0.629    0.807     0.868     1
+Weighted Avg.    0.851    0.238    0.849      0.851    0.850      0.629    0.807     0.797     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  61  26 |   a = 0
+  19 197 |   b = 1
+

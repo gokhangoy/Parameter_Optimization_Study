@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.LWL -U 0 -K -1 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" -W weka.classifiers.trees.DecisionStump
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Locally weighted learning
+===========================
+Using classifier: weka.classifiers.trees.DecisionStump
+Using linear weighting kernels
+Using all neighbours
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         235               77.5578 %
+Incorrectly Classified Instances        68               22.4422 %
+Kappa statistic                          0.5293
+Mean absolute error                      0.2783
+Root mean squared error                  0.3664
+Relative absolute error                 67.8615 %
+Root relative squared error             80.9699 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.885    0.269    0.570      0.885    0.694      0.561    0.905     0.726     0
+                 0.731    0.115    0.940      0.731    0.823      0.561    0.905     0.960     1
+Weighted Avg.    0.776    0.159    0.834      0.776    0.786      0.561    0.905     0.893     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  77  10 |   a = 0
+  58 158 |   b = 1
+

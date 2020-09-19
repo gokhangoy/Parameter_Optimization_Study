@@ -1,0 +1,132 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.CfsSubsetEval -P 1 -E 1" -S "weka.attributeSelection.BestFirst -D 1 -N 5" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 73
+	Merit of best subset found:    0.255
+
+Attribute Subset Evaluator (supervised, Class (nominal): 12 class):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 1,2,3,4,6,7,8,11 : 8
+                     typical_Chest_Pain
+                     atypical
+                     Region_RWMA
+                     Hyper_Tension
+                     nonanginal
+                     dialostic_Murmur
+                     Tinversion
+                     age
+
+
+Header of reduced data:
+@relation 'alizadehsani_Categorized-weka.filters.unsupervised.attribute.Remove-V-R1-4,6-8,11-12'
+
+@attribute typical_Chest_Pain {0,1}
+@attribute atypical {0,1}
+@attribute Region_RWMA {0,1,2,3,4}
+@attribute Hyper_Tension {0,1}
+@attribute nonanginal {0,1}
+@attribute dialostic_Murmur {0,1}
+@attribute Tinversion {0,1}
+@attribute age {0,1,2,3,4,5,6,7,8,9,10}
+@attribute class {0,1}
+
+@data
+
+
+Classifier Model
+J48 pruned tree
+------------------
+
+typical_Chest_Pain = 0
+|   Region_RWMA = 0
+|   |   Tinversion = 0
+|   |   |   age = 0: 0 (0.0)
+|   |   |   age = 1: 0 (0.0)
+|   |   |   age = 2: 0 (0.0)
+|   |   |   age = 3: 0 (0.0)
+|   |   |   age = 4: 0 (0.0)
+|   |   |   age = 5: 0 (0.0)
+|   |   |   age = 6: 0 (12.0/1.0)
+|   |   |   age = 7: 0 (32.0/4.0)
+|   |   |   age = 8: 0 (23.0/4.0)
+|   |   |   age = 9
+|   |   |   |   dialostic_Murmur = 0
+|   |   |   |   |   Hyper_Tension = 0: 0 (3.0)
+|   |   |   |   |   Hyper_Tension = 1: 1 (4.0/1.0)
+|   |   |   |   dialostic_Murmur = 1: 1 (7.0)
+|   |   |   age = 10
+|   |   |   |   atypical = 0: 0 (3.0/1.0)
+|   |   |   |   atypical = 1: 1 (3.0)
+|   |   Tinversion = 1: 1 (24.0/9.0)
+|   Region_RWMA = 1
+|   |   Hyper_Tension = 0: 0 (4.0/1.0)
+|   |   Hyper_Tension = 1: 1 (6.0)
+|   Region_RWMA = 2: 1 (13.0/1.0)
+|   Region_RWMA = 3: 0 (0.0)
+|   Region_RWMA = 4: 1 (5.0)
+typical_Chest_Pain = 1: 1 (164.0/10.0)
+
+Number of Leaves  : 	21
+
+Size of the tree : 	29
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         261               86.1386 %
+Incorrectly Classified Instances        42               13.8614 %
+Kappa statistic                          0.6591
+Mean absolute error                      0.1984
+Root mean squared error                  0.3318
+Relative absolute error                 48.3753 %
+Root relative squared error             73.3301 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.747    0.093    0.765      0.747    0.756      0.659    0.857     0.697     0
+                 0.907    0.253    0.899      0.907    0.903      0.659    0.857     0.909     1
+Weighted Avg.    0.861    0.207    0.860      0.861    0.861      0.659    0.857     0.848     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  65  22 |   a = 0
+  20 196 |   b = 1
+

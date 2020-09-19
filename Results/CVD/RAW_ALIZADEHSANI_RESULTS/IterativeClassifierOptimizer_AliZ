@@ -1,0 +1,198 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.IterativeClassifierOptimizer -W weka.classifiers.meta.LogitBoost -L 50 -P 1 -E 1 -I 1 -F 10 -R 1 -percentage 0.0 -metric RMSE -S 1 -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Best value found: 0.3252821281209838
+Best number of iterations found: 10
+
+
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (class=0)
+
+Decision Stump
+
+Classifications
+
+typical_Chest_Pain = 0 : 0.2158273381294964
+typical_Chest_Pain != 0 : -1.7560975609756098
+typical_Chest_Pain is missing : -0.8514851485148515
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 2
+	Class 1 (class=0)
+
+Decision Stump
+
+Classifications
+
+Region_RWMA = 0 : 0.13991319551315412
+Region_RWMA != 0 : -1.4114511680732686
+Region_RWMA is missing : -0.24985914185638375
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 3
+	Class 1 (class=0)
+
+Decision Stump
+
+Classifications
+
+Hyper_Tension = 0 : 0.5782344328846827
+Hyper_Tension != 0 : -0.6156393384036116
+Hyper_Tension is missing : -0.09274301196874801
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 4
+	Class 1 (class=0)
+
+Decision Stump
+
+Classifications
+
+dialostic_Murmur = 0 : 0.23996280660818647
+dialostic_Murmur != 0 : -0.8309607513980946
+dialostic_Murmur is missing : -0.03378341708167097
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 5
+	Class 1 (class=0)
+
+Decision Stump
+
+Classifications
+
+Tinversion = 0 : 0.25030391820204656
+Tinversion != 0 : -0.8286912292120788
+Tinversion is missing : -0.029037614989003986
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 6
+	Class 1 (class=0)
+
+Decision Stump
+
+Classifications
+
+nonanginal = 0 : -0.1600203075117652
+nonanginal != 0 : 1.4415770959885998
+nonanginal is missing : -0.029089126922711404
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 7
+	Class 1 (class=0)
+
+Decision Stump
+
+Classifications
+
+age = 6 : 1.4120957328797747
+age != 6 : -0.10053267370747986
+age is missing : 0.012184284518173216
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 8
+	Class 1 (class=0)
+
+Decision Stump
+
+Classifications
+
+age = 7 : 0.6097981367576103
+age != 7 : -0.2998106773926292
+age is missing : 0.006529615306533437
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 9
+	Class 1 (class=0)
+
+Decision Stump
+
+Classifications
+
+age = 5 : 2.995218234908751
+age != 5 : -0.056238203914557666
+age is missing : -0.013265231172540248
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 10
+	Class 1 (class=0)
+
+Decision Stump
+
+Classifications
+
+ejection_Fraction = 0 : 0.24186478743177195
+ejection_Fraction != 0 : -0.43856385706888973
+ejection_Fraction is missing : 0.008871787164567865
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+Number of performed iterations: 10
+
+
+Time taken to build model: 0.16 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         256               84.4884 %
+Incorrectly Classified Instances        47               15.5116 %
+Kappa statistic                          0.6005
+Mean absolute error                      0.2216
+Root mean squared error                  0.3298
+Relative absolute error                 54.0474 %
+Root relative squared error             72.8845 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.644    0.074    0.778      0.644    0.704      0.605    0.908     0.793     0
+                 0.926    0.356    0.866      0.926    0.895      0.605    0.908     0.961     1
+Weighted Avg.    0.845    0.275    0.841      0.845    0.840      0.605    0.908     0.912     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  56  31 |   a = 0
+  16 200 |   b = 1
+

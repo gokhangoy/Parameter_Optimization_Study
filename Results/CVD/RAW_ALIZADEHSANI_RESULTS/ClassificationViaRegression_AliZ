@@ -1,0 +1,321 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.ClassificationViaRegression -W weka.classifiers.trees.M5P -- -M 4.0
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Classification via Regression
+
+Classifier for class with index 0:
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+typical_Chest_Pain=0 <= 0.5 : 
+|   Region_RWMA=0 <= 0.5 : LM1 (58/0%)
+|   Region_RWMA=0 >  0.5 : 
+|   |   dialostic_Murmur=0 <= 0.5 : LM2 (36/0%)
+|   |   dialostic_Murmur=0 >  0.5 : LM3 (70/68.47%)
+typical_Chest_Pain=0 >  0.5 : 
+|   Region_RWMA=0 <= 0.5 : LM4 (28/68.345%)
+|   Region_RWMA=0 >  0.5 : 
+|   |   age=8,4,0,2,1,3,7,6,5 <= 0.5 : 
+|   |   |   dialostic_Murmur=0 <= 0.5 : LM5 (11/0%)
+|   |   |   dialostic_Murmur=0 >  0.5 : LM6 (16/51.159%)
+|   |   age=8,4,0,2,1,3,7,6,5 >  0.5 : LM7 (84/75.467%)
+
+LM num: 1
+class = 
+	0.0225 * typical_Chest_Pain=0 
+	+ 0.0084 * atypical=1 
+	+ 0.0308 * Region_RWMA=0 
+	+ 0.012 * Hyper_Tension=0 
+	+ 0.0069 * ejection_Fraction=2,0 
+	+ 0.0297 * nonanginal=1 
+	+ 0.0308 * dialostic_Murmur=0 
+	+ 0.0311 * Tinversion=0 
+	- 0.0123 * age=8,4,0,2,1,3,7,6,5 
+	+ 0.038 * age=4,0,2,1,3,7,6,5 
+	+ 0.0155 * age=6,5 
+	- 0.0571
+
+LM num: 2
+class = 
+	0.0225 * typical_Chest_Pain=0 
+	+ 0.0084 * atypical=1 
+	+ 0.025 * Region_RWMA=0 
+	+ 0.0339 * Hyper_Tension=0 
+	+ 0.0069 * ejection_Fraction=2,0 
+	+ 0.0297 * nonanginal=1 
+	+ 0.0554 * dialostic_Murmur=0 
+	+ 0.063 * Tinversion=0 
+	- 0.0415 * age=8,4,0,2,1,3,7,6,5 
+	+ 0.08 * age=4,0,2,1,3,7,6,5 
+	+ 0.0155 * age=6,5 
+	- 0.075
+
+LM num: 3
+class = 
+	0.0225 * typical_Chest_Pain=0 
+	+ 0.0084 * atypical=1 
+	+ 0.025 * Region_RWMA=0 
+	+ 0.0251 * Hyper_Tension=0 
+	+ 0.0069 * ejection_Fraction=2,0 
+	+ 0.0297 * nonanginal=1 
+	+ 0.0426 * dialostic_Murmur=0 
+	+ 0.2045 * Tinversion=0 
+	- 0.1525 * age=8,4,0,2,1,3,7,6,5 
+	+ 0.2747 * age=4,0,2,1,3,7,6,5 
+	+ 0.0155 * age=6,5 
+	- 0.0592
+
+LM num: 4
+class = 
+	0.0261 * typical_Chest_Pain=0 
+	+ 0.0098 * atypical=1 
+	+ 0.2165 * Region_RWMA=1,0 
+	+ 0.0985 * Region_RWMA=0 
+	+ 0.0831 * Hyper_Tension=0 
+	+ 0.1055 * ejection_Fraction=2,0 
+	+ 0.1252 * nonanginal=1 
+	+ 0.2008 * dialostic_Murmur=0 
+	+ 0.0799 * Tinversion=0 
+	- 0.0556 * Valvular_Heart_Disease=0,3 
+	+ 0.0854 * age=8,4,0,2,1,3,7,6,5 
+	+ 0.0593 * age=4,0,2,1,3,7,6,5 
+	+ 0.018 * age=6,5 
+	- 0.3135
+
+LM num: 5
+class = 
+	0.0261 * typical_Chest_Pain=0 
+	+ 0.0098 * atypical=1 
+	+ 0.0217 * Region_RWMA=1,0 
+	+ 0.0459 * Region_RWMA=0 
+	+ 0.253 * Hyper_Tension=0 
+	+ 0.1395 * ejection_Fraction=2,0 
+	+ 0.3184 * nonanginal=1 
+	+ 0.1803 * dialostic_Murmur=0 
+	+ 0.1295 * Tinversion=0 
+	- 0.0655 * Valvular_Heart_Disease=0,3 
+	+ 0.1432 * age=8,4,0,2,1,3,7,6,5 
+	+ 0.0294 * age=4,0,2,1,3,7,6,5 
+	+ 0.018 * age=6,5 
+	- 0.2676
+
+LM num: 6
+class = 
+	0.0261 * typical_Chest_Pain=0 
+	+ 0.0098 * atypical=1 
+	+ 0.0217 * Region_RWMA=1,0 
+	+ 0.0459 * Region_RWMA=0 
+	+ 0.4524 * Hyper_Tension=0 
+	+ 0.1395 * ejection_Fraction=2,0 
+	+ 0.5537 * nonanginal=1 
+	+ 0.1643 * dialostic_Murmur=0 
+	+ 0.1295 * Tinversion=0 
+	- 0.0655 * Valvular_Heart_Disease=0,3 
+	+ 0.1432 * age=8,4,0,2,1,3,7,6,5 
+	+ 0.0294 * age=4,0,2,1,3,7,6,5 
+	+ 0.018 * age=6,5 
+	- 0.2601
+
+LM num: 7
+class = 
+	0.0261 * typical_Chest_Pain=0 
+	+ 0.0098 * atypical=1 
+	+ 0.0217 * Region_RWMA=1,0 
+	+ 0.0459 * Region_RWMA=0 
+	+ 0.0586 * Hyper_Tension=0 
+	+ 0.4579 * ejection_Fraction=2,0 
+	- 0.1298 * ejection_Fraction=0 
+	+ 0.2365 * nonanginal=1 
+	+ 0.0517 * dialostic_Murmur=0 
+	+ 0.399 * Tinversion=0 
+	- 0.138 * Valvular_Heart_Disease=0,3 
+	+ 0.0775 * age=8,4,0,2,1,3,7,6,5 
+	+ 0.0294 * age=4,0,2,1,3,7,6,5 
+	+ 0.018 * age=6,5 
+	- 0.0817
+
+Number of Rules : 7
+
+Classifier for class with index 1:
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+typical_Chest_Pain=1 <= 0.5 : 
+|   Region_RWMA=1,2,3,4 <= 0.5 : 
+|   |   age=9,10 <= 0.5 : LM1 (84/75.467%)
+|   |   age=9,10 >  0.5 : 
+|   |   |   dialostic_Murmur=1 <= 0.5 : LM2 (16/51.159%)
+|   |   |   dialostic_Murmur=1 >  0.5 : LM3 (11/0%)
+|   Region_RWMA=1,2,3,4 >  0.5 : LM4 (28/68.345%)
+typical_Chest_Pain=1 >  0.5 : 
+|   Region_RWMA=1,2,3,4 <= 0.5 : 
+|   |   dialostic_Murmur=1 <= 0.5 : LM5 (70/68.47%)
+|   |   dialostic_Murmur=1 >  0.5 : LM6 (36/0%)
+|   Region_RWMA=1,2,3,4 >  0.5 : LM7 (58/0%)
+
+LM num: 1
+class = 
+	0.0261 * typical_Chest_Pain=1 
+	+ 0.0098 * atypical=0 
+	+ 0.0459 * Region_RWMA=1,2,3,4 
+	+ 0.0217 * Region_RWMA=2,3,4 
+	+ 0.0586 * Hyper_Tension=1 
+	- 0.1298 * ejection_Fraction=2,1 
+	+ 0.4579 * ejection_Fraction=1 
+	+ 0.2365 * nonanginal=0 
+	+ 0.0517 * dialostic_Murmur=1 
+	+ 0.399 * Tinversion=1 
+	- 0.138 * Valvular_Heart_Disease=1,2 
+	+ 0.018 * age=7,4,0,1,2,3,8,9,10 
+	+ 0.0294 * age=4,0,1,2,3,8,9,10 
+	+ 0.0775 * age=9,10 
+	- 0.0826
+
+LM num: 2
+class = 
+	0.0261 * typical_Chest_Pain=1 
+	+ 0.0098 * atypical=0 
+	+ 0.0459 * Region_RWMA=1,2,3,4 
+	+ 0.0217 * Region_RWMA=2,3,4 
+	+ 0.4524 * Hyper_Tension=1 
+	+ 0.1395 * ejection_Fraction=1 
+	+ 0.5537 * nonanginal=0 
+	+ 0.1643 * dialostic_Murmur=1 
+	+ 0.1295 * Tinversion=1 
+	- 0.0655 * Valvular_Heart_Disease=1,2 
+	+ 0.018 * age=7,4,0,1,2,3,8,9,10 
+	+ 0.0294 * age=4,0,1,2,3,8,9,10 
+	+ 0.1432 * age=9,10 
+	- 0.4079
+
+LM num: 3
+class = 
+	0.0261 * typical_Chest_Pain=1 
+	+ 0.0098 * atypical=0 
+	+ 0.0459 * Region_RWMA=1,2,3,4 
+	+ 0.0217 * Region_RWMA=2,3,4 
+	+ 0.253 * Hyper_Tension=1 
+	+ 0.1395 * ejection_Fraction=1 
+	+ 0.3184 * nonanginal=0 
+	+ 0.1803 * dialostic_Murmur=1 
+	+ 0.1295 * Tinversion=1 
+	- 0.0655 * Valvular_Heart_Disease=1,2 
+	+ 0.018 * age=7,4,0,1,2,3,8,9,10 
+	+ 0.0294 * age=4,0,1,2,3,8,9,10 
+	+ 0.1432 * age=9,10 
+	+ 0.0183
+
+LM num: 4
+class = 
+	0.0261 * typical_Chest_Pain=1 
+	+ 0.0098 * atypical=0 
+	+ 0.0985 * Region_RWMA=1,2,3,4 
+	+ 0.2165 * Region_RWMA=2,3,4 
+	+ 0.0831 * Hyper_Tension=1 
+	+ 0.1055 * ejection_Fraction=1 
+	+ 0.1252 * nonanginal=0 
+	+ 0.2008 * dialostic_Murmur=1 
+	+ 0.0799 * Tinversion=1 
+	- 0.0556 * Valvular_Heart_Disease=1,2 
+	+ 0.018 * age=7,4,0,1,2,3,8,9,10 
+	+ 0.0593 * age=4,0,1,2,3,8,9,10 
+	+ 0.0854 * age=9,10 
+	+ 0.261
+
+LM num: 5
+class = 
+	0.0225 * typical_Chest_Pain=1 
+	+ 0.0084 * atypical=0 
+	+ 0.025 * Region_RWMA=1,2,3,4 
+	+ 0.0251 * Hyper_Tension=1 
+	+ 0.0069 * ejection_Fraction=1 
+	+ 0.0297 * nonanginal=0 
+	+ 0.0426 * dialostic_Murmur=1 
+	+ 0.2045 * Tinversion=1 
+	+ 0.0155 * age=7,4,0,1,2,3,8,9,10 
+	+ 0.2747 * age=4,0,1,2,3,8,9,10 
+	- 0.1525 * age=9,10 
+	+ 0.5569
+
+LM num: 6
+class = 
+	0.0225 * typical_Chest_Pain=1 
+	+ 0.0084 * atypical=0 
+	+ 0.025 * Region_RWMA=1,2,3,4 
+	+ 0.0339 * Hyper_Tension=1 
+	+ 0.0069 * ejection_Fraction=1 
+	+ 0.0297 * nonanginal=0 
+	+ 0.0554 * dialostic_Murmur=1 
+	+ 0.063 * Tinversion=1 
+	+ 0.0155 * age=7,4,0,1,2,3,8,9,10 
+	+ 0.08 * age=4,0,1,2,3,8,9,10 
+	- 0.0415 * age=9,10 
+	+ 0.7763
+
+LM num: 7
+class = 
+	0.0225 * typical_Chest_Pain=1 
+	+ 0.0084 * atypical=0 
+	+ 0.0308 * Region_RWMA=1,2,3,4 
+	+ 0.012 * Hyper_Tension=1 
+	+ 0.0069 * ejection_Fraction=1 
+	+ 0.0297 * nonanginal=0 
+	+ 0.0308 * dialostic_Murmur=1 
+	+ 0.0311 * Tinversion=1 
+	+ 0.0155 * age=7,4,0,1,2,3,8,9,10 
+	+ 0.038 * age=4,0,1,2,3,8,9,10 
+	- 0.0123 * age=9,10 
+	+ 0.8437
+
+Number of Rules : 7
+
+
+
+Time taken to build model: 0.2 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         261               86.1386 %
+Incorrectly Classified Instances        42               13.8614 %
+Kappa statistic                          0.6518
+Mean absolute error                      0.1935
+Root mean squared error                  0.3067
+Relative absolute error                 47.1871 %
+Root relative squared error             67.7719 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.713    0.079    0.785      0.713    0.747      0.653    0.937     0.832     0
+                 0.921    0.287    0.888      0.921    0.905      0.653    0.937     0.976     1
+Weighted Avg.    0.861    0.227    0.859      0.861    0.859      0.653    0.937     0.935     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  62  25 |   a = 0
+  17 199 |   b = 1
+

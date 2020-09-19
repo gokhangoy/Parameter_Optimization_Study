@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 303
+Number of Rules : 75
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 82
+	Merit of best subset found:   85.809
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 1,2,3,4,6,7,8,12
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         230               75.9076 %
+Incorrectly Classified Instances        73               24.0924 %
+Kappa statistic                          0.4366
+Mean absolute error                      0.3181
+Root mean squared error                  0.3822
+Relative absolute error                 77.5651 %
+Root relative squared error             84.4648 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.655    0.199    0.570      0.655    0.610      0.439    0.843     0.664     0
+                 0.801    0.345    0.852      0.801    0.826      0.439    0.843     0.925     1
+Weighted Avg.    0.759    0.303    0.771      0.759    0.764      0.439    0.843     0.850     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  57  30 |   a = 0
+  43 173 |   b = 1
+

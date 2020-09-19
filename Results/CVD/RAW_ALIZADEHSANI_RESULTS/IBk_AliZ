@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         252               83.1683 %
+Incorrectly Classified Instances        51               16.8317 %
+Kappa statistic                          0.6165
+Mean absolute error                      0.1945
+Root mean squared error                  0.3684
+Relative absolute error                 47.42   %
+Root relative squared error             81.4097 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.828    0.167    0.667      0.828    0.738      0.624    0.875     0.691     0
+                 0.833    0.172    0.923      0.833    0.876      0.624    0.875     0.934     1
+Weighted Avg.    0.832    0.171    0.849      0.832    0.836      0.624    0.875     0.864     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  72  15 |   a = 0
+  36 180 |   b = 1
+

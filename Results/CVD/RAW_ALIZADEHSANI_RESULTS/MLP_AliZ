@@ -1,0 +1,623 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    3.414275389859926
+    Node 2    -3.0740168772553336
+    Node 3    -2.839516951155098
+    Node 4    -2.855689214310765
+    Node 5    -2.37417314137437
+    Node 6    -1.2920342909527818
+    Node 7    -3.1861741165674364
+    Node 8    -0.11524298248319705
+    Node 9    -4.152540929171379
+    Node 10    0.1743713121251592
+    Node 11    -2.033649328789983
+    Node 12    -3.2984901424409
+    Node 13    -1.8442886650208754
+    Node 14    4.6579985067184175
+    Node 15    -3.359517304652915
+    Node 16    0.0020396152280993335
+    Node 17    -0.4039394113291694
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -3.4155929900641304
+    Node 2    3.112280847951502
+    Node 3    2.83993329357647
+    Node 4    2.847364359657355
+    Node 5    2.3735156626020637
+    Node 6    1.3054622185184013
+    Node 7    3.1840130541557805
+    Node 8    0.09536947160633732
+    Node 9    4.15382119379739
+    Node 10    -0.14956084536814948
+    Node 11    2.0313181350436786
+    Node 12    3.251434972872595
+    Node 13    1.8549334752024953
+    Node 14    -4.661451648828821
+    Node 15    3.3580314963817672
+    Node 16    0.02456725165937278
+    Node 17    0.3999069845149794
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.35012475656402403
+    Attrib typical_Chest_Pain=1    2.41467630483288
+    Attrib atypical=1    -9.270196114453325E-4
+    Attrib Region_RWMA=0    -1.8429914193013566
+    Attrib Region_RWMA=1    -0.050633974642879366
+    Attrib Region_RWMA=2    0.5039186499563681
+    Attrib Region_RWMA=3    -0.27737017692743315
+    Attrib Region_RWMA=4    0.7177596804567643
+    Attrib Hyper_Tension=1    1.0269276742891233
+    Attrib ejection_Fraction=0    -1.1897669102866881
+    Attrib ejection_Fraction=1    0.4939231745911833
+    Attrib ejection_Fraction=2    0.32713726914051544
+    Attrib nonanginal=1    -0.7724330916786284
+    Attrib dialostic_Murmur=1    0.5580058800838309
+    Attrib Tinversion=1    -0.7722614518725774
+    Attrib Valvular_Heart_Disease=0    0.3098263204853254
+    Attrib Valvular_Heart_Disease=1    -0.1531491394972774
+    Attrib Valvular_Heart_Disease=2    -0.8689031559390855
+    Attrib Valvular_Heart_Disease=3    0.08380771982576178
+    Attrib st_depression=1    -0.3133449630042224
+    Attrib age=0    -0.024247087392723077
+    Attrib age=1    -0.021473930774067996
+    Attrib age=2    0.03609911840660775
+    Attrib age=3    0.038138865920795115
+    Attrib age=4    0.005643968920995682
+    Attrib age=5    -1.7211548987324088
+    Attrib age=6    -1.5554036054759353
+    Attrib age=7    -2.411042509126115
+    Attrib age=8    0.6775283709561598
+    Attrib age=9    2.0850748552396143
+    Attrib age=10    1.6340929308068168
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.5298626844738511
+    Attrib typical_Chest_Pain=1    2.7531127811322436
+    Attrib atypical=1    -1.1622799583547996
+    Attrib Region_RWMA=0    -0.027565537203032505
+    Attrib Region_RWMA=1    -0.212796303960272
+    Attrib Region_RWMA=2    0.12846074251720072
+    Attrib Region_RWMA=3    0.5123396023131683
+    Attrib Region_RWMA=4    1.086868687950518
+    Attrib Hyper_Tension=1    -2.520943782687897
+    Attrib ejection_Fraction=0    1.5627492929353006
+    Attrib ejection_Fraction=1    -0.08438996626954445
+    Attrib ejection_Fraction=2    -1.0325776823236281
+    Attrib nonanginal=1    -1.4829886960742782
+    Attrib dialostic_Murmur=1    -1.1343498830086671
+    Attrib Tinversion=1    1.7063213851150267
+    Attrib Valvular_Heart_Disease=0    2.489628195554238
+    Attrib Valvular_Heart_Disease=1    -0.8978229507383091
+    Attrib Valvular_Heart_Disease=2    -0.7039946322534018
+    Attrib Valvular_Heart_Disease=3    0.06296681964110631
+    Attrib st_depression=1    0.9217438551930833
+    Attrib age=0    0.03515328698953482
+    Attrib age=1    0.01603920000687617
+    Attrib age=2    -0.04209346793984012
+    Attrib age=3    -0.038529954621113915
+    Attrib age=4    -0.02317764783296136
+    Attrib age=5    -0.804529695312063
+    Attrib age=6    -0.6418509821290055
+    Attrib age=7    1.9370311052497813
+    Attrib age=8    2.4654877275173877
+    Attrib age=9    -1.800954362997901
+    Attrib age=10    0.8794815919957067
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.4709634351694799
+    Attrib typical_Chest_Pain=1    1.3954620700520408
+    Attrib atypical=1    -1.0047009994948246
+    Attrib Region_RWMA=0    0.73735332703176
+    Attrib Region_RWMA=1    -0.16035368663350844
+    Attrib Region_RWMA=2    -0.5056556010844938
+    Attrib Region_RWMA=3    0.4859842462684153
+    Attrib Region_RWMA=4    0.8016094572290225
+    Attrib Hyper_Tension=1    1.6141771395235456
+    Attrib ejection_Fraction=0    0.03773635375547217
+    Attrib ejection_Fraction=1    0.7984133578215138
+    Attrib ejection_Fraction=2    -0.4787631736775513
+    Attrib nonanginal=1    -0.546644378572209
+    Attrib dialostic_Murmur=1    1.1971547649607204
+    Attrib Tinversion=1    2.6059945341054727
+    Attrib Valvular_Heart_Disease=0    -1.348822583155517
+    Attrib Valvular_Heart_Disease=1    0.8099635572346665
+    Attrib Valvular_Heart_Disease=2    1.1580435246331824
+    Attrib Valvular_Heart_Disease=3    0.37182141923793705
+    Attrib st_depression=1    1.835574140507918
+    Attrib age=0    -4.126038849847219E-4
+    Attrib age=1    -0.015495777863921166
+    Attrib age=2    0.044385820894360994
+    Attrib age=3    0.04462165026848003
+    Attrib age=4    -0.007437327554779147
+    Attrib age=5    -0.3658520621623149
+    Attrib age=6    0.08604157396773182
+    Attrib age=7    0.9800281723403763
+    Attrib age=8    0.7113127128331523
+    Attrib age=9    -0.7572708901504758
+    Attrib age=10    1.042260106346644
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    0.02775860647610755
+    Attrib typical_Chest_Pain=1    2.680910901095585
+    Attrib atypical=1    -0.3917673948349511
+    Attrib Region_RWMA=0    -1.0348611764959057
+    Attrib Region_RWMA=1    0.08483452859076822
+    Attrib Region_RWMA=2    -0.23998272864729694
+    Attrib Region_RWMA=3    -0.008981278700497869
+    Attrib Region_RWMA=4    1.0294035366204448
+    Attrib Hyper_Tension=1    1.8724619158469973
+    Attrib ejection_Fraction=0    -0.4496727304742521
+    Attrib ejection_Fraction=1    -0.25834322734107973
+    Attrib ejection_Fraction=2    0.7059609717833131
+    Attrib nonanginal=1    -1.714735332104657
+    Attrib dialostic_Murmur=1    0.31435700208403095
+    Attrib Tinversion=1    1.002818700197905
+    Attrib Valvular_Heart_Disease=0    -0.31588269493325266
+    Attrib Valvular_Heart_Disease=1    0.2569511581002902
+    Attrib Valvular_Heart_Disease=2    -0.5205641250292977
+    Attrib Valvular_Heart_Disease=3    0.41399868491913594
+    Attrib st_depression=1    -0.9545109613924564
+    Attrib age=0    0.007970361338197021
+    Attrib age=1    0.011646789402706505
+    Attrib age=2    0.01547064502599707
+    Attrib age=3    0.03976812226233849
+    Attrib age=4    -0.017729012210492938
+    Attrib age=5    -1.6310923428501023
+    Attrib age=6    -1.1154226013021786
+    Attrib age=7    -1.2911525013510385
+    Attrib age=8    0.2661101928058649
+    Attrib age=9    2.089532472671818
+    Attrib age=10    1.5153197661965807
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.3836992874836343
+    Attrib typical_Chest_Pain=1    0.507665346218984
+    Attrib atypical=1    -0.22767962803557376
+    Attrib Region_RWMA=0    -0.0553017777517188
+    Attrib Region_RWMA=1    -0.06273711750215989
+    Attrib Region_RWMA=2    0.23270569738635427
+    Attrib Region_RWMA=3    0.3626193662223846
+    Attrib Region_RWMA=4    0.51706469576514
+    Attrib Hyper_Tension=1    0.4190149084711603
+    Attrib ejection_Fraction=0    -0.06522589154535857
+    Attrib ejection_Fraction=1    0.6966243032326802
+    Attrib ejection_Fraction=2    -0.17707052886892768
+    Attrib nonanginal=1    -0.38276523203033663
+    Attrib dialostic_Murmur=1    0.9822510276846096
+    Attrib Tinversion=1    1.4940194025999818
+    Attrib Valvular_Heart_Disease=0    -0.6701372720118259
+    Attrib Valvular_Heart_Disease=1    0.24052498950695905
+    Attrib Valvular_Heart_Disease=2    0.9412934271229425
+    Attrib Valvular_Heart_Disease=3    0.24779871624315686
+    Attrib st_depression=1    0.940989051431939
+    Attrib age=0    -0.0443912538976877
+    Attrib age=1    -0.00392625963417309
+    Attrib age=2    0.03827498808932467
+    Attrib age=3    -0.019178711335550738
+    Attrib age=4    -0.04182934598971571
+    Attrib age=5    0.010618741853891665
+    Attrib age=6    0.07784381324651751
+    Attrib age=7    0.4877069300960996
+    Attrib age=8    0.5195093334062115
+    Attrib age=9    -0.20968725450965567
+    Attrib age=10    0.5408987027350817
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.39556361370118137
+    Attrib typical_Chest_Pain=1    2.5022196830999306
+    Attrib atypical=1    -0.6648029991649141
+    Attrib Region_RWMA=0    0.021670626171741487
+    Attrib Region_RWMA=1    0.2703618864207048
+    Attrib Region_RWMA=2    -0.5731776975953334
+    Attrib Region_RWMA=3    0.5022182391615932
+    Attrib Region_RWMA=4    1.0065857471929778
+    Attrib Hyper_Tension=1    1.1385211596923772
+    Attrib ejection_Fraction=0    -1.0639687550785433
+    Attrib ejection_Fraction=1    1.2406920282706373
+    Attrib ejection_Fraction=2    0.2092212235548654
+    Attrib nonanginal=1    -2.237322827603111
+    Attrib dialostic_Murmur=1    0.23752258259465311
+    Attrib Tinversion=1    1.1424492107310849
+    Attrib Valvular_Heart_Disease=0    -1.5094610392590457
+    Attrib Valvular_Heart_Disease=1    2.2517833572858272
+    Attrib Valvular_Heart_Disease=2    -0.23595303700508943
+    Attrib Valvular_Heart_Disease=3    0.36948155363887225
+    Attrib st_depression=1    -0.7090037312132236
+    Attrib age=0    0.009042354726466327
+    Attrib age=1    0.007442748623851456
+    Attrib age=2    0.010339486798490428
+    Attrib age=3    -0.013648951442539824
+    Attrib age=4    -0.007749845357316057
+    Attrib age=5    -1.6791984091019045
+    Attrib age=6    -0.040842104224791995
+    Attrib age=7    1.2298515221279738
+    Attrib age=8    -0.15267267882618116
+    Attrib age=9    0.7145441967989705
+    Attrib age=10    1.561884755196218
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.2378948110268766
+    Attrib typical_Chest_Pain=1    0.23726487854802075
+    Attrib atypical=1    -0.07719236534190867
+    Attrib Region_RWMA=0    -0.310657765023529
+    Attrib Region_RWMA=1    0.1493116093642271
+    Attrib Region_RWMA=2    0.2760792909953537
+    Attrib Region_RWMA=3    0.22231242775741702
+    Attrib Region_RWMA=4    0.23412891188188842
+    Attrib Hyper_Tension=1    0.16145945476134868
+    Attrib ejection_Fraction=0    -0.11286149142907971
+    Attrib ejection_Fraction=1    0.2882724171795214
+    Attrib ejection_Fraction=2    0.03350430281772585
+    Attrib nonanginal=1    -0.06118004341329987
+    Attrib dialostic_Murmur=1    0.35896509553700684
+    Attrib Tinversion=1    0.39533247118604703
+    Attrib Valvular_Heart_Disease=0    -0.07808930068715483
+    Attrib Valvular_Heart_Disease=1    -0.008086366165773478
+    Attrib Valvular_Heart_Disease=2    0.3177286044087523
+    Attrib Valvular_Heart_Disease=3    0.15301703555380203
+    Attrib st_depression=1    0.1919088392331474
+    Attrib age=0    0.04758697995063188
+    Attrib age=1    -0.01775650915923973
+    Attrib age=2    0.01021389432018592
+    Attrib age=3    -0.0022108880107618023
+    Attrib age=4    -0.007678542290495749
+    Attrib age=5    0.047869028925509934
+    Attrib age=6    0.0574135313365011
+    Attrib age=7    -0.08048231253925599
+    Attrib age=8    0.24138551118465082
+    Attrib age=9    0.1710204887325671
+    Attrib age=10    0.29370472086049265
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.35545664509168146
+    Attrib typical_Chest_Pain=1    2.8647231654832286
+    Attrib atypical=1    -1.9697755182806342
+    Attrib Region_RWMA=0    -0.33792916433227205
+    Attrib Region_RWMA=1    -0.5062949467433076
+    Attrib Region_RWMA=2    0.6725765512202456
+    Attrib Region_RWMA=3    0.32395155600430275
+    Attrib Region_RWMA=4    0.7386020130613357
+    Attrib Hyper_Tension=1    0.14130685764996628
+    Attrib ejection_Fraction=0    0.6107442035025671
+    Attrib ejection_Fraction=1    0.48547895591236595
+    Attrib ejection_Fraction=2    -0.9057230571135216
+    Attrib nonanginal=1    -2.5125606359226276
+    Attrib dialostic_Murmur=1    0.4407073397944308
+    Attrib Tinversion=1    3.1428195959091245
+    Attrib Valvular_Heart_Disease=0    0.5745237693855574
+    Attrib Valvular_Heart_Disease=1    -0.9526985064586204
+    Attrib Valvular_Heart_Disease=2    0.6988195140672859
+    Attrib Valvular_Heart_Disease=3    0.26613009871831406
+    Attrib st_depression=1    0.5559640239176231
+    Attrib age=0    -0.0322221927237584
+    Attrib age=1    -0.0022075560258088198
+    Attrib age=2    0.04114848447780449
+    Attrib age=3    -0.04191936551538457
+    Attrib age=4    -0.012579879900444214
+    Attrib age=5    -0.9584635170732911
+    Attrib age=6    -1.5640903825926105
+    Attrib age=7    1.830068338044487
+    Attrib age=8    0.40081985904910106
+    Attrib age=9    -1.2188526132380293
+    Attrib age=10    2.7141752823310434
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.12143311766066593
+    Attrib typical_Chest_Pain=1    0.20788200477544844
+    Attrib atypical=1    -0.10888060604872697
+    Attrib Region_RWMA=0    -0.19184428363699305
+    Attrib Region_RWMA=1    0.14578046118953908
+    Attrib Region_RWMA=2    0.121626771052884
+    Attrib Region_RWMA=3    0.21272527052455675
+    Attrib Region_RWMA=4    0.1577551432966633
+    Attrib Hyper_Tension=1    0.15516174559831758
+    Attrib ejection_Fraction=0    -0.008390176409658341
+    Attrib ejection_Fraction=1    0.10078982950050469
+    Attrib ejection_Fraction=2    0.0497435294767308
+    Attrib nonanginal=1    0.162573421867814
+    Attrib dialostic_Murmur=1    0.18830647054389085
+    Attrib Tinversion=1    0.19008470896984156
+    Attrib Valvular_Heart_Disease=0    0.04278528632387661
+    Attrib Valvular_Heart_Disease=1    0.06051807865354135
+    Attrib Valvular_Heart_Disease=2    0.11480055150120132
+    Attrib Valvular_Heart_Disease=3    0.14104528077142353
+    Attrib st_depression=1    0.2879179075030762
+    Attrib age=0    6.252555014952116E-4
+    Attrib age=1    -0.013042402317631062
+    Attrib age=2    0.03023741315527681
+    Attrib age=3    0.02275384157610552
+    Attrib age=4    -0.03347705219599467
+    Attrib age=5    0.13872312687994393
+    Attrib age=6    0.06744809449022882
+    Attrib age=7    -0.0484078507565982
+    Attrib age=8    0.139965720786876
+    Attrib age=9    0.18538109370131134
+    Attrib age=10    0.1904112654154645
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -0.30475436846550225
+    Attrib typical_Chest_Pain=1    1.0908216134092175
+    Attrib atypical=1    -0.37040435059675103
+    Attrib Region_RWMA=0    0.08763672679397193
+    Attrib Region_RWMA=1    -0.1581514905836045
+    Attrib Region_RWMA=2    -0.09579641316480023
+    Attrib Region_RWMA=3    0.37806782415157053
+    Attrib Region_RWMA=4    0.7431452371875854
+    Attrib Hyper_Tension=1    1.2116871359231898
+    Attrib ejection_Fraction=0    -0.08100209000670888
+    Attrib ejection_Fraction=1    0.6739938736766222
+    Attrib ejection_Fraction=2    -0.30333428786908434
+    Attrib nonanginal=1    -0.7147969116562237
+    Attrib dialostic_Murmur=1    1.2672371111708118
+    Attrib Tinversion=1    1.7008220265363676
+    Attrib Valvular_Heart_Disease=0    -1.2776104833106998
+    Attrib Valvular_Heart_Disease=1    0.6831159862752569
+    Attrib Valvular_Heart_Disease=2    0.9657695223741645
+    Attrib Valvular_Heart_Disease=3    0.23595527814828332
+    Attrib st_depression=1    1.7110463708905255
+    Attrib age=0    0.018678630585707942
+    Attrib age=1    0.01147082523584194
+    Attrib age=2    -0.010862882301298116
+    Attrib age=3    0.015902225058541664
+    Attrib age=4    0.028258415518080296
+    Attrib age=5    -0.38083248346698445
+    Attrib age=6    0.009257316459152572
+    Attrib age=7    0.3775738332091794
+    Attrib age=8    0.5432276018304592
+    Attrib age=9    -0.21333327814243777
+    Attrib age=10    0.7991610216279764
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    0.31757495528063506
+    Attrib typical_Chest_Pain=1    2.3839347311757195
+    Attrib atypical=1    -0.03701536895964902
+    Attrib Region_RWMA=0    -1.8176797711276962
+    Attrib Region_RWMA=1    -0.0720189421472255
+    Attrib Region_RWMA=2    0.43906970418610186
+    Attrib Region_RWMA=3    -0.26073180773360016
+    Attrib Region_RWMA=4    0.6903010708535352
+    Attrib Hyper_Tension=1    0.8813866696640645
+    Attrib ejection_Fraction=0    -1.7584813219926283
+    Attrib ejection_Fraction=1    1.1099374211006883
+    Attrib ejection_Fraction=2    0.3755093955427818
+    Attrib nonanginal=1    -0.8122776156856666
+    Attrib dialostic_Murmur=1    1.2901377779493641
+    Attrib Tinversion=1    -0.603357531133742
+    Attrib Valvular_Heart_Disease=0    0.3174743529020921
+    Attrib Valvular_Heart_Disease=1    -0.32904562909607876
+    Attrib Valvular_Heart_Disease=2    -0.41549836099856063
+    Attrib Valvular_Heart_Disease=3    -0.3918873687408792
+    Attrib st_depression=1    0.48244201855334734
+    Attrib age=0    0.04709658872849795
+    Attrib age=1    -0.043694720894122255
+    Attrib age=2    -0.02401183049107103
+    Attrib age=3    5.595162917265487E-4
+    Attrib age=4    -0.03252916844326218
+    Attrib age=5    -1.4359247922182945
+    Attrib age=6    -1.367721047321177
+    Attrib age=7    -2.4495209848531845
+    Attrib age=8    0.8440413240682534
+    Attrib age=9    2.5007517037827944
+    Attrib age=10    0.5649165001652511
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -0.28628358602487597
+    Attrib typical_Chest_Pain=1    2.0947417852819266
+    Attrib atypical=1    -1.2347296783499109
+    Attrib Region_RWMA=0    -1.0233229111304099
+    Attrib Region_RWMA=1    0.1258786827640324
+    Attrib Region_RWMA=2    0.27188606870695314
+    Attrib Region_RWMA=3    0.33882985928006804
+    Attrib Region_RWMA=4    1.1653004437094006
+    Attrib Hyper_Tension=1    0.5973577969638344
+    Attrib ejection_Fraction=0    -1.015012345386529
+    Attrib ejection_Fraction=1    0.8670808451799114
+    Attrib ejection_Fraction=2    0.34698457910379055
+    Attrib nonanginal=1    -1.606059336365976
+    Attrib dialostic_Murmur=1    0.5601315736612423
+    Attrib Tinversion=1    1.891034008042068
+    Attrib Valvular_Heart_Disease=0    -0.7509898305191267
+    Attrib Valvular_Heart_Disease=1    0.8907164790077811
+    Attrib Valvular_Heart_Disease=2    0.4177977312093706
+    Attrib Valvular_Heart_Disease=3    0.05771889419796579
+    Attrib st_depression=1    0.5914626282299662
+    Attrib age=0    -0.025140699035507776
+    Attrib age=1    -0.046929639173773546
+    Attrib age=2    0.024004757063985777
+    Attrib age=3    0.034090381673899314
+    Attrib age=4    -0.025979866607433524
+    Attrib age=5    -0.9728579626643512
+    Attrib age=6    -0.2887613605997421
+    Attrib age=7    0.3131803479371595
+    Attrib age=8    1.5292511987335784
+    Attrib age=9    -0.2568153819770623
+    Attrib age=10    0.8464344551229482
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    0.6187391805213186
+    Attrib typical_Chest_Pain=1    3.0404074531258547
+    Attrib atypical=1    -0.8041651330216943
+    Attrib Region_RWMA=0    0.9168963450645681
+    Attrib Region_RWMA=1    0.4442065947040807
+    Attrib Region_RWMA=2    -1.4052485505520897
+    Attrib Region_RWMA=3    -0.7028712774045017
+    Attrib Region_RWMA=4    -1.267639925635257
+    Attrib Hyper_Tension=1    -3.0208070088948342
+    Attrib ejection_Fraction=0    1.0226828379052317
+    Attrib ejection_Fraction=1    -2.4455956167935695
+    Attrib ejection_Fraction=2    0.7463706810194264
+    Attrib nonanginal=1    3.0260257529250714
+    Attrib dialostic_Murmur=1    -1.3420561155532513
+    Attrib Tinversion=1    -2.1184883976977162
+    Attrib Valvular_Heart_Disease=0    -4.201647474510107
+    Attrib Valvular_Heart_Disease=1    1.6635814625804874
+    Attrib Valvular_Heart_Disease=2    1.052837808863346
+    Attrib Valvular_Heart_Disease=3    0.13077047608965736
+    Attrib st_depression=1    2.1300043647112075
+    Attrib age=0    0.030890332899921727
+    Attrib age=1    0.04128248017014047
+    Attrib age=2    -0.03589043738281265
+    Attrib age=3    0.03400153193447518
+    Attrib age=4    0.0018345762087415216
+    Attrib age=5    0.010226018538812267
+    Attrib age=6    1.048901672613677
+    Attrib age=7    -2.088332136465436
+    Attrib age=8    2.221525478162661
+    Attrib age=9    0.22528606990183453
+    Attrib age=10    -3.9952465147738883
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    0.3285753156918048
+    Attrib typical_Chest_Pain=1    0.26822945415548166
+    Attrib atypical=1    0.6100731046982637
+    Attrib Region_RWMA=0    -2.436166716162043
+    Attrib Region_RWMA=1    0.33247428296797077
+    Attrib Region_RWMA=2    0.42996670985109386
+    Attrib Region_RWMA=3    -0.296357317896602
+    Attrib Region_RWMA=4    0.817700815995478
+    Attrib Hyper_Tension=1    2.440121982935221
+    Attrib ejection_Fraction=0    -1.3277172792913332
+    Attrib ejection_Fraction=1    0.3048487855568578
+    Attrib ejection_Fraction=2    0.720705748672081
+    Attrib nonanginal=1    -0.7218034356885408
+    Attrib dialostic_Murmur=1    1.425769589227571
+    Attrib Tinversion=1    -0.1322332583818583
+    Attrib Valvular_Heart_Disease=0    1.2600317099554863
+    Attrib Valvular_Heart_Disease=1    -0.9370217525877067
+    Attrib Valvular_Heart_Disease=2    -0.9536390748907451
+    Attrib Valvular_Heart_Disease=3    -0.08449825502690975
+    Attrib st_depression=1    0.5988202946600892
+    Attrib age=0    -0.018576080468722604
+    Attrib age=1    -0.02577111402111102
+    Attrib age=2    -0.047145898942977715
+    Attrib age=3    -0.04271945398829661
+    Attrib age=4    -0.02626176063185505
+    Attrib age=5    -1.627205080524222
+    Attrib age=6    0.5188757679065196
+    Attrib age=7    -3.5244176703745134
+    Attrib age=8    -0.10557132090051723
+    Attrib age=9    0.849341751021833
+    Attrib age=10    2.43325367123828
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -0.15417402378631223
+    Attrib typical_Chest_Pain=1    0.22362466798954914
+    Attrib atypical=1    -0.0941084488132915
+    Attrib Region_RWMA=0    -0.3077202596183451
+    Attrib Region_RWMA=1    0.14402256279659023
+    Attrib Region_RWMA=2    0.2773860157242252
+    Attrib Region_RWMA=3    0.15462043880166793
+    Attrib Region_RWMA=4    0.24168917094119263
+    Attrib Hyper_Tension=1    0.09398817319421571
+    Attrib ejection_Fraction=0    -0.14533029929178148
+    Attrib ejection_Fraction=1    0.26594338766346437
+    Attrib ejection_Fraction=2    0.0329887335409009
+    Attrib nonanginal=1    0.059021290358660466
+    Attrib dialostic_Murmur=1    0.2747285820382473
+    Attrib Tinversion=1    0.2959788822958321
+    Attrib Valvular_Heart_Disease=0    0.013280340975090404
+    Attrib Valvular_Heart_Disease=1    -0.004728128920043324
+    Attrib Valvular_Heart_Disease=2    0.1951725968816832
+    Attrib Valvular_Heart_Disease=3    0.16817575164963675
+    Attrib st_depression=1    0.16917963225563648
+    Attrib age=0    -0.007791925292918979
+    Attrib age=1    0.02994951694072885
+    Attrib age=2    -0.03052379685540887
+    Attrib age=3    0.03316112828854176
+    Attrib age=4    0.04704762108749398
+    Attrib age=5    0.0578817845432454
+    Attrib age=6    0.06662399817204143
+    Attrib age=7    -0.08744186624069529
+    Attrib age=8    0.22536088278968053
+    Attrib age=9    0.13158874396399212
+    Attrib age=10    0.2678853776694942
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -0.2501253455784299
+    Attrib typical_Chest_Pain=1    0.24236653487545634
+    Attrib atypical=1    -0.04967528716934637
+    Attrib Region_RWMA=0    -0.31539857577199476
+    Attrib Region_RWMA=1    0.12139375281905222
+    Attrib Region_RWMA=2    0.3136940160005097
+    Attrib Region_RWMA=3    0.20052857809101418
+    Attrib Region_RWMA=4    0.376093105175409
+    Attrib Hyper_Tension=1    0.12256930689973203
+    Attrib ejection_Fraction=0    -0.208892807633658
+    Attrib ejection_Fraction=1    0.43341150678707896
+    Attrib ejection_Fraction=2    -0.07166867398308935
+    Attrib nonanginal=1    -0.04270234051842439
+    Attrib dialostic_Murmur=1    0.5791074661826693
+    Attrib Tinversion=1    0.5604766071363293
+    Attrib Valvular_Heart_Disease=0    -0.314672758213861
+    Attrib Valvular_Heart_Disease=1    0.0028496484973290475
+    Attrib Valvular_Heart_Disease=2    0.5192377057629773
+    Attrib Valvular_Heart_Disease=3    0.1531475764853535
+    Attrib st_depression=1    0.4460702030975066
+    Attrib age=0    -0.03257634462133361
+    Attrib age=1    0.01969689113428985
+    Attrib age=2    -0.009820604182286675
+    Attrib age=3    -0.027177905655377445
+    Attrib age=4    -0.006981809482332915
+    Attrib age=5    0.05158042161723609
+    Attrib age=6    0.03968434148771757
+    Attrib age=7    -0.052241893134362255
+    Attrib age=8    0.35616988041052283
+    Attrib age=9    0.1297649833872721
+    Attrib age=10    0.35830248828029104
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+Time taken to build model: 1.37 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         260               85.8086 %
+Incorrectly Classified Instances        43               14.1914 %
+Kappa statistic                          0.6592
+Mean absolute error                      0.1539
+Root mean squared error                  0.3407
+Relative absolute error                 37.53   %
+Root relative squared error             75.3036 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.782    0.111    0.739      0.782    0.760      0.660    0.915     0.795     0
+                 0.889    0.218    0.910      0.889    0.899      0.660    0.915     0.962     1
+Weighted Avg.    0.858    0.188    0.861      0.858    0.859      0.660    0.915     0.914     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  68  19 |   a = 0
+  24 192 |   b = 1
+

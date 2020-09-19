@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         1.6023 * (normalized) typical_Chest_Pain=1
+ +      -0.3984 * (normalized) atypical=1
+ +      -0.9348 * (normalized) Region_RWMA=0
+ +       0.2651 * (normalized) Region_RWMA=2
+ +       0      * (normalized) Region_RWMA=3
+ +       0.6697 * (normalized) Region_RWMA=4
+ +       0.802  * (normalized) Hyper_Tension=1
+ +      -0.5328 * (normalized) ejection_Fraction=0
+ +       0.6674 * (normalized) ejection_Fraction=1
+ +      -0.1345 * (normalized) ejection_Fraction=2
+ +      -1.1979 * (normalized) nonanginal=1
+ +       0.8008 * (normalized) dialostic_Murmur=1
+ +       0.803  * (normalized) Tinversion=1
+ +       0.3991 * (normalized) Valvular_Heart_Disease=0
+ +      -0.001  * (normalized) Valvular_Heart_Disease=1
+ +      -0.0008 * (normalized) Valvular_Heart_Disease=2
+ +      -0.3973 * (normalized) Valvular_Heart_Disease=3
+ +       0.3962 * (normalized) st_depression=1
+ +      -1      * (normalized) age=5
+ +      -0.8413 * (normalized) age=6
+ +      -0.4394 * (normalized) age=7
+ +       0.3613 * (normalized) age=8
+ +       0.7603 * (normalized) age=9
+ +       1.1591 * (normalized) age=10
+ +       0.1053
+
+Number of kernel evaluations: 16417 (85.816% cached)
+
+
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         260               85.8086 %
+Incorrectly Classified Instances        43               14.1914 %
+Kappa statistic                          0.6497
+Mean absolute error                      0.1419
+Root mean squared error                  0.3767
+Relative absolute error                 34.6071 %
+Root relative squared error             83.2567 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.736    0.093    0.762      0.736    0.749      0.650    0.822     0.636     0
+                 0.907    0.264    0.895      0.907    0.901      0.650    0.822     0.878     1
+Weighted Avg.    0.858    0.215    0.857      0.858    0.857      0.650    0.822     0.809     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  64  23 |   a = 0
+  20 196 |   b = 1
+

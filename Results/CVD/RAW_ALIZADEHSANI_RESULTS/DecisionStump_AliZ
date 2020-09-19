@@ -1,0 +1,70 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+typical_Chest_Pain = 0 : 0
+typical_Chest_Pain != 0 : 1
+typical_Chest_Pain is missing : 1
+
+Class distributions
+
+typical_Chest_Pain = 0
+0	1	
+0.5539568345323741	0.4460431654676259	
+typical_Chest_Pain != 0
+0	1	
+0.06097560975609756	0.9390243902439024	
+typical_Chest_Pain is missing
+0	1	
+0.2871287128712871	0.7128712871287128	
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         231               76.2376 %
+Incorrectly Classified Instances        72               23.7624 %
+Kappa statistic                          0.5075
+Mean absolute error                      0.2895
+Root mean squared error                  0.3811
+Relative absolute error                 70.597  %
+Root relative squared error             84.2184 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.885    0.287    0.554      0.885    0.681      0.543    0.759     0.484     0
+                 0.713    0.115    0.939      0.713    0.811      0.543    0.759     0.863     1
+Weighted Avg.    0.762    0.164    0.828      0.762    0.773      0.543    0.759     0.754     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  77  10 |   a = 0
+  62 154 |   b = 1
+

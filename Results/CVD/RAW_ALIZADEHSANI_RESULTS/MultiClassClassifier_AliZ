@@ -1,0 +1,128 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.MultiClassClassifier -M 0 -R 2.0 -S 1 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+MultiClassClassifier
+
+Classifier 1
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                    Class
+Variable                                0
+=========================================
+typical_Chest_Pain=1              -3.3097
+atypical=1                          0.216
+Region_RWMA=0                      4.1094
+Region_RWMA=1                      2.0412
+Region_RWMA=2                       0.904
+Region_RWMA=3                     -9.8884
+Region_RWMA=4                    -14.6369
+Hyper_Tension=1                   -1.8063
+ejection_Fraction=0                0.7842
+ejection_Fraction=1               -1.0729
+ejection_Fraction=2               -0.1631
+nonanginal=1                       2.2374
+dialostic_Murmur=1                -2.0635
+Tinversion=1                      -1.9319
+Valvular_Heart_Disease=0          -0.8867
+Valvular_Heart_Disease=1           0.5118
+Valvular_Heart_Disease=2           0.7574
+Valvular_Heart_Disease=3           0.5749
+st_depression=1                   -0.3604
+age=0                                   0
+age=1                                   0
+age=2                                   0
+age=3                                   0
+age=4                                   0
+age=5                             16.9038
+age=6                              2.3973
+age=7                              0.6935
+age=8                             -0.4067
+age=9                              -0.559
+age=10                             -2.701
+Intercept                         -2.0423
+
+
+Odds Ratios...
+                                    Class
+Variable                                0
+=========================================
+typical_Chest_Pain=1               0.0365
+atypical=1                          1.241
+Region_RWMA=0                     60.9101
+Region_RWMA=1                      7.6995
+Region_RWMA=2                      2.4693
+Region_RWMA=3                      0.0001
+Region_RWMA=4                           0
+Hyper_Tension=1                    0.1643
+ejection_Fraction=0                2.1906
+ejection_Fraction=1                 0.342
+ejection_Fraction=2                0.8495
+nonanginal=1                       9.3685
+dialostic_Murmur=1                  0.127
+Tinversion=1                       0.1449
+Valvular_Heart_Disease=0            0.412
+Valvular_Heart_Disease=1           1.6683
+Valvular_Heart_Disease=2           2.1328
+Valvular_Heart_Disease=3            1.777
+st_depression=1                    0.6974
+age=0                                   1
+age=1                                   1
+age=2                                   1
+age=3                                   1
+age=4                                   1
+age=5                       21939735.5455
+age=6                             10.9937
+age=7                              2.0008
+age=8                              0.6659
+age=9                              0.5718
+age=10                             0.0671
+
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         261               86.1386 %
+Incorrectly Classified Instances        42               13.8614 %
+Kappa statistic                          0.6591
+Mean absolute error                      0.1714
+Root mean squared error                  0.3189
+Relative absolute error                 41.7863 %
+Root relative squared error             70.4769 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.747    0.093    0.765      0.747    0.756      0.659    0.917     0.827     0
+                 0.907    0.253    0.899      0.907    0.903      0.659    0.917     0.959     1
+Weighted Avg.    0.861    0.207    0.860      0.861    0.861      0.659    0.917     0.921     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  65  22 |   a = 0
+  20 196 |   b = 1
+

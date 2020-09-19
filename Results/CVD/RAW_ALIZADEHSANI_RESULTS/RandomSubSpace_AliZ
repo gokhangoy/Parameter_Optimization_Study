@@ -1,0 +1,459 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.RandomSubSpace -P 0.5 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -2063690255 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 5,2,10,7,9,1,12
+
+Filtered Header
+@relation 'alizadehsani_Categorized-weka.filters.unsupervised.attribute.Remove-V-R5,2,10,7,9,1,12'
+
+@attribute ejection_Fraction {0,1,2}
+@attribute atypical {0,1}
+@attribute st_depression {0,1}
+@attribute dialostic_Murmur {0,1}
+@attribute Valvular_Heart_Disease {0,1,2,3}
+@attribute typical_Chest_Pain {0,1}
+@attribute class {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+typical_Chest_Pain = 0
+|   dialostic_Murmur = 0
+|   |   ejection_Fraction = 0 : 0 (55/15) [18/6]
+|   |   ejection_Fraction = 1 : 1 (11/4) [4/1]
+|   |   ejection_Fraction = 2 : 0 (10/5) [7/2]
+|   dialostic_Murmur = 1 : 1 (22/6) [12/4]
+typical_Chest_Pain = 1 : 1 (104/3) [60/7]
+
+Size of the tree : 8
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 2099727826 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 11,8,3,10,4,2,12
+
+Filtered Header
+@relation 'alizadehsani_Categorized-weka.filters.unsupervised.attribute.Remove-V-R11,8,3,10,4,2,12'
+
+@attribute age {0,1,2,3,4,5,6,7,8,9,10}
+@attribute Tinversion {0,1}
+@attribute Region_RWMA {0,1,2,3,4}
+@attribute st_depression {0,1}
+@attribute Hyper_Tension {0,1}
+@attribute atypical {0,1}
+@attribute class {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+Region_RWMA = 0
+|   Hyper_Tension = 0
+|   |   atypical = 0 : 1 (30/13) [17/5]
+|   |   atypical = 1 : 0 (27/5) [17/5]
+|   Hyper_Tension = 1
+|   |   age = 0 : 1 (0/0) [0/0]
+|   |   age = 1 : 1 (0/0) [0/0]
+|   |   age = 2 : 1 (0/0) [0/0]
+|   |   age = 3 : 1 (0/0) [0/0]
+|   |   age = 4 : 1 (0/0) [0/0]
+|   |   age = 5 : 0 (1/0) [0/0]
+|   |   age = 6 : 0 (5/2) [0/0]
+|   |   age = 7
+|   |   |   st_depression = 0
+|   |   |   |   atypical = 0 : 1 (11/4) [7/2]
+|   |   |   |   atypical = 1 : 0 (7/2) [7/0]
+|   |   |   st_depression = 1 : 1 (4/0) [2/0]
+|   |   age = 8 : 1 (21/3) [11/1]
+|   |   age = 9 : 1 (27/3) [11/2]
+|   |   age = 10 : 1 (8/0) [4/0]
+Region_RWMA = 1 : 1 (19/3) [7/0]
+Region_RWMA = 2 : 1 (22/1) [10/0]
+Region_RWMA = 3 : 1 (11/0) [3/0]
+Region_RWMA = 4 : 1 (9/0) [5/0]
+
+Size of the tree : 25
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1010665265 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 6,11,5,3,9,4,12
+
+Filtered Header
+@relation 'alizadehsani_Categorized-weka.filters.unsupervised.attribute.Remove-V-R6,11,5,3,9,4,12'
+
+@attribute nonanginal {0,1}
+@attribute age {0,1,2,3,4,5,6,7,8,9,10}
+@attribute ejection_Fraction {0,1,2}
+@attribute Region_RWMA {0,1,2,3,4}
+@attribute Valvular_Heart_Disease {0,1,2,3}
+@attribute Hyper_Tension {0,1}
+@attribute class {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+ : 1 (202/58) [101/29]
+
+Size of the tree : 1
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -1796648817 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 3,7,9,1,11,4,12
+
+Filtered Header
+@relation 'alizadehsani_Categorized-weka.filters.unsupervised.attribute.Remove-V-R3,7,9,1,11,4,12'
+
+@attribute Region_RWMA {0,1,2,3,4}
+@attribute dialostic_Murmur {0,1}
+@attribute Valvular_Heart_Disease {0,1,2,3}
+@attribute typical_Chest_Pain {0,1}
+@attribute age {0,1,2,3,4,5,6,7,8,9,10}
+@attribute Hyper_Tension {0,1}
+@attribute class {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+typical_Chest_Pain = 0
+|   Region_RWMA = 0
+|   |   age = 0 : 0 (0/0) [0/0]
+|   |   age = 1 : 0 (0/0) [0/0]
+|   |   age = 2 : 0 (0/0) [0/0]
+|   |   age = 3 : 0 (0/0) [0/0]
+|   |   age = 4 : 0 (0/0) [0/0]
+|   |   age = 5 : 0 (0/0) [0/0]
+|   |   age = 6 : 0 (9/1) [4/0]
+|   |   age = 7 : 0 (26/6) [13/3]
+|   |   age = 8 : 0 (22/7) [10/2]
+|   |   age = 9 : 1 (14/4) [5/2]
+|   |   age = 10 : 1 (7/2) [1/0]
+|   Region_RWMA = 1 : 1 (9/3) [1/0]
+|   Region_RWMA = 2 : 1 (7/0) [6/1]
+|   Region_RWMA = 3 : 0 (0/0) [0/0]
+|   Region_RWMA = 4 : 1 (3/0) [2/0]
+typical_Chest_Pain = 1 : 1 (105/6) [59/4]
+
+Size of the tree : 19
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 202814595 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 9,2,3,10,5,1,12
+
+Filtered Header
+@relation 'alizadehsani_Categorized-weka.filters.unsupervised.attribute.Remove-V-R9,2,3,10,5,1,12'
+
+@attribute Valvular_Heart_Disease {0,1,2,3}
+@attribute atypical {0,1}
+@attribute Region_RWMA {0,1,2,3,4}
+@attribute st_depression {0,1}
+@attribute ejection_Fraction {0,1,2}
+@attribute typical_Chest_Pain {0,1}
+@attribute class {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+typical_Chest_Pain = 0
+|   Region_RWMA = 0 : 0 (79/28) [32/10]
+|   Region_RWMA = 1 : 1 (6/2) [4/1]
+|   Region_RWMA = 2 : 1 (7/0) [6/1]
+|   Region_RWMA = 3 : 0 (0/0) [0/0]
+|   Region_RWMA = 4 : 1 (4/0) [1/0]
+typical_Chest_Pain = 1 : 1 (106/5) [58/5]
+
+Size of the tree : 8
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -310411617 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 4,9,11,2,6,1,12
+
+Filtered Header
+@relation 'alizadehsani_Categorized-weka.filters.unsupervised.attribute.Remove-V-R4,9,11,2,6,1,12'
+
+@attribute Hyper_Tension {0,1}
+@attribute Valvular_Heart_Disease {0,1,2,3}
+@attribute age {0,1,2,3,4,5,6,7,8,9,10}
+@attribute atypical {0,1}
+@attribute nonanginal {0,1}
+@attribute typical_Chest_Pain {0,1}
+@attribute class {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+typical_Chest_Pain = 0
+|   age = 0 : 0 (0/0) [0/0]
+|   age = 1 : 0 (0/0) [0/0]
+|   age = 2 : 0 (0/0) [0/0]
+|   age = 3 : 0 (0/0) [0/0]
+|   age = 4 : 0 (0/0) [0/0]
+|   age = 5 : 0 (1/0) [0/0]
+|   age = 6 : 0 (10/2) [4/0]
+|   age = 7 : 0 (31/8) [15/6]
+|   age = 8
+|   |   Hyper_Tension = 0 : 0 (11/2) [16/5]
+|   |   Hyper_Tension = 1 : 1 (10/4) [5/0]
+|   age = 9
+|   |   Valvular_Heart_Disease = 0
+|   |   |   Hyper_Tension = 0 : 0 (2/1) [1/0]
+|   |   |   Hyper_Tension = 1 : 1 (3/0) [1/0]
+|   |   Valvular_Heart_Disease = 1 : 1 (10/3) [3/0]
+|   |   Valvular_Heart_Disease = 2 : 1 (2/0) [1/0]
+|   |   Valvular_Heart_Disease = 3 : 0 (1/0) [0/0]
+|   age = 10 : 1 (5/0) [7/2]
+typical_Chest_Pain = 1 : 1 (116/8) [48/2]
+
+Size of the tree : 22
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 499160755 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 1,2,5,4,7,11,12
+
+Filtered Header
+@relation 'alizadehsani_Categorized-weka.filters.unsupervised.attribute.Remove-V-R1,2,5,4,7,11,12'
+
+@attribute typical_Chest_Pain {0,1}
+@attribute atypical {0,1}
+@attribute ejection_Fraction {0,1,2}
+@attribute Hyper_Tension {0,1}
+@attribute dialostic_Murmur {0,1}
+@attribute age {0,1,2,3,4,5,6,7,8,9,10}
+@attribute class {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+typical_Chest_Pain = 0
+|   age = 0 : 0 (0/0) [0/0]
+|   age = 1 : 0 (0/0) [0/0]
+|   age = 2 : 0 (0/0) [0/0]
+|   age = 3 : 0 (0/0) [0/0]
+|   age = 4 : 0 (0/0) [0/0]
+|   age = 5 : 0 (1/0) [0/0]
+|   age = 6 : 0 (11/1) [3/1]
+|   age = 7 : 0 (31/11) [15/3]
+|   age = 8
+|   |   ejection_Fraction = 0
+|   |   |   Hyper_Tension = 0 : 0 (12/2) [5/1]
+|   |   |   Hyper_Tension = 1 : 1 (5/2) [3/1]
+|   |   ejection_Fraction = 1 : 1 (6/1) [3/1]
+|   |   ejection_Fraction = 2 : 0 (4/1) [4/2]
+|   age = 9
+|   |   dialostic_Murmur = 0
+|   |   |   atypical = 0 : 0 (3/0) [0/0]
+|   |   |   atypical = 1
+|   |   |   |   Hyper_Tension = 0 : 0 (2/0) [1/0]
+|   |   |   |   Hyper_Tension = 1 : 1 (2/0) [4/0]
+|   |   dialostic_Murmur = 1 : 1 (9/0) [3/0]
+|   age = 10 : 1 (9/1) [3/1]
+typical_Chest_Pain = 1 : 1 (107/5) [57/5]
+
+Size of the tree : 25
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1036777830 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 9,7,4,6,3,11,12
+
+Filtered Header
+@relation 'alizadehsani_Categorized-weka.filters.unsupervised.attribute.Remove-V-R9,7,4,6,3,11,12'
+
+@attribute Valvular_Heart_Disease {0,1,2,3}
+@attribute dialostic_Murmur {0,1}
+@attribute Hyper_Tension {0,1}
+@attribute nonanginal {0,1}
+@attribute Region_RWMA {0,1,2,3,4}
+@attribute age {0,1,2,3,4,5,6,7,8,9,10}
+@attribute class {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+Region_RWMA = 0
+|   age = 0 : 1 (0/0) [0/0]
+|   age = 1 : 1 (0/0) [0/0]
+|   age = 2 : 1 (0/0) [0/0]
+|   age = 3 : 1 (0/0) [0/0]
+|   age = 4 : 1 (0/0) [0/0]
+|   age = 5 : 0 (1/0) [0/0]
+|   age = 6 : 0 (8/2) [8/1]
+|   age = 7 : 0 (47/23) [18/8]
+|   age = 8
+|   |   nonanginal = 0
+|   |   |   Valvular_Heart_Disease = 0
+|   |   |   |   Hyper_Tension = 0 : 0 (8/4) [7/3]
+|   |   |   |   Hyper_Tension = 1 : 1 (7/0) [3/0]
+|   |   |   Valvular_Heart_Disease = 1 : 1 (23/6) [9/1]
+|   |   |   Valvular_Heart_Disease = 2 : 1 (4/0) [2/1]
+|   |   |   Valvular_Heart_Disease = 3 : 0 (3/1) [0/0]
+|   |   nonanginal = 1 : 0 (5/0) [0/0]
+|   age = 9
+|   |   Hyper_Tension = 0
+|   |   |   dialostic_Murmur = 0 : 0 (3/0) [3/1]
+|   |   |   dialostic_Murmur = 1 : 1 (2/0) [2/0]
+|   |   Hyper_Tension = 1 : 1 (28/2) [10/3]
+|   age = 10 : 1 (13/2) [3/0]
+Region_RWMA = 1 : 1 (15/3) [11/0]
+Region_RWMA = 2 : 1 (20/0) [12/1]
+Region_RWMA = 3 : 1 (7/0) [7/0]
+Region_RWMA = 4 : 1 (8/0) [6/0]
+
+Size of the tree : 29
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -558549743 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 9,10,5,2,6,11,12
+
+Filtered Header
+@relation 'alizadehsani_Categorized-weka.filters.unsupervised.attribute.Remove-V-R9,10,5,2,6,11,12'
+
+@attribute Valvular_Heart_Disease {0,1,2,3}
+@attribute st_depression {0,1}
+@attribute ejection_Fraction {0,1,2}
+@attribute atypical {0,1}
+@attribute nonanginal {0,1}
+@attribute age {0,1,2,3,4,5,6,7,8,9,10}
+@attribute class {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+atypical = 0
+|   Valvular_Heart_Disease = 0 : 1 (48/8) [21/3]
+|   Valvular_Heart_Disease = 1
+|   |   ejection_Fraction = 0
+|   |   |   nonanginal = 0 : 1 (37/7) [13/1]
+|   |   |   nonanginal = 1 : 0 (2/0) [1/0]
+|   |   ejection_Fraction = 1 : 1 (17/0) [12/2]
+|   |   ejection_Fraction = 2 : 1 (15/0) [15/0]
+|   Valvular_Heart_Disease = 2 : 1 (16/0) [3/2]
+|   Valvular_Heart_Disease = 3 : 0 (8/1) [2/1]
+atypical = 1
+|   age = 0 : 0 (0/0) [0/0]
+|   age = 1 : 0 (0/0) [0/0]
+|   age = 2 : 0 (0/0) [0/0]
+|   age = 3 : 0 (0/0) [0/0]
+|   age = 4 : 0 (0/0) [0/0]
+|   age = 5 : 0 (0/0) [1/0]
+|   age = 6 : 0 (8/1) [2/0]
+|   age = 7 : 0 (21/4) [12/5]
+|   age = 8 : 0 (17/8) [10/3]
+|   age = 9 : 1 (12/1) [5/2]
+|   age = 10 : 1 (1/0) [4/0]
+
+Size of the tree : 23
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 234190797 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 7,10,1,8,4,3,12
+
+Filtered Header
+@relation 'alizadehsani_Categorized-weka.filters.unsupervised.attribute.Remove-V-R7,10,1,8,4,3,12'
+
+@attribute dialostic_Murmur {0,1}
+@attribute st_depression {0,1}
+@attribute typical_Chest_Pain {0,1}
+@attribute Tinversion {0,1}
+@attribute Hyper_Tension {0,1}
+@attribute Region_RWMA {0,1,2,3,4}
+@attribute class {0,1}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+typical_Chest_Pain = 0
+|   Region_RWMA = 0
+|   |   dialostic_Murmur = 0
+|   |   |   Tinversion = 0 : 0 (39/7) [28/6]
+|   |   |   Tinversion = 1
+|   |   |   |   st_depression = 0 : 0 (6/2) [4/3]
+|   |   |   |   st_depression = 1
+|   |   |   |   |   Hyper_Tension = 0 : 0 (4/2) [1/0]
+|   |   |   |   |   Hyper_Tension = 1 : 1 (3/1) [2/0]
+|   |   dialostic_Murmur = 1 : 1 (17/8) [7/2]
+|   Region_RWMA = 1 : 1 (6/2) [4/1]
+|   Region_RWMA = 2 : 1 (10/1) [3/0]
+|   Region_RWMA = 3 : 0 (0/0) [0/0]
+|   Region_RWMA = 4 : 1 (2/0) [3/0]
+typical_Chest_Pain = 1 : 1 (115/8) [49/2]
+
+Size of the tree : 16
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         259               85.4785 %
+Incorrectly Classified Instances        44               14.5215 %
+Kappa statistic                          0.6274
+Mean absolute error                      0.2588
+Root mean squared error                  0.334 
+Relative absolute error                 63.1072 %
+Root relative squared error             73.8057 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.667    0.069    0.795      0.667    0.725      0.632    0.900     0.781     0
+                 0.931    0.333    0.874      0.931    0.901      0.632    0.900     0.948     1
+Weighted Avg.    0.855    0.258    0.851      0.855    0.851      0.632    0.900     0.900     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  58  29 |   a = 0
+  15 201 |   b = 1
+

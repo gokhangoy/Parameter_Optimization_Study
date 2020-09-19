@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CVParameterSelection -X 10 -S 1 -W weka.classifiers.rules.ZeroR
+Relation:     alizadehsani_Categorized
+Instances:    303
+Attributes:   12
+              typical_Chest_Pain
+              atypical
+              Region_RWMA
+              Hyper_Tension
+              ejection_Fraction
+              nonanginal
+              dialostic_Murmur
+              Tinversion
+              Valvular_Heart_Disease
+              st_depression
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.rules.ZeroR
+Classifier Options: 
+
+ZeroR predicts class value: 1
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         216               71.2871 %
+Incorrectly Classified Instances        87               28.7129 %
+Kappa statistic                          0     
+Mean absolute error                      0.4101
+Root mean squared error                  0.4525
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    ?          0.000    ?          ?        0.482     0.279     0
+                 1.000    1.000    0.713      1.000    0.832      ?        0.482     0.705     1
+Weighted Avg.    0.713    0.713    ?          0.713    ?          ?        0.482     0.583     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   0  87 |   a = 0
+   0 216 |   b = 1
+
